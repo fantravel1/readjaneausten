@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Austen Biography | Life, Times & Literary Legacy</title>
+    <meta name="description" content="Discover the fascinating life of Jane Austen (1775-1817). From her Hampshire childhood to literary immortality, explore the woman behind Pride and Prejudice.">
+    <meta name="keywords" content="Jane Austen biography, Regency author, Hampshire writer, Georgian literature, literary biography">
+    <meta name="author" content="Read Jane Austen">
+    <meta property="og:title" content="Jane Austen Biography - Life & Literary Legacy">
+    <meta property="og:description" content="Explore the remarkable life of Jane Austen, from her Georgian upbringing to her enduring literary legacy.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://readjaneausten.com/biography">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #F7F3E9;
+            --sage-green: #9CAF88;
+            --deep-teal: #4A6741;
+            --gold: #D4AF37;
+            --burgundy: #722F37;
+            --soft-brown: #8B7355;
+            --text-dark: #2C2C2C;
+            --text-light: #666;
+            --light-sage: #B8D1A4;
+            --warm-white: #FEFCF6;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, var(--cream) 0%, #F0EBD8 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .narrow-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--deep-teal) 0%, var(--sage-green) 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            margin-bottom: 1rem;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .hero-content {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .timeline-section {
+            padding: 4rem 0;
+            background: var(--warm-white);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--burgundy);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--sage-green);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 3rem;
+            width: 100%;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: 0;
+            margin-right: 50%;
+            padding-right: 2rem;
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: 50%;
+            margin-right: 0;
+            padding-left: 2rem;
+            text-align: left;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: var(--gold);
+            border: 4px solid var(--warm-white);
+            border-radius: 50%;
+            z-index: 2;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            border: 1px solid rgba(156, 175, 136, 0.2);
+        }
+
+        .timeline-date {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--burgundy);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-title {
+            font-size: 1.3rem;
+            color: var(--deep-teal);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .timeline-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+
+        .life-sections {
+            padding: 4rem 0;
+        }
+
+        .life-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .life-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+            border: 1px solid rgba(156, 175, 136, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .life-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .life-card h3 {
+            font-size: 1.5rem;
+            color: var(--burgundy);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .life-card h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: var(--gold);
+        }
+
+        .life-card p {
+            margin-bottom: 1rem;
+        }
+
+        .influence-section {
+            background: linear-gradient(135deg, var(--light-sage) 0%, var(--sage-green) 100%);
+            padding: 4rem 0;
+            color: white;
+        }
+
+        .influence-content {
+            text-align: center;
+        }
+
+        .influence-section h2 {
+            color: white;
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .influence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .influence-item {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .influence-item h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .quotes-section {
+            padding: 4rem 0;
+            background: var(--warm-white);
+        }
+
+        .quote-carousel {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .quote-item {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--gold);
+            margin-bottom: 2rem;
+        }
+
+        .quote-text {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: var(--deep-teal);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .quote-context {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            font-style: normal;
+        }
+
+        .legacy-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, white 0%, var(--cream) 100%);
+        }
+
+        .legacy-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .legacy-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--burgundy);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            background: var(--deep-teal);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                margin-left: 50px;
+                margin-right: 0;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                text-align: left;
+            }
+
+            .timeline-marker {
+                left: 20px;
+            }
+
+            .life-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .life-card {
+                padding: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .quote-item {
+                padding: 2rem;
+            }
+
+            .quote-text {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container, .narrow-container {
+                padding: 0 15px;
+            }
+
+            .timeline-content {
+                padding: 1.5rem;
+            }
+
+            .life-card {
+                padding: 1.5rem;
+            }
+
+            .influence-item {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html">← Back to Complete Works</a>
+            </nav>
+            <div class="hero-content">
+                <h1>Jane Austen</h1>
+                <p class="hero-subtitle">A Life in Letters • 1775-1817</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="timeline-section">
+            <div class="narrow-container">
+                <h2 class="section-title">Life Timeline</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">December 16, 1775</div>
+                            <h3 class="timeline-title">Birth in Steventon</h3>
+                            <p class="timeline-description">Born at Steventon Rectory in Hampshire, the seventh of eight children to Reverend George Austen and Cassandra Leigh Austen. Her father was both rector and schoolmaster, creating an intellectually stimulating household.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">1783-1786</div>
+                            <h3 class="timeline-title">Early Education</h3>
+                            <p class="timeline-description">Attended Mrs. Cawley's school in Oxford and Southampton with her sister Cassandra, then the Abbey School in Reading. Most of her education came from her father's extensive library and family discussions.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">1787-1793</div>
+                            <h3 class="timeline-title">Juvenilia Period</h3>
+                            <p class="timeline-description">Wrote her earliest works, including "Love and Freindship" and "The History of England," showing her emerging wit and satirical style. These early pieces demonstrated her keen observation of social absurdities.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">1795-1797</div>
+                            <h3 class="timeline-title">First Impressions</h3>
+                            <p class="timeline-description">Wrote the first draft of "First Impressions" (later "Pride and Prejudice"). Her father unsuccessfully tried to get it published, but this marked the beginning of her serious literary career.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">1797-1798</div>
+                            <h3 class="timeline-title">Sense and Sensibility</h3>
+                            <p class="timeline-description">Completed the first version of "Sense and Sensibility" (originally titled "Elinor and Marianne"). This epistolary novel was later revised into the published form we know today.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">1801</div>
+                            <h3 class="timeline-title">Move to Bath</h3>
+                            <p class="timeline-description">The family moved to Bath when her father retired. This period was less productive for Jane's writing, possibly due to the social whirl and her dislike of city life compared to rural Hampshire.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">1805</div>
+                            <h3 class="timeline-title">Father's Death</h3>
+                            <p class="timeline-description">George Austen died, leaving Jane, her mother, and sister Cassandra in reduced circumstances. This period of financial uncertainty lasted several years and affected the family deeply.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">1809</div>
+                            <h3 class="timeline-title">Return to Hampshire</h3>
+                            <p class="timeline-description">Moved to Chawton Cottage, provided by her brother Edward. This return to the countryside reinvigorated her writing, beginning her most productive period.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">1811</div>
+                            <h3 class="timeline-title">First Publication</h3>
+                            <p class="timeline-description">"Sense and Sensibility" published "By A Lady" - her first novel to see print. The success encouraged her to continue writing and revising her other works.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">1813</div>
+                            <h3 class="timeline-title">Pride and Prejudice</h3>
+                            <p class="timeline-description">Published "Pride and Prejudice," which received excellent reviews and became her most popular work. The novel's wit and memorable characters established her reputation.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">1814-1815</div>
+                            <h3 class="timeline-title">Peak Publishing Years</h3>
+                            <p class="timeline-description">Published "Mansfield Park" (1814) and "Emma" (1815). "Emma" was dedicated to the Prince Regent, marking her growing literary recognition and social acknowledgment.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">1816-1817</div>
+                            <h3 class="timeline-title">Final Period</h3>
+                            <p class="timeline-description">Began "Sanditon" but illness prevented its completion. Her health declined rapidly, possibly due to Addison's disease or Hodgkin's lymphoma, though the exact cause remains unknown.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">July 18, 1817</div>
+                            <h3 class="timeline-title">Death in Winchester</h3>
+                            <p class="timeline-description">Died in Winchester at age 41, where she had gone seeking medical treatment. "Northanger Abbey" and "Persuasion" were published posthumously in December 1817, identified as works "By the Author of Pride and Prejudice."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="life-sections">
+            <div class="container">
+                <h2 class="section-title">Her World</h2>
+                <div class="life-grid">
+                    <div class="life-card">
+                        <h3>Family & Relationships</h3>
+                        <p>Jane was exceptionally close to her sister Cassandra, who remained her lifelong confidante. Their correspondence provides much of what we know about Jane's inner life, though Cassandra destroyed many letters after Jane's death.</p>
+                        <p>She had six brothers and one sister, living in a large, boisterous household that valued wit, reading, and intellectual discourse. Her father's encouragement of her writing was unusual for the time.</p>
+                        <p>Despite several romantic attachments, including a mysterious seaside romance and a brief engagement to Harris Bigg-Wither, she never married, dedicating herself to her family and her art.</p>
+                    </div>
+
+                    <div class="life-card">
+                        <h3>The Regency World</h3>
+                        <p>Jane lived through the Georgian and Regency periods, times of significant social and political upheaval. The Napoleonic Wars, social reform movements, and changing class structures all influenced her writing.</p>
+                        <p>She moved within the world of the landed gentry - neither aristocracy nor common folk, but the educated middle class who lived on inherited property and investments rather than trade.</p>
+                        <p>Her novels reflect the constraints and possibilities of women's lives in this period, particularly around marriage, inheritance, and social mobility.</p>
+                    </div>
+
+                    <div class="life-card">
+                        <h3>Literary Circle</h3>
+                        <p>Though she lived a relatively quiet life, Jane was well-read in contemporary literature. She admired Samuel Richardson, Henry Fielding, and Frances Burney, while satirizing the Gothic novels of Ann Radcliffe.</p>
+                        <p>Her writing was influenced by 18th-century moral philosophy, particularly the emphasis on reason, propriety, and the cultivation of virtue through experience.</p>
+                        <p>She corresponded with other writers and maintained friendships with literary-minded women, creating an informal network of intellectual exchange.</p>
+                    </div>
+
+                    <div class="life-card">
+                        <h3>Daily Life & Interests</h3>
+                        <p>Jane was accomplished in the typical feminine pursuits of her class: she played the pianoforte, drew, danced, and was skilled in needlework. However, her true passion was always writing and reading.</p>
+                        <p>She enjoyed walking, often taking long walks around the Hampshire countryside that appear in her novels. She was also fond of card games and charades.</p>
+                        <p>Her letters reveal a sharp wit and keen observer of human folly, traits that made her novels so enduringly entertaining and insightful.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quotes-section">
+            <div class="narrow-container">
+                <h2 class="section-title">In Her Own Words</h2>
+                <div class="quote-carousel">
+                    <div class="quote-item">
+                        <p class="quote-text">"I am going to take a heroine whom no one but myself will much like."</p>
+                        <p class="quote-context">Writing about Emma Woodhouse to her nephew</p>
+                    </div>
+
+                    <div class="quote-item">
+                        <p class="quote-text">"The little things are infinitely the most important."</p>
+                        <p class="quote-context">From a letter to her niece Fanny Knight, 1814</p>
+                    </div>
+
+                    <div class="quote-item">
+                        <p class="quote-text">"I could not sit seriously down to write a serious Romance under any other motive than to save my life, & if it were indispensable for me to keep it up & never relax into laughing at myself or other people, I am sure I should be hung before I had finished the first chapter."</p>
+                        <p class="quote-context">Letter to James Stanier Clarke, 1816</p>
+                    </div>
+
+                    <div class="quote-item">
+                        <p class="quote-text">"What dreadful hot weather we have! It keeps me in a continual state of inelegance."</p>
+                        <p class="quote-context">Letter to Cassandra Austen, 1798</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="influence-section">
+            <div class="container">
+                <div class="influence-content">
+                    <h2>Literary Innovations</h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.95;">Jane Austen revolutionized the novel form in ways that continue to influence writers today.</p>
+                    
+                    <div class="influence-grid">
+                        <div class="influence-item">
+                            <h4>Free Indirect Discourse</h4>
+                            <p>Pioneered a narrative technique that blends third-person narration with the character's inner voice, allowing intimate access to thoughts while maintaining narrative distance.</p>
+                        </div>
+
+                        <div class="influence-item">
+                            <h4>Psychological Realism</h4>
+                            <p>Created complex, believable characters with internal lives, moving beyond the archetypes common in 18th-century fiction to portray genuine human psychology.</p>
+                        </div>
+
+                        <div class="influence-item">
+                            <h4>Social Satire</h4>
+                            <p>Mastered the art of gentle but penetrating social criticism, exposing human folly and social pretension through wit rather than direct condemnation.</p>
+                        </div>
+
+                        <div class="influence-item">
+                            <h4>Domestic Realism</h4>
+                            <p>Elevated everyday life to high art, proving that ordinary domestic experiences could be as compelling as epic adventures or Gothic mysteries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="legacy-section">
+            <div class="narrow-container">
+                <h2 class="section-title">Enduring Legacy</h2>
+                <div class="legacy-content">
+                    <p class="legacy-text">More than two centuries after her death, Jane Austen remains one of the most beloved and widely read authors in the English language. Her influence extends far beyond literature into film, television, and popular culture, with countless adaptations and reinterpretations keeping her work alive for new generations.</p>
+
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-number">200+</span>
+                            <p class="stat-label">Years in Print</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <p class="stat-label">Film & TV Adaptations</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <p class="stat-label">Languages Translated</p>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">Millions</span>
+                            <p class="stat-label">Annual Readers</p>
+                        </div>
+                    </div>
+
+                    <p class="legacy-text">Austen's exploration of universal themes—love, family, social expectations, personal growth—ensures her continued relevance. Her heroines, with their intelligence, moral complexity, and determination to forge their own paths within social constraints, remain inspiring models for readers worldwide.</p>
+
+                    <p class="legacy-text">Academic recognition has grown steadily since the mid-20th century, with Austen now considered one of the foundational figures of the English novel. Her techniques continue to influence contemporary writers, while her wit and wisdom provide comfort and insight to readers seeking both entertainment and understanding of the human condition.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Read Jane Austen | <a href="index.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">Complete Works</a></p>
+        </div>
+    </footer>
+</body>
+</html>
