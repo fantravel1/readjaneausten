@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Austen Blog | Literary Analysis, Historical Context & Modern Relevance</title>
+    <meta name="description" content="Explore Jane Austen's enduring legacy through in-depth articles on her writing techniques, Regency life, modern adaptations, and literary analysis.">
+    <meta name="keywords" content="Jane Austen blog, literary analysis, Regency era, Pride and Prejudice analysis, classic literature, book club guides">
+    <meta name="author" content="Read Jane Austen">
+    <meta property="og:title" content="Jane Austen Blog - Literary Insights & Analysis">
+    <meta property="og:description" content="Deep dive into Jane Austen's world with expert analysis, historical context, and modern interpretations.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://readjaneausten.com/blog/">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #F7F3E9;
+            --sage-green: #9CAF88;
+            --deep-teal: #4A6741;
+            --gold: #D4AF37;
+            --burgundy: #722F37;
+            --soft-brown: #8B7355;
+            --text-dark: #2C2C2C;
+            --text-light: #666;
+            --light-sage: #B8D1A4;
+            --warm-white: #FEFCF6;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, var(--cream) 0%, #F0EBD8 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--deep-teal) 0%, var(--sage-green) 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            margin-bottom: 1rem;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.95rem;
+            margin-right: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .hero-content {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .intro-section {
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .intro-text {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+        }
+
+        .featured-section {
+            padding: 2rem 0 4rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--burgundy);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
+
+        .featured-post {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            margin-bottom: 4rem;
+            border: 1px solid rgba(156, 175, 136, 0.2);
+        }
+
+        .featured-content {
+            padding: 3rem;
+        }
+
+        .featured-category {
+            display: inline-block;
+            background: var(--gold);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .featured-title {
+            font-size: 2rem;
+            color: var(--burgundy);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .featured-excerpt {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+            margin-bottom: 2rem;
+        }
+
+        .featured-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+
+        .read-time {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .publish-date {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .read-more {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--sage-green), var(--deep-teal));
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(156, 175, 136, 0.3);
+        }
+
+        .read-more:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(156, 175, 136, 0.4);
+            background: linear-gradient(135deg, var(--deep-teal), var(--sage-green));
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 1px solid rgba(156, 175, 136, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-content {
+            padding: 2rem;
+        }
+
+        .blog-category {
+            display: inline-block;
+            background: var(--light-sage);
+            color: var(--deep-teal);
+            padding: 0.4rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .blog-title {
+            font-size: 1.4rem;
+            color: var(--burgundy);
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .blog-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .blog-title a:hover {
+            color: var(--deep-teal);
+        }
+
+        .blog-excerpt {
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .blog-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+        }
+
+        .categories-section {
+            background: linear-gradient(135deg, var(--light-sage) 0%, var(--sage-green) 100%);
+            padding: 4rem 0;
+            color: white;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .category-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .category-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .category-card h3 {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-card p {
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .newsletter-section {
+            background: var(--warm-white);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .newsletter-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 2px solid var(--sage-green);
+            border-radius: 25px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .newsletter-input:focus {
+            border-color: var(--deep-teal);
+        }
+
+        .newsletter-btn {
+            background: var(--burgundy);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .newsletter-btn:hover {
+            background: var(--deep-teal);
+        }
+
+        footer {
+            background: var(--deep-teal);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .featured-content {
+                padding: 2rem;
+            }
+
+            .featured-title {
+                font-size: 1.6rem;
+            }
+
+            .blog-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .featured-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: flex-start;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .blog-content {
+                padding: 1.5rem;
+            }
+
+            .featured-content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html">← Complete Works</a>
+                <a href="../biography.html">Biography</a>
+                <a href="index.html">Blog</a>
+            </nav>
+            <div class="hero-content">
+                <h1>The Jane Austen Blog</h1>
+                <p class="hero-subtitle">Literary Insights • Historical Context • Modern Relevance</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <div class="container">
+                <p class="intro-text">
+                    Dive deeper into the world of Jane Austen with expert analysis, historical context, and fresh perspectives on her timeless works. From character studies to writing techniques, discover new layers of meaning in literature's most beloved novels.
+                </p>
+            </div>
+        </section>
+
+        <section class="featured-section">
+            <div class="container">
+                <h2 class="section-title">Featured Article</h2>
+                <article class="featured-post">
+                    <div class="featured-content">
+                        <span class="featured-category">Literary Analysis</span>
+                        <h3 class="featured-title">Reading Jane Austen in the 21st Century: Why Her Heroines Still Inspire</h3>
+                        <p class="featured-excerpt">
+                            In an age of social media and global connectivity, what can Elizabeth Bennet and Emma Woodhouse teach us about authentic relationships, personal growth, and navigating social expectations? Explore how Austen's insights into human nature remain startlingly relevant for modern readers seeking both entertainment and wisdom.
+                        </p>
+                        <div class="featured-meta">
+                            <span class="publish-date">Published January 15, 2025</span>
+                            <span class="read-time">8 min read</span>
+                        </div>
+                        <a href="reading-austen-today.html" class="read-more">Read Full Article</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="blog-grid-section">
+            <div class="container">
+                <h2 class="section-title">Latest Articles</h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-content">
+                            <span class="blog-category">Writing Craft</span>
+                            <h3 class="blog-title">
+                                <a href="austen-writing-techniques.html">Mastering Free Indirect Discourse: Austen's Revolutionary Technique</a>
+                            </h3>
+                            <p class="blog-excerpt">
+                                Discover how Jane Austen pioneered a narrative technique that changed fiction forever, allowing readers unprecedented access to characters' inner lives while maintaining narrative sophistication.
+                            </p>
+                            <div class="blog-meta">
+                                <span>January 10, 2025</span>
+                                <span>6 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-content">
+                            <span class="blog-category">Historical Context</span>
+                            <h3 class="blog-title">
+                                <a href="regency-life-explained.html">Life in Regency England: Understanding Austen's Social World</a>
+                            </h3>
+                            <p class="blog-excerpt">
+                                From morning calls to marriage settlements, explore the intricate social rules and daily realities that shaped every aspect of life in Jane Austen's era.
+                            </p>
+                            <div class="blog-meta">
+                                <span>January 8, 2025</span>
+                                <span>12 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-content">
+                            <span class="blog-category">Adaptations</span>
+                            <h3 class="blog-title">
+                                <a href="adaptations-guide.html">From Screen to Page: The Complete Guide to Austen Adaptations</a>
+                            </h3>
+                            <p class="blog-excerpt">
+                                A comprehensive analysis of how different directors and writers have interpreted Austen's works, from the 1995 BBC Pride and Prejudice to modern retellings.
+                            </p>
+                            <div class="blog-meta">
+                                <span>January 5, 2025</span>
+                                <span>15 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-content">
+                            <span class="blog-category">Character Studies</span>
+                            <h3 class="blog-title">
+                                <a href="character-studies.html">The Psychology of Elizabeth Bennet: Pride, Prejudice, and Personal Growth</a>
+                            </h3>
+                            <p class="blog-excerpt">
+                                An in-depth exploration of literature's most beloved heroine, examining her flaws, strengths, and the psychological journey that makes her so enduringly appealing.
+                            </p>
+                            <div class="blog-meta">
+                                <span>January 3, 2025</span>
+                                <span>10 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-content">
+                            <span class="blog-category">Book Clubs</span>
+                            <h3 class="blog-title">
+                                <a href="book-club-guides.html">The Ultimate Book Club Guide to Pride and Prejudice</a>
+                            </h3>
+                            <p class="blog-excerpt">
+                                Discussion questions, historical context, and thematic analysis to enhance your book club's exploration of Austen's most popular novel.
+                            </p>
+                            <div class="blog-meta">
+                                <span>January 1, 2025</span>
+                                <span>8 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-content">
+                            <span class="blog-category">Literary Analysis</span>
+                            <h3 class="blog-title">
+                                <a href="#">The Art of Austen's Irony: How Wit Reveals Truth</a>
+                            </h3>
+                            <p class="blog-excerpt">
+                                Examine how Jane Austen used irony not just for humor, but as a sophisticated tool for social criticism and character development.
+                            </p>
+                            <div class="blog-meta">
+                                <span>December 28, 2024</span>
+                                <span>7 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <div class="container">
+                <h2 class="section-title" style="color: white;">Explore by Topic</h2>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <span class="category-icon">📚</span>
+                        <h3>Literary Analysis</h3>
+                        <p>Deep dives into Austen's writing techniques, themes, and literary innovations that influenced generations of writers.</p>
+                    </div>
+
+                    <div class="category-card">
+                        <span class="category-icon">🏰</span>
+                        <h3>Historical Context</h3>
+                        <p>Explore Regency England's social customs, politics, and daily life to better understand Austen's world.</p>
+                    </div>
+
+                    <div class="category-card">
+                        <span class="category-icon">🎭</span>
+                        <h3>Character Studies</h3>
+                        <p>Psychological profiles of Austen's memorable characters and what makes them so enduringly compelling.</p>
+                    </div>
+
+                    <div class="category-card">
+                        <span class="category-icon">📺</span>
+                        <h3>Adaptations</h3>
+                        <p>Reviews and analysis of film, television, and modern retellings of Austen's classic novels.</p>
+                    </div>
+
+                    <div class="category-card">
+                        <span class="category-icon">💬</span>
+                        <h3>Book Club Guides</h3>
+                        <p>Discussion questions, reading guides, and activities for book clubs and classroom use.</p>
+                    </div>
+
+                    <div class="category-card">
+                        <span class="category-icon">🌟</span>
+                        <h3>Modern Relevance</h3>
+                        <p>How Austen's insights into human nature, relationships, and society remain relevant today.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2 class="section-title">Stay Updated</h2>
+                    <p>Get the latest articles, reading recommendations, and Austen insights delivered to your inbox.</p>
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Enter your email">
+                        <button type="submit" class="newsletter-btn">Subscribe</button>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-light); margin-top: 1rem;">
+                        No spam, just thoughtful content about literature's greatest novelist.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Read Jane Austen | <a href="../index.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">Complete Works</a> | <a href="../biography.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">Biography</a></p>
+        </div>
+    </footer>
+</body>
+</html>
