@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Free Indirect Discourse: Austen's Revolutionary Technique | Jane Austen Blog</title>
+    <meta name="description" content="Discover how Jane Austen pioneered free indirect discourse, a narrative technique that revolutionized fiction and continues to influence writers today.">
+    <meta name="keywords" content="free indirect discourse, Jane Austen writing techniques, narrative voice, literary analysis, writing craft, fiction techniques">
+    <meta name="author" content="Read Jane Austen">
+    <meta property="og:title" content="Mastering Free Indirect Discourse: Austen's Revolutionary Technique">
+    <meta property="og:description" content="Learn how Jane Austen's innovative narrative technique changed fiction forever and how modern writers can apply these principles.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://readjaneausten.com/blog/austen-writing-techniques.html">
+    <meta property="article:published_time" content="2025-01-10">
+    <meta property="article:author" content="Read Jane Austen">
+    <meta property="article:section" content="Writing Craft">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #F7F3E9;
+            --sage-green: #9CAF88;
+            --deep-teal: #4A6741;
+            --gold: #D4AF37;
+            --burgundy: #722F37;
+            --soft-brown: #8B7355;
+            --text-dark: #2C2C2C;
+            --text-light: #666;
+            --light-sage: #B8D1A4;
+            --warm-white: #FEFCF6;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.8;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, var(--cream) 0%, #F0EBD8 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--deep-teal) 0%, var(--sage-green) 100%);
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            margin-bottom: 1rem;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.95rem;
+            margin-right: 2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .breadcrumb {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .article-header {
+            background: var(--warm-white);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .article-category {
+            display: inline-block;
+            background: var(--deep-teal);
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .article-title {
+            font-size: 2.8rem;
+            color: var(--burgundy);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            font-weight: 400;
+        }
+
+        .article-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 2rem;
+            line-height: 1.4;
+        }
+
+        .article-meta {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            font-size: 0.95rem;
+            color: var(--text-light);
+            border-top: 1px solid #ddd;
+            padding-top: 1.5rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .article-content {
+            background: white;
+            padding: 4rem 0;
+        }
+
+        .content-wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .article-content h2 {
+            font-size: 1.8rem;
+            color: var(--burgundy);
+            margin: 2.5rem 0 1.5rem;
+            line-height: 1.3;
+        }
+
+        .article-content h3 {
+            font-size: 1.4rem;
+            color: var(--deep-teal);
+            margin: 2rem 0 1rem;
+            line-height: 1.4;
+        }
+
+        .article-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .article-content p:first-of-type {
+            font-size: 1.2rem;
+            color: var(--deep-teal);
+            font-weight: 500;
+        }
+
+        .example-box {
+            background: var(--cream);
+            border: 2px solid var(--sage-green);
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .example-label {
+            background: var(--sage-green);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .example-text {
+            font-style: italic;
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--gold);
+        }
+
+        .example-analysis {
+            font-size: 0.95rem;
+            color: var(--text-dark);
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2.5rem 0;
+        }
+
+        .comparison-card {
+            background: white;
+            border: 2px solid var(--light-sage);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .comparison-card h4 {
+            color: var(--burgundy);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .technique-breakdown {
+            background: linear-gradient(135deg, var(--light-sage) 0%, var(--sage-green) 100%);
+            color: white;
+            padding: 3rem 0;
+            margin: 3rem 0;
+        }
+
+        .technique-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .step-card {
+            background: rgba(255,255,255,0.15);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            text-align: center;
+        }
+
+        .step-number {
+            background: var(--gold);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+            font-size: 1.2rem;
+        }
+
+        .step-card h4 {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .pullquote {
+            background: var(--burgundy);
+            color: white;
+            padding: 2.5rem;
+            margin: 2.5rem 0;
+            border-radius: 15px;
+            font-size: 1.3rem;
+            font-style: italic;
+            text-align: center;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        .pullquote::before {
+            content: '"';
+            font-size: 4rem;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            opacity: 0.3;
+        }
+
+        .modern-application {
+            background: var(--warm-white);
+            padding: 3rem 0;
+            margin: 3rem 0;
+        }
+
+        .application-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .application-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--deep-teal);
+        }
+
+        .application-card h4 {
+            color: var(--deep-teal);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .writer-tips {
+            background: var(--cream);
+            border-left: 4px solid var(--gold);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .writer-tips h4 {
+            color: var(--burgundy);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .tips-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .tips-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .tips-list li::before {
+            content: '✍️';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .related-articles {
+            background: linear-gradient(135deg, var(--light-sage) 0%, var(--sage-green) 100%);
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .related-card {
+            background: rgba(255,255,255,0.15);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .related-card h4 {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .related-card a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .related-card a:hover {
+            color: white;
+        }
+
+        .share-section {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid #eee;
+            margin-top: 3rem;
+        }
+
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .share-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: transform 0.3s ease;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .share-twitter {
+            background: #1DA1F2;
+            color: white;
+        }
+
+        .share-facebook {
+            background: #4267B2;
+            color: white;
+        }
+
+        .share-pinterest {
+            background: #BD081C;
+            color: white;
+        }
+
+        footer {
+            background: var(--deep-teal);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .article-title {
+                font-size: 2.2rem;
+            }
+
+            .article-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .article-meta {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .technique-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .application-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .related-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .share-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container, .article-container {
+                padding: 0 15px;
+            }
+
+            .content-wrapper {
+                padding: 0 10px;
+            }
+
+            .article-content {
+                padding: 2rem 0;
+            }
+
+            .pullquote {
+                padding: 2rem 1.5rem;
+                font-size: 1.1rem;
+            }
+
+            .example-box, .comparison-card, .application-card, .step-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html">← Complete Works</a>
+                <a href="../biography.html">Biography</a>
+                <a href="index.html">Blog</a>
+            </nav>
+            <div class="breadcrumb">
+                Blog > Writing Craft > Austen's Writing Techniques
+            </div>
+        </div>
+    </header>
+
+    <section class="article-header">
+        <div class="article-container">
+            <span class="article-category">Writing Craft</span>
+            <h1 class="article-title">Mastering Free Indirect Discourse</h1>
+            <p class="article-subtitle">How Jane Austen's Revolutionary Technique Changed Fiction Forever</p>
+            <div class="article-meta">
+                <div class="meta-item">
+                    <span>📅</span>
+                    <span>January 10, 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span>⏱️</span>
+                    <span>6 min read</span>
+                </div>
+                <div class="meta-item">
+                    <span>👤</span>
+                    <span>Writing Analysis</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article class="article-content">
+        <div class="content-wrapper">
+            <p>Among Jane Austen's many contributions to literature, perhaps none is more technically revolutionary than her mastery of free indirect discourse. This narrative technique, which seamlessly blends third-person narration with a character's inner voice, fundamentally changed how fiction could portray consciousness and continues to influence writers today.</p>
+
+            <p>But what exactly is free indirect discourse, and why was Austen's use of it so groundbreaking? To understand its impact, we need to examine how it works, how it differs from other narrative techniques, and why it remains such a powerful tool for contemporary writers.</p>
+
+            <h2>Understanding Free Indirect Discourse</h2>
+
+            <p>Free indirect discourse (also called free indirect speech or style) is a narrative technique that presents a character's thoughts or speech without the usual markers like quotation marks or phrases such as "he thought" or "she said." Instead, the narrator adopts the character's perspective while maintaining third-person narration.</p>
+
+            <div class="comparison-grid">
+                <div class="comparison-card">
+                    <h4>Direct Speech</h4>
+                    <p><strong>Example:</strong> Elizabeth said, "I cannot fix on the hour, or the spot, or the look, or the words, which laid the foundation."</p>
+                    <p><em>Uses quotation marks and attribution.</em></p>
+                </div>
+
+                <div class="comparison-card">
+                    <h4>Indirect Speech</h4>
+                    <p><strong>Example:</strong> Elizabeth reflected that she could not fix on the hour, or the spot, or the look, or the words, which laid the foundation.</p>
+                    <p><em>Reports thoughts with clear attribution.</em></p>
+                </div>
+
+                <div class="comparison-card">
+                    <h4>Free Indirect Discourse</h4>
+                    <p><strong>Example:</strong> She could not fix on the hour, or the spot, or the look, or the words, which laid the foundation.</p>
+                    <p><em>Blends narrator and character voice seamlessly.</em></p>
+                </div>
+            </div>
+
+            <h3>Austen's Masterful Application</h3>
+
+            <p>Austen didn't invent free indirect discourse, but she perfected it in ways that her predecessors never achieved. Her genius lay in using this technique not just to report thoughts, but to reveal character psychology, advance plot, and provide social commentary simultaneously.</p>
+
+            <div class="example-box">
+                <div class="example-label">Pride and Prejudice Example</div>
+                <div class="example-text">
+                    "Elizabeth could not repress a smile at this, but she answered only by a slight inclination of the head. She saw that he wanted to engage her on the old subject of his grievances, and she was in no humour to indulge him."
+                </div>
+                <p class="example-analysis">
+                    <strong>Analysis:</strong> Notice how we experience Elizabeth's amusement, understand her thoughts about Mr. Wickham's intentions, and grasp her current emotional state—all without Austen explicitly telling us "Elizabeth thought" or using internal monologue.
+                </p>
+            </div>
+
+            <h2>The Revolutionary Impact</h2>
+
+            <p>Before Austen's sophisticated use of this technique, novelists typically relied on more explicit methods to convey character thoughts. They might use lengthy internal monologues, direct authorial commentary, or clear markers that separated the narrator's voice from the character's perspective.</p>
+
+            <div class="pullquote">
+                "Austen's free indirect discourse created an intimate reading experience that felt revolutionary—readers could inhabit a character's consciousness while still maintaining the sophistication of third-person narration."
+            </div>
+
+            <p>What made Austen's approach so powerful was her ability to use free indirect discourse to achieve multiple literary goals simultaneously:</p>
+
+            <div class="technique-breakdown">
+                <div class="container">
+                    <h3 style="color: white; text-align: center; font-size: 2rem; margin-bottom: 2rem;">How Austen Uses Free Indirect Discourse</h3>
+                    <div class="technique-steps">
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <h4>Character Development</h4>
+                            <p>Reveals personality through thought patterns, vocabulary choices, and emotional responses without explicit description.</p>
+                        </div>
+
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <h4>Plot Advancement</h4>
+                            <p>Moves the story forward through characters' internal processing of events and decision-making.</p>
+                        </div>
+
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <h4>Social Commentary</h4>
+                            <p>Critiques society through characters' observations while maintaining narrative distance for irony.</p>
+                        </div>
+
+                        <div class="step-card">
+                            <div class="step-number">4</div>
+                            <h4>Emotional Intimacy</h4>
+                            <p>Creates deep reader connection to characters without breaking narrative flow or sophistication.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>The Technique in Action</h3>
+
+            <p>Let's examine a more complex example from <em>Emma</em> to see how Austen layers multiple functions into her free indirect discourse:</p>
+
+            <div class="example-box">
+                <div class="example-label">Emma Example</div>
+                <div class="example-text">
+                    "The hair was curled, and the maid sent away, and Emma sat down to think and be miserable. It was a wretched business indeed! Such an overthrow of everything she had been wishing for! Such a development of everything most unwelcome! Such a blow for Harriet!"
+                </div>
+                <p class="example-analysis">
+                    <strong>Multi-layered Analysis:</strong><br>
+                    • <strong>Character voice:</strong> The exclamatory style reflects Emma's dramatic personality<br>
+                    • <strong>Emotional state:</strong> We feel her distress without being told she's upset<br>
+                    • <strong>Self-awareness:</strong> Her focus on how events affect her plans reveals her self-centered nature<br>
+                    • <strong>Irony:</strong> Austen lets us see Emma's limitations while Emma remains unconscious of them
+                </p>
+            </div>
+
+            <h2>Why It Changed Literature</h2>
+
+            <p>Austen's mastery of free indirect discourse represented a significant evolution in narrative sophistication. It allowed for psychological realism that was unprecedented in its subtlety and effectiveness. Characters could reveal themselves through their thought patterns without the artificiality of constant internal monologue or the distance of pure third-person description.</p>
+
+            <p>This technique also enabled Austen to maintain what critics call "narrative flexibility"—the ability to move seamlessly between intimate character perspective and broader social observation. She could zoom in on a character's private thoughts and zoom out to comment on social situations without jarring transitions.</p>
+
+            <h3>Influence on Modern Literature</h3>
+
+            <p>The impact of Austen's innovation can be traced through literary history. Writers from Virginia Woolf to contemporary novelists have built upon the foundation she established. The stream-of-consciousness technique that defines modernist literature owes a debt to Austen's pioneering work with free indirect discourse.</p>
+
+            <div class="modern-application">
+                <div class="container">
+                    <h3 style="text-align: center; color: var(--burgundy); margin-bottom: 2rem;">Modern Applications</h3>
+                    <div class="application-grid">
+                        <div class="application-card">
+                            <h4>Contemporary Fiction</h4>
+                            <p>Authors like Zadie Smith and Ian McEwan use sophisticated free indirect discourse to create complex, multi-perspective narratives that owe their techniques to Austen's innovations.</p>
+                        </div>
+
+                        <div class="application-card">
+                            <h4>Young Adult Literature</h4>
+                            <p>Even in YA fiction, writers use free indirect discourse to create intimate connections with teenage protagonists while maintaining narrative sophistication.</p>
+                        </div>
+
+                        <div class="application-card">
+                            <h4>Literary Fiction</h4>
+                            <p>The psychological realism that defines serious contemporary fiction relies heavily on techniques that Austen pioneered over two centuries ago.</p>
+                        </div>
+
+                        <div class="application-card">
+                            <h4>Popular Fiction</h4>
+                            <p>Romance novels, mysteries, and thrillers all employ versions of free indirect discourse to create reader engagement and character development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Mastering the Technique</h2>
+
+            <p>For contemporary writers looking to employ free indirect discourse effectively, Austen's novels provide a masterclass in best practices. The key is finding the right balance between character voice and narrative sophistication.</p>
+
+            <div class="writer-tips">
+                <h4>Essential Tips for Writers</h4>
+                <ul class="tips-list">
+                    <li><strong>Study character voice:</strong> Each character should have distinct thought patterns, vocabulary, and concerns that come through in free indirect discourse.</li>
+                    <li><strong>Maintain consistency:</strong> Once you establish a character's "voice" in free indirect discourse, keep it consistent throughout the work.</li>
+                    <li><strong>Use for revelation:</strong> Let free indirect discourse reveal character traits, motivations, and blind spots naturally.</li>
+                    <li><strong>Balance intimacy and distance:</strong> Remember that you can still maintain irony and authorial perspective while using this technique.</li>
+                    <li><strong>Practice the transitions:</strong> Learn to move smoothly between straight narration and free indirect discourse without jarring the reader.</li>
+                    <li><strong>Avoid overuse:</strong> Like any technique, free indirect discourse is most effective when used judiciously and purposefully.</li>
+                </ul>
+            </div>
+
+            <h2>The Enduring Legacy</h2>
+
+            <p>More than two centuries after Austen perfected free indirect discourse, it remains one of the most powerful tools in a fiction writer's arsenal. Its ability to create intimacy while maintaining narrative sophistication, to reveal character while advancing plot, and to provide social commentary while preserving readability makes it as relevant today as it was revolutionary in Austen's time.</p>
+
+            <p>Understanding how Austen employed this technique doesn't just help us appreciate her genius—it provides contemporary writers with a roadmap for creating the kind of psychological depth and narrative sophistication that marks truly exceptional fiction. In studying her methods, we learn not just about literary history, but about the enduring principles of effective storytelling.</p>
+
+            <p>Jane Austen's mastery of free indirect discourse reminds us that the most powerful innovations in literature often appear deceptively simple. By learning to see the world through her characters' eyes while maintaining her own wise perspective, she created a template for psychological realism that continues to influence how we tell stories about the complexity of human consciousness.</p>
+
+            <div class="share-section">
+                <h3>Share This Article</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn share-twitter">Share on Twitter</a>
+                    <a href="#" class="share-btn share-facebook">Share on Facebook</a>
+                    <a href="#" class="share-btn share-pinterest">Save to Pinterest</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <section class="related-articles">
+        <div class="container">
+            <h3 style="color: white; text-align: center; font-size: 2rem; margin-bottom: 2rem;">Continue Reading</h3>
+            <div class="related-grid">
+                <div class="related-card">
+                    <h4><a href="reading-austen-today.html">Reading Austen in the 21st Century</a></h4>
+                    <p>Discover why Austen's heroines remain relevant and inspiring for modern readers navigating contemporary challenges.</p>
+                </div>
+
+                <div class="related-card">
+                    <h4><a href="character-studies.html">The Psychology of Elizabeth Bennet</a></h4>
+                    <p>An in-depth exploration of how Austen uses free indirect discourse to reveal her most beloved heroine's inner life.</p>
+                </div>
+
+                <div class="related-card">
+                    <h4><a href="regency-life-explained.html">Life in Regency England</a></h4>
+                    <p>Understanding the historical context that shaped Austen's writing and the social world she so expertly depicted.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Read Jane Austen | <a href="../index.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">Complete Works</a> | <a href="index.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">Blog Home</a></p>
+        </div>
+    </footer>
+</body>
+</html>
