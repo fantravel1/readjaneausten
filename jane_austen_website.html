@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Austen Complete Works | Read Free Online | Classic Literature</title>
+    <meta name="description" content="Read Jane Austen's complete works online for free. Pride and Prejudice, Emma, Sense and Sensibility, and more classic novels. Mobile-optimized reading experience.">
+    <meta name="keywords" content="Jane Austen, Pride and Prejudice, Emma, classic literature, free books online, Regency novels">
+    <meta name="author" content="Read Jane Austen">
+    <meta property="og:title" content="Jane Austen Complete Works - Read Free Online">
+    <meta property="og:description" content="Discover Jane Austen's timeless novels. Read Pride and Prejudice, Emma, and all her works free online.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://readjaneausten.com">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #F7F3E9;
+            --sage-green: #9CAF88;
+            --deep-teal: #4A6741;
+            --gold: #D4AF37;
+            --burgundy: #722F37;
+            --soft-brown: #8B7355;
+            --text-dark: #2C2C2C;
+            --text-light: #666;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, var(--cream) 0%, #F0EBD8 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--deep-teal) 0%, var(--sage-green) 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .books-section {
+            padding: 3rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--burgundy);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .book-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(156, 175, 136, 0.2);
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .book-rank {
+            background: var(--gold);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .book-title {
+            font-size: 1.4rem;
+            color: var(--burgundy);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .book-year {
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .book-description {
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .read-link {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--sage-green), var(--deep-teal));
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(156, 175, 136, 0.3);
+        }
+
+        .read-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(156, 175, 136, 0.4);
+            background: linear-gradient(135deg, var(--deep-teal), var(--sage-green));
+        }
+
+        .biography-section {
+            background: linear-gradient(135deg, white 0%, var(--cream) 100%);
+            padding: 4rem 0;
+            margin-top: 3rem;
+            border-top: 3px solid var(--gold);
+        }
+
+        .biography-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .biography-content h2 {
+            color: var(--burgundy);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .biography-content h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
+
+        .biography-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-dark);
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--deep-teal);
+            border-left: 4px solid var(--gold);
+            padding-left: 2rem;
+            margin: 2rem 0;
+            background: rgba(156, 175, 136, 0.1);
+            padding: 1.5rem 1.5rem 1.5rem 2rem;
+            border-radius: 0 10px 10px 0;
+        }
+
+        footer {
+            background: var(--deep-teal);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .footer-content {
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .books-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .book-card {
+                padding: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .biography-content h2 {
+                font-size: 1.6rem;
+            }
+
+            .quote {
+                padding-left: 1.5rem;
+                padding-right: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            header {
+                padding: 1.5rem 0;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .book-card {
+                padding: 1.2rem;
+            }
+
+            .biography-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Jane Austen</h1>
+            <p class="subtitle">Complete Works • Read Free Online</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="books-section">
+            <div class="container">
+                <h2 class="section-title">Complete Works by Popularity</h2>
+                <div class="books-grid">
+                    <article class="book-card">
+                        <div class="book-rank">1</div>
+                        <h3 class="book-title">Pride and Prejudice</h3>
+                        <p class="book-year">Published 1813</p>
+                        <p class="book-description">Austen's most beloved novel follows Elizabeth Bennet as she navigates issues of manners, upbringing, morality, and marriage in Georgian England. A timeless tale of love, wit, and social commentary that continues to captivate readers worldwide.</p>
+                        <a href="https://www.gutenberg.org/ebooks/1342" class="read-link" target="_blank" rel="noopener">Read Free Online</a>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-rank">2</div>
+                        <h3 class="book-title">Emma</h3>
+                        <p class="book-year">Published 1815</p>
+                        <p class="book-description">The story of Emma Woodhouse, a clever and well-meaning but sometimes misguided young woman who fancies herself a matchmaker. A brilliant exploration of self-discovery, friendship, and the complexities of social relationships.</p>
+                        <a href="https://www.gutenberg.org/ebooks/158" class="read-link" target="_blank" rel="noopener">Read Free Online</a>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-rank">3</div>
+                        <h3 class="book-title">Sense and Sensibility</h3>
+                        <p class="book-year">Published 1811</p>
+                        <p class="book-description">Austen's first published novel contrasts the temperaments of two sisters: Elinor's sense and Marianne's sensibility. A masterful examination of love, loss, and the balance between emotion and reason.</p>
+                        <a href="https://www.gutenberg.org/ebooks/161" class="read-link" target="_blank" rel="noopener">Read Free Online</a>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-rank">4</div>
+                        <h3 class="book-title">Mansfield Park</h3>
+                        <p class="book-year">Published 1814</p>
+                        <p class="book-description">The story of Fanny Price, a young girl from a poor family who is sent to live with her wealthy relatives. A complex novel exploring themes of morality, social mobility, and the corrupting influence of wealth.</p>
+                        <a href="https://www.gutenberg.org/ebooks/141" class="read-link" target="_blank" rel="noopener">Read Free Online</a>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-rank">5</div>
+                        <h3 class="book-title">Northanger Abbey</h3>
+                        <p class="book-year">Published 1817 (posthumously)</p>
+                        <p class="book-description">A coming-of-age story and a parody of Gothic novels, following Catherine Morland as she learns to distinguish between fiction and reality. Austen's playful critique of the popular literature of her time.</p>
+                        <a href="https://www.gutenberg.org/ebooks/121" class="read-link" target="_blank" rel="noopener">Read Free Online</a>
+                    </article>
+
+                    <article class="book-card">
+                        <div class="book-rank">6</div>
+                        <h3 class="book-title">Persuasion</h3>
+                        <p class="book-year">Published 1817 (posthumously)</p>
+                        <p class="book-description">Austen's final completed novel tells the story of Anne Elliot and her second chance at love with Captain Wentworth. A mature reflection on love, regret, and the possibility of redemption and renewal.</p>
+                        <a href="https://www.gutenberg.org/ebooks/105" class="read-link" target="_blank" rel="noopener">Read Free Online</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="biography-section">
+            <div class="container">
+                <div class="biography-content">
+                    <h2>The Enduring Legacy of Jane Austen</h2>
+                    
+                    <div class="biography-text">
+                        <p>Jane Austen (1775-1817) stands as one of English literature's most celebrated and influential novelists. Born in the Hampshire village of Steventon, she lived during the Georgian era, a time of significant social and political change in England. Despite her relatively short life of just 41 years, Austen created a body of work that continues to resonate with readers more than two centuries later.</p>
+
+                        <p>Writing during the Regency period, Austen possessed an extraordinary gift for social observation and satire. Her novels provide an intimate window into the lives, manners, and preoccupations of the English gentry during the late 18th and early 19th centuries. Through wit, irony, and keen psychological insight, she explored themes that remain profoundly relevant today: love, marriage, social class, personal growth, and the complex dynamics of human relationships.</p>
+                    </div>
+
+                    <div class="quote">
+                        "The little things are infinitely the most important."
+                        <br><em>— Jane Austen</em>
+                    </div>
+
+                    <div class="biography-text">
+                        <p>What makes Austen's work truly revolutionary is her focus on the interior lives of women and her subtle but powerful critique of the social constraints of her time. Her heroines—Elizabeth Bennet, Emma Woodhouse, Anne Elliot—are complex, intelligent women who navigate a world where their choices are limited but their spirits remain indomitable. Through their stories, Austen championed the importance of personal integrity, emotional intelligence, and the right to marry for love rather than mere social or economic advantage.</p>
+
+                        <p>Austen's influence on literature cannot be overstated. She pioneered the use of free indirect discourse, a narrative technique that allows readers intimate access to characters' thoughts and feelings. Her precise, elegant prose style and masterful use of irony have inspired countless writers. From Charlotte Brontë to contemporary authors, her impact on the novel form continues to be felt across genres and generations.</p>
+
+                        <p>Today, Jane Austen's works remain bestsellers, have been adapted into numerous films and television series, and continue to attract new readers worldwide. Her exploration of universal human experiences—the search for love, the struggle for independence, the navigation of social expectations—ensures that her novels feel as fresh and relevant today as they did over 200 years ago. In an age of rapid change, Austen's timeless wisdom about human nature and relationships provides both comfort and insight, proving that great literature truly is immortal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Read Jane Austen. All books are in the public domain.</p>
+                <p>Free reading links provided courtesy of Project Gutenberg.</p>
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>
