@@ -2,20 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#4A6741">
+
+    <!-- SEO Meta Tags -->
     <title>Jane Austen Blog | Literary Analysis, Historical Context & Modern Relevance</title>
-    <meta name="description" content="Explore Jane Austen's enduring legacy through in-depth articles on her writing techniques, Regency life, modern adaptations, and literary analysis.">
-    <meta name="keywords" content="Jane Austen blog, literary analysis, Regency era, Pride and Prejudice analysis, classic literature, book club guides">
+    <meta name="description" content="Explore Jane Austen's enduring legacy through in-depth articles on her writing techniques, Regency life, modern adaptations, and literary analysis. Expert insights for readers, scholars, and book clubs.">
+    <meta name="keywords" content="Jane Austen blog, literary analysis, Regency era, Pride and Prejudice analysis, classic literature, book club guides, writing techniques, character studies">
     <meta name="author" content="Read Jane Austen">
+    <link rel="canonical" href="https://readjaneausten.com/blog/">
+
+    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Jane Austen Blog - Literary Insights & Analysis">
-    <meta property="og:description" content="Deep dive into Jane Austen's world with expert analysis, historical context, and modern interpretations.">
+    <meta property="og:description" content="Deep dive into Jane Austen's world with expert analysis, historical context, and modern interpretations. New articles on writing techniques, adaptations, and more.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://readjaneausten.com/blog/">
-    <!-- Emoji Favicon -->
+    <meta property="og:site_name" content="Read Jane Austen">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://readjaneausten.com/og-image.png">
+    <meta property="og:image:alt" content="Jane Austen Blog">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jane Austen Blog - Literary Insights & Analysis">
+    <meta name="twitter:description" content="Deep dive into Jane Austen's world with expert analysis, historical context, and modern interpretations.">
+    <meta name="twitter:image" content="https://readjaneausten.com/og-image.png">
+    <meta name="twitter:image:alt" content="Jane Austen Blog">
+
+    <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
-    <!-- For social sharing -->
-    <meta property="og:image" content="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
-        
+
+    <!-- Schema.org Structured Data for SEO/AEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Blog",
+                "@id": "https://readjaneausten.com/blog/#blog",
+                "url": "https://readjaneausten.com/blog/",
+                "name": "The Jane Austen Blog",
+                "description": "Literary analysis, historical context, and modern insights into Jane Austen's works",
+                "publisher": {
+                    "@id": "https://readjaneausten.com/#organization"
+                },
+                "isPartOf": {
+                    "@id": "https://readjaneausten.com/#website"
+                },
+                "blogPost": [
+                    {
+                        "@type": "BlogPosting",
+                        "headline": "Reading Jane Austen in the 21st Century: Why Her Heroines Still Inspire",
+                        "url": "https://readjaneausten.com/blog/reading-austen-today.html",
+                        "datePublished": "2025-01-15",
+                        "author": {
+                            "@type": "Organization",
+                            "name": "Read Jane Austen"
+                        }
+                    },
+                    {
+                        "@type": "BlogPosting",
+                        "headline": "Mastering Free Indirect Discourse: Austen's Revolutionary Technique",
+                        "url": "https://readjaneausten.com/blog/austen-writing-techniques.html",
+                        "datePublished": "2025-01-10",
+                        "author": {
+                            "@type": "Organization",
+                            "name": "Read Jane Austen"
+                        }
+                    },
+                    {
+                        "@type": "BlogPosting",
+                        "headline": "Life in Regency England: Understanding Austen's Social World",
+                        "url": "https://readjaneausten.com/blog/regency-life-explained.html",
+                        "datePublished": "2025-01-08",
+                        "author": {
+                            "@type": "Organization",
+                            "name": "Read Jane Austen"
+                        }
+                    }
+                ]
+            },
+            {
+                "@type": "CollectionPage",
+                "@id": "https://readjaneausten.com/blog/#webpage",
+                "url": "https://readjaneausten.com/blog/",
+                "name": "Jane Austen Blog | Literary Analysis & Insights",
+                "isPartOf": {
+                    "@id": "https://readjaneausten.com/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://readjaneausten.com/blog/#breadcrumb"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://readjaneausten.com/blog/#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://readjaneausten.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Blog",
+                        "item": "https://readjaneausten.com/blog/"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
     <style>
         * {
             margin: 0;
@@ -67,10 +167,37 @@
             font-size: 0.95rem;
             margin-right: 2rem;
             transition: color 0.3s ease;
+            padding: 8px 12px;
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
         }
 
         nav a:hover {
             color: white;
+        }
+
+        .breadcrumb-nav {
+            background: rgba(255,255,255,0.1);
+            padding: 0.75rem;
+            margin-top: 1rem;
+            border-radius: 8px;
+        }
+
+        .breadcrumb-nav a,
+        .breadcrumb-nav span {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-nav a:hover {
+            color: white;
+        }
+
+        .breadcrumb-nav span {
+            margin: 0 0.5rem;
+            opacity: 0.6;
         }
 
         .hero-content {
@@ -277,17 +404,21 @@
         }
 
         .blog-read-btn {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             background: linear-gradient(135deg, var(--sage-green), var(--deep-teal));
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 12px 24px;
             border-radius: 20px;
             font-weight: 500;
             font-size: 0.9rem;
             transition: all 0.3s ease;
             margin-top: 1rem;
             box-shadow: 0 3px 10px rgba(156, 175, 136, 0.3);
+            min-height: 48px;
+            min-width: 48px;
         }
         
         .blog-read-btn:hover {
@@ -450,6 +581,11 @@
                 <a href="../index.html">← Complete Works</a>
                 <a href="../biography.html">Biography</a>
                 <a href="index.html">Blog</a>
+            </nav>
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>›</span>
+                <span>Blog</span>
             </nav>
             <div class="hero-content">
                 <h1>The Jane Austen Blog</h1>
