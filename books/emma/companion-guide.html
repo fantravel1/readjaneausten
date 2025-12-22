@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#4A6741">
+
+    <title>Emma Companion Guide | Historical Context & Reading Notes</title>
+    <meta name="description" content="Essential companion guide for reading Emma. Includes historical context, Highbury social hierarchy, character relationships, and key passages for deeper understanding.">
+    <meta name="keywords" content="Emma companion guide, Highbury society, Jane Austen vocabulary, historical background, Emma reading guide">
+    <meta name="author" content="Read Jane Austen">
+    <link rel="canonical" href="https://readjaneausten.com/books/emma/companion-guide.html">
+
+    <meta property="og:title" content="Emma Companion Reading Guide">
+    <meta property="og:description" content="Essential context and notes for reading Emma by Jane Austen.">
+    <meta property="og:type" content="article">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --cream: #F7F3E9; --sage-green: #9CAF88; --deep-teal: #4A6741; --gold: #D4AF37; --burgundy: #722F37; --text-dark: #2C2C2C; --text-light: #666; --light-sage: #B8D1A4; --warm-white: #FEFCF6; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.7; color: var(--text-dark); background: linear-gradient(135deg, var(--cream) 0%, #F0EBD8 100%); min-height: 100vh; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .article-container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        header { background: linear-gradient(135deg, var(--deep-teal) 0%, var(--sage-green) 100%); color: white; padding: 2rem 0; }
+        nav { margin-bottom: 1rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.95rem; margin-right: 2rem; padding: 8px 12px; min-height: 44px; display: inline-flex; align-items: center; }
+        nav a:hover { color: white; }
+        .breadcrumb-nav { background: rgba(255,255,255,0.1); padding: 0.75rem; margin-top: 1rem; border-radius: 8px; }
+        .breadcrumb-nav a, .breadcrumb-nav span { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb-nav span { margin: 0 0.5rem; opacity: 0.6; }
+        .hero-content { text-align: center; padding: 2rem 0; }
+        h1 { font-size: 2.8rem; font-weight: 300; letter-spacing: 1px; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .hero-subtitle { font-size: 1.2rem; opacity: 0.9; font-style: italic; }
+
+        .content-section { padding: 3rem 0; }
+        .section-title { font-size: 2rem; color: var(--burgundy); margin: 2.5rem 0 1.5rem; position: relative; padding-bottom: 0.75rem; }
+        .section-title::after { content: ''; position: absolute; bottom: 0; left: 0; width: 80px; height: 3px; background: var(--gold); }
+        h3 { color: var(--deep-teal); font-size: 1.4rem; margin: 2rem 0 1rem; }
+        p { margin-bottom: 1.25rem; line-height: 1.8; }
+
+        .context-box { background: white; border-radius: 15px; padding: 2rem; margin: 2rem 0; box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
+        .context-box h4 { color: var(--burgundy); margin-bottom: 1rem; font-size: 1.2rem; }
+
+        .vocabulary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .vocab-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .vocab-term { color: var(--burgundy); font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .vocab-def { color: var(--text-dark); font-size: 0.95rem; line-height: 1.6; }
+
+        .character-section { background: var(--warm-white); border-radius: 15px; padding: 2rem; margin: 2rem 0; }
+        .character-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .character-card { background: white; border-radius: 10px; padding: 1.25rem; border-left: 4px solid var(--gold); }
+        .character-name { color: var(--burgundy); font-weight: 600; margin-bottom: 0.5rem; }
+        .character-desc { font-size: 0.9rem; color: var(--text-dark); }
+
+        .hierarchy-table { width: 100%; background: white; border-radius: 15px; overflow: hidden; margin: 2rem 0; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .hierarchy-table th { background: var(--deep-teal); color: white; padding: 1rem; text-align: left; }
+        .hierarchy-table td { padding: 1rem; border-bottom: 1px solid #eee; }
+        .hierarchy-table tr:last-child td { border-bottom: none; }
+
+        .quote-highlight { background: rgba(156, 175, 136, 0.1); border-left: 4px solid var(--gold); padding: 1.5rem 2rem; border-radius: 0 15px 15px 0; margin: 2rem 0; }
+        .quote-highlight p { font-size: 1.1rem; font-style: italic; color: var(--deep-teal); margin-bottom: 0.5rem; }
+        .quote-highlight cite { color: var(--text-light); font-size: 0.9rem; }
+
+        .timeline { background: white; border-radius: 15px; padding: 2rem; margin: 2rem 0; box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
+        .timeline-item { display: flex; gap: 1.5rem; padding: 1rem 0; border-bottom: 1px solid #eee; }
+        .timeline-item:last-child { border-bottom: none; }
+        .timeline-period { color: var(--burgundy); font-weight: 600; min-width: 120px; }
+        .timeline-event { color: var(--text-dark); }
+
+        .places-section { background: white; border-radius: 15px; padding: 2rem; margin: 2rem 0; box-shadow: 0 8px 25px rgba(0,0,0,0.08); }
+        .place-item { padding: 1rem 0; border-bottom: 1px solid #eee; }
+        .place-item:last-child { border-bottom: none; }
+        .place-name { color: var(--burgundy); font-weight: 600; }
+        .place-desc { color: var(--text-dark); font-size: 0.95rem; margin-top: 0.25rem; }
+
+        .resource-links { display: flex; gap: 1rem; flex-wrap: wrap; margin: 2rem 0; }
+        .resource-link { display: inline-flex; align-items: center; background: var(--deep-teal); color: white; text-decoration: none; padding: 12px 24px; border-radius: 25px; transition: all 0.3s ease; min-height: 48px; }
+        .resource-link:hover { background: var(--burgundy); transform: translateY(-2px); }
+
+        footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; margin-top: 3rem; }
+        footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
+
+        @media (max-width: 768px) { h1 { font-size: 2.2rem; } .vocabulary-grid { grid-template-columns: 1fr; } .timeline-item { flex-direction: column; gap: 0.5rem; } .timeline-period { min-width: auto; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../../index.html">← Complete Works</a>
+                <a href="../../biography.html">Biography</a>
+                <a href="../../blog/">Blog</a>
+                <a href="../../book-clubs/">Book Clubs</a>
+            </nav>
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <a href="../../index.html">Home</a>
+                <span>›</span>
+                <span>Study Guides</span>
+                <span>›</span>
+                <span>Emma</span>
+            </nav>
+            <div class="hero-content">
+                <h1>Emma</h1>
+                <p class="hero-subtitle">Companion Reading Guide</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-section">
+        <div class="article-container">
+
+            <p>This companion guide provides essential context for reading <em>Emma</em>. Understanding the social dynamics of a small English village, the subtle gradations of class, and Austen's sophisticated irony will deepen your appreciation of this masterpiece.</p>
+
+            <h2 class="section-title">Historical Context</h2>
+
+            <div class="context-box">
+                <h4>Genteel Country Society</h4>
+                <p>Published in 1815, <em>Emma</em> is set in the years leading up to its publication, though the exact timeframe remains deliberately vague. Unlike Austen's other novels, which feature travel to London, Bath, or the seaside, <em>Emma</em> takes place entirely within the confined world of Highbury, a fictional village sixteen miles from London.</p>
+                <p>This setting allows Austen to examine in microscopic detail the social hierarchies and relationships of a small community where everyone knows everyone else's business, fortunes, and family connections.</p>
+                <p>Key aspects of this world:</p>
+                <ul style="margin-left: 1.5rem;">
+                    <li>Social position was determined by birth, property ownership, and connections</li>
+                    <li>The gentry maintained careful distinctions between themselves and tradespeople</li>
+                    <li>Women's options were severely limited—marriage, dependency, or genteel poverty</li>
+                    <li>Small communities operated on strict codes of visiting, etiquette, and propriety</li>
+                </ul>
+            </div>
+
+            <div class="context-box">
+                <h4>The Status of Governesses</h4>
+                <p>Jane Fairfax's impending career as a governess is treated as a kind of genteel slavery. Governesses occupied an ambiguous position—too educated to associate with servants, but employed and thus not equal to the family. They faced isolation, dependency, and often harsh treatment. For a talented, educated woman like Jane, it represents a tragic waste of potential and a loss of autonomy.</p>
+            </div>
+
+            <h2 class="section-title">Understanding Highbury's Social Hierarchy</h2>
+
+            <p>The novel's conflicts arise largely from the fine gradations of rank in Highbury. Understanding who stands where clarifies Emma's snobbery and the social risks various characters take.</p>
+
+            <table class="hierarchy-table">
+                <thead>
+                    <tr>
+                        <th>Social Rank</th>
+                        <th>Characters</th>
+                        <th>Status & Position</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Highest Gentry</strong></td>
+                        <td>Emma Woodhouse, Mr. Knightley</td>
+                        <td>Landowners with ancient estates (Hartfield, Donwell Abbey). Mr. Knightley is a magistrate. Emma has £30,000.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Upper Gentry</strong></td>
+                        <td>Weston family, Frank Churchill (by adoption)</td>
+                        <td>Mr. Weston made money in trade but bought property. Frank is heir to the Churchill fortune.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Professional Class</strong></td>
+                        <td>Mr. Elton (later with wealthy wife)</td>
+                        <td>Vicar with a good living; marries £10,000. Aspires to gentility.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Genteel Poverty</strong></td>
+                        <td>Miss Bates, Mrs. Bates, Jane Fairfax</td>
+                        <td>Gentlewoman's daughters with small incomes. Dependent on community goodwill. Jane faces becoming a governess.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Respectable Farmers</strong></td>
+                        <td>Robert Martin and family</td>
+                        <td>Prosperous tenant farmers. Below the gentry line but solid and respectable. Abbey Mill Farm.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tradespeople</strong></td>
+                        <td>Mr. Perry (apothecary), Coles</td>
+                        <td>Necessary for the community but not "genteel." The Coles' new wealth makes them socially ambitious.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Uncertain Status</strong></td>
+                        <td>Harriet Smith</td>
+                        <td>Illegitimate daughter of unknown parentage, educated at Mrs. Goddard's school. Eventually revealed to be tradesman's daughter.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="context-box">
+                <h4>The Significance of "Elegance of Mind"</h4>
+                <p>When Emma tells Harriet that Mr. Elton requires a woman with "elegance of mind," she's making a crucial class distinction. "Elegance of mind" refers to refined manners, education, taste, and social graces—qualities supposedly found only in the gentry. Emma wrongly assumes Harriet possesses these qualities, while dismissing the worthy Robert Martin as lacking them. Austen's irony shows that "elegance of mind" has little to do with birth and much to do with genuine goodness and sense.</p>
+            </div>
+
+            <h2 class="section-title">Essential Vocabulary</h2>
+
+            <div class="vocabulary-grid">
+                <div class="vocab-card">
+                    <div class="vocab-term">Handsome</div>
+                    <div class="vocab-def">The famous opening describes Emma as "handsome, clever, and rich." In Regency usage, "handsome" meant attractive with dignity and good features, though not necessarily beautiful in a delicate way.</div>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-term">Tolerable</div>
+                    <div class="vocab-def">When applied to people or situations, means "acceptable" or "passable" rather than excellent. Emma finds Robert Martin "tolerable" but not genteel enough for Harriet.</div>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-term">Elegance of Mind</div>
+                    <div class="vocab-def">Refined taste, manners, education, and sensibility supposedly found in the gentry class. Emma uses this as justification for class prejudice.</div>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-term">Coming Out</div>
+                    <div class="vocab-def">A young woman's formal entry into society as eligible for marriage. Emma has "come out" and presides over Highbury society.</div>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-term">Natural Daughter</div>
+                    <div class="vocab-def">A euphemism for illegitimate child. Harriet is someone's "natural daughter," though her parentage is initially unknown.</div>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-term">Parlour Boarder</div>
+                    <div class="vocab-def">A student at a school who pays extra to live with the school mistress's family rather than in dormitories—a sign of higher status. Harriet is a parlour boarder at Mrs. Goddard's.</div>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-term">Governess</div>
+                    <div class="vocab-def">An educated woman employed to teach children in a private home. The only respectable employment for gentlewomen, but considered a form of "degradation" requiring total dependency.</div>
+                </div>
+                <div class="vocab-card">
+                    <div class="vocab-term">Exploring Party</div>
+                    <div class="vocab-def">An excursion or outing, like the trips to Box Hill or Donwell Abbey. These occasions allowed for socializing outside formal calls.</div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Character Relationships</h2>
+
+            <div class="character-section">
+                <h3 style="margin-top: 0;">Emma's Social Web</h3>
+                <p>Understanding the complex relationships in Highbury is essential to following the plot:</p>
+                <div class="character-grid">
+                    <div class="character-card">
+                        <div class="character-name">Emma & Mr. Woodhouse</div>
+                        <div class="character-desc">Emma's valetudinarian father depends on her completely. His hypochondria and resistance to change limit Emma's world and keep her at Hartfield.</div>
+                    </div>
+                    <div class="character-card">
+                        <div class="character-name">Emma & Mr. Knightley</div>
+                        <div class="character-desc">Old family friends. Knightley's brother married Emma's sister. He's 16-17 years older and has known Emma since she was a child. He alone criticizes her honestly.</div>
+                    </div>
+                    <div class="character-card">
+                        <div class="character-name">Emma & Harriet Smith</div>
+                        <div class="character-desc">Emma takes up Harriet as a protégée, flattered by her admiration. Their friendship is marked by inequality—Emma directs, Harriet obeys.</div>
+                    </div>
+                    <div class="character-card">
+                        <div class="character-name">Emma & Jane Fairfax</div>
+                        <div class="character-desc">They should be friends—similar age, both accomplished—but Emma resents Jane's superiority in accomplishments and dislikes her reserve.</div>
+                    </div>
+                    <div class="character-card">
+                        <div class="character-name">Emma & Miss Bates</div>
+                        <div class="character-desc">Miss Bates is Jane's aunt and a harmless, talkative spinster whom Emma finds tedious. Emma's treatment of her reveals her capacity for unkindness.</div>
+                    </div>
+                    <div class="character-card">
+                        <div class="character-name">Emma & Mrs. Weston</div>
+                        <div class="character-desc">Emma's former governess and closest friend. Mrs. Weston is too indulgent to check Emma's faults, having raised her with excessive praise.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="character-section">
+                <h3 style="margin-top: 0;">The Secret Engagement</h3>
+                <p>Frank Churchill and Jane Fairfax's secret engagement is the novel's central mystery. Understanding why they hide it explains much of the plot:</p>
+                <div class="character-grid">
+                    <div class="character-card">
+                        <div class="character-name">Why Secret?</div>
+                        <div class="character-desc">Frank depends entirely on his aunt Mrs. Churchill's goodwill for his inheritance. She would never approve his marrying a penniless nobody like Jane.</div>
+                    </div>
+                    <div class="character-card">
+                        <div class="character-name">Frank's Behavior</div>
+                        <div class="character-desc">Frank flirts with Emma to disguise his true attachment. His apparent attentions to Emma are a screen, though they're genuine enough to mislead everyone.</div>
+                    </div>
+                    <div class="character-card">
+                        <div class="character-name">Jane's Reserve</div>
+                        <div class="character-desc">Jane must hide her feelings and endure seeing Frank flirt with Emma. Her coldness is the strain of living a lie and knowing she faces dependence as a governess.</div>
+                    </div>
+                    <div class="character-card">
+                        <div class="character-name">The Pianoforte</div>
+                        <div class="character-desc">Frank's secret gift to Jane. Emma assumes it's from Mr. Dixon (Jane's friend's husband), revealing her capacity for unkind speculation.</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Key Locations</h2>
+
+            <div class="places-section">
+                <div class="place-item">
+                    <div class="place-name">Hartfield</div>
+                    <div class="place-desc">The Woodhouse estate. Though less grand than Donwell Abbey, it's one of Highbury's principal properties. Emma is its mistress and reigns over local society from here.</div>
+                </div>
+                <div class="place-item">
+                    <div class="place-name">Donwell Abbey</div>
+                    <div class="place-desc">Mr. Knightley's ancestral estate with its ancient abbey ruins. Represents tradition, stability, and proper English values. The strawberry party there is a crucial scene.</div>
+                </div>
+                <div class="place-item">
+                    <div class="place-name">Randalls</div>
+                    <div class="place-desc">The Westons' home, purchased with Mr. Weston's earnings from trade. Smaller than Hartfield or Donwell but respectable. Frank Churchill visits here.</div>
+                </div>
+                <div class="place-item">
+                    <div class="place-name">Box Hill</div>
+                    <div class="place-desc">A local beauty spot where the characters go for an exploring party. The scene of Emma's famous insult to Miss Bates and Mr. Knightley's rebuke.</div>
+                </div>
+                <div class="place-item">
+                    <div class="place-name">Mrs. Goddard's School</div>
+                    <div class="place-desc">A boarding school for girls where Harriet Smith was educated as a parlour boarder. Represents Harriet's uncertain social position.</div>
+                </div>
+                <div class="place-item">
+                    <div class="place-name">Abbey Mill Farm</div>
+                    <div class="place-desc">Robert Martin's prosperous farm, rented from Mr. Knightley's estate. A substantial property, though Martin is a farmer, not gentry.</div>
+                </div>
+                <div class="place-item">
+                    <div class="place-name">Ford's</div>
+                    <div class="place-desc">The principal shop in Highbury where the characters purchase gloves, fabric, and other goods. A gathering place for the community.</div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Novel Timeline</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-period">Autumn (Year 1)</div>
+                    <div class="timeline-event">Miss Taylor marries Mr. Weston and becomes Mrs. Weston. Emma befriends Harriet Smith and discourages her attachment to Robert Martin.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">October</div>
+                    <div class="timeline-event">Emma begins her matchmaking scheme between Harriet and Mr. Elton. Robert Martin proposes to Harriet; Emma convinces her to refuse.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">December</div>
+                    <div class="timeline-event">Mr. Elton proposes to Emma (not Harriet) after the Christmas Eve party. Emma realizes her terrible mistake.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">January (Year 2)</div>
+                    <div class="timeline-event">Mr. Elton goes to Bath and soon becomes engaged to Augusta Hawkins, a woman with £10,000.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">February</div>
+                    <div class="timeline-event">Frank Churchill's long-anticipated visit is postponed due to Mrs. Churchill's illness. Jane Fairfax returns to Highbury.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">Late February</div>
+                    <div class="timeline-event">Frank Churchill finally arrives. The mysterious pianoforte is delivered to Jane Fairfax. Emma and Frank begin their flirtation.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">April</div>
+                    <div class="timeline-event">The Eltons return to Highbury as a married couple. Mrs. Elton immediately irritates everyone with her presumption.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">June</div>
+                    <div class="timeline-event">Strawberry party at Donwell Abbey. Emma observes tensions between Frank and Jane. The disastrous Box Hill excursion; Emma insults Miss Bates.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">Late June</div>
+                    <div class="timeline-event">Mr. Knightley rebukes Emma. Mrs. Churchill dies. Frank and Jane's engagement is revealed. Emma realizes she loves Mr. Knightley.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">July</div>
+                    <div class="timeline-event">Mr. Knightley proposes to Emma. Harriet becomes engaged to Robert Martin (with Emma's blessing). Double weddings planned.</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-period">October</div>
+                    <div class="timeline-event">The novel concludes with the marriages of Frank-Jane and Emma-Mr. Knightley, followed soon by Harriet-Robert Martin's wedding.</div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Key Passages to Watch</h2>
+
+            <div class="quote-highlight">
+                <p>"The real evils, indeed, of Emma's situation were the power of having rather too much her own way, and a disposition to think a little too well of herself."</p>
+                <cite>— Narrator, Chapter 1</cite>
+                <p style="font-style: normal; font-size: 0.95rem; margin-top: 1rem; color: var(--text-dark);">Austen's narrator immediately identifies Emma's fundamental flaws, setting up her journey toward self-knowledge.</p>
+            </div>
+
+            <div class="quote-highlight">
+                <p>"It was badly done, indeed! You, whom she had known from an infant, whom she had seen grow up from a period when her notice was an honour, to have you now, in thoughtless spirits, and the pride of the moment, laugh at her, humble her—and before her niece, too—and before others, many of whom (certainly some,) would be entirely guided by your treatment of her."</p>
+                <cite>— Mr. Knightley to Emma, Chapter 43</cite>
+                <p style="font-style: normal; font-size: 0.95rem; margin-top: 1rem; color: var(--text-dark);">Mr. Knightley's rebuke after Box Hill forces Emma to confront her cruelty and abuse of social power.</p>
+            </div>
+
+            <div class="quote-highlight">
+                <p>"If I loved you less, I might be able to talk about it more."</p>
+                <cite>— Mr. Knightley to Emma, Chapter 49</cite>
+                <p style="font-style: normal; font-size: 0.95rem; margin-top: 1rem; color: var(--text-dark);">One of Austen's most romantic lines, expressing genuine feeling through restraint.</p>
+            </div>
+
+            <div class="quote-highlight">
+                <p>"Seldom, very seldom, does complete truth belong to any human disclosure; seldom can it happen that something is not a little disguised, or a little mistaken."</p>
+                <cite>— Narrator, Chapter 49</cite>
+                <p style="font-style: normal; font-size: 0.95rem; margin-top: 1rem; color: var(--text-dark);">Austen's commentary on the limits of understanding and the complexity of human communication.</p>
+            </div>
+
+            <h2 class="section-title">Additional Resources</h2>
+
+            <div class="resource-links">
+                <a href="lesson-plan.html" class="resource-link">Complete Lesson Plan</a>
+                <a href="../../blog/book-club-guides.html" class="resource-link">Book Club Guide</a>
+                <a href="https://www.gutenberg.org/ebooks/158" class="resource-link" target="_blank">Read Free Online</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Read Jane Austen | <a href="../../index.html">Complete Works</a> | <a href="../../biography.html">Biography</a> | <a href="../../blog/">Blog</a> | <a href="../../book-clubs/">Book Clubs</a></p>
+        </div>
+    </footer>
+</body>
+</html>

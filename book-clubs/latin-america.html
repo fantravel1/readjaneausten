@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#4A6741">
+
+    <!-- SEO Meta Tags -->
+    <title>Latin American Jane Austen Book Clubs | Women's Reading Groups Brazil, Argentina, Mexico</title>
+    <meta name="description" content="Find female-only and female-led Jane Austen book clubs across Latin America. Reading communities in Brazil, Argentina, Mexico, Chile, Colombia and more.">
+    <meta name="keywords" content="Jane Austen book clubs Latin America, clubes de lectura Jane Austen, women's book clubs Brazil Argentina, female reading groups Spanish Portuguese">
+    <meta name="author" content="Read Jane Austen">
+    <link rel="canonical" href="https://readjaneausten.com/book-clubs/latin-america.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Latin American Jane Austen Book Clubs for Women">
+    <meta property="og:description" content="Join female-only and female-led Jane Austen reading communities across Latin America.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://readjaneausten.com/book-clubs/latin-america.html">
+    <meta property="og:site_name" content="Read Jane Austen">
+    <meta property="og:image" content="https://readjaneausten.com/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --cream: #F7F3E9; --sage-green: #9CAF88; --deep-teal: #4A6741; --gold: #D4AF37; --burgundy: #722F37; --text-dark: #2C2C2C; --text-light: #666; --light-sage: #B8D1A4; --warm-white: #FEFCF6; }
+        body { font-family: 'Georgia', 'Times New Roman', serif; line-height: 1.7; color: var(--text-dark); background: linear-gradient(135deg, var(--cream) 0%, #F0EBD8 100%); min-height: 100vh; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: linear-gradient(135deg, var(--deep-teal) 0%, var(--sage-green) 100%); color: white; padding: 2rem 0; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
+        nav { margin-bottom: 1rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.95rem; margin-right: 2rem; transition: color 0.3s ease; padding: 8px 12px; min-height: 44px; display: inline-flex; align-items: center; }
+        nav a:hover { color: white; }
+        .breadcrumb-nav { background: rgba(255,255,255,0.1); padding: 0.75rem; margin-top: 1rem; border-radius: 8px; }
+        .breadcrumb-nav a, .breadcrumb-nav span { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb-nav span { margin: 0 0.5rem; opacity: 0.6; }
+        .hero-content { text-align: center; padding: 2rem 0; }
+        h1 { font-size: 2.8rem; font-weight: 300; letter-spacing: 1px; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .hero-subtitle { font-size: 1.2rem; opacity: 0.9; font-style: italic; }
+        .intro-section { padding: 3rem 0; text-align: center; }
+        .intro-text { max-width: 800px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8; }
+        .country-section { padding: 3rem 0; }
+        .country-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--gold); }
+        .country-flag { font-size: 2.5rem; }
+        .country-header h2 { color: var(--burgundy); font-size: 1.8rem; font-weight: 400; }
+        .clubs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .club-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.1); border: 1px solid rgba(156, 175, 136, 0.2); transition: transform 0.3s ease; }
+        .club-card:hover { transform: translateY(-5px); }
+        .club-header { padding: 1.5rem; border-bottom: 1px solid #eee; }
+        .club-type { display: inline-block; background: var(--gold); color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.75rem; font-weight: 500; text-transform: uppercase; margin-bottom: 0.75rem; }
+        .club-type.female-led { background: var(--sage-green); }
+        .club-name { color: var(--burgundy); font-size: 1.3rem; margin-bottom: 0.25rem; }
+        .club-location { color: var(--text-light); font-size: 0.9rem; }
+        .club-body { padding: 1.5rem; }
+        .club-description { color: var(--text-dark); line-height: 1.7; margin-bottom: 1.5rem; }
+        .club-details { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem; }
+        .detail { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; }
+        .detail-icon { font-size: 1.1rem; }
+        .club-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+        .tag { background: var(--light-sage); color: var(--deep-teal); padding: 0.3rem 0.7rem; border-radius: 12px; font-size: 0.8rem; }
+        .club-footer { padding: 1rem 1.5rem; background: #f9f9f9; border-top: 1px solid #eee; }
+        .join-info { font-size: 0.9rem; color: var(--text-light); font-style: italic; }
+        .language-note { background: var(--warm-white); border-radius: 15px; padding: 2rem; margin: 2rem 0; border-left: 4px solid var(--gold); }
+        .language-note h3 { color: var(--burgundy); margin-bottom: 0.5rem; }
+        footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; margin-top: 3rem; }
+        footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
+        @media (max-width: 768px) { h1 { font-size: 2.2rem; } .clubs-grid { grid-template-columns: 1fr; } .club-details { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html">← Complete Works</a>
+                <a href="../biography.html">Biography</a>
+                <a href="../blog/">Blog</a>
+                <a href="index.html">Book Clubs</a>
+            </nav>
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>›</span>
+                <a href="index.html">Book Clubs</a>
+                <span>›</span>
+                <span>Latin America</span>
+            </nav>
+            <div class="hero-content">
+                <h1>Latin American Book Clubs</h1>
+                <p class="hero-subtitle">Clubes de Lectura de Jane Austen para Mujeres en América Latina</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <div class="container">
+                <p class="intro-text">
+                    Latin America has embraced Jane Austen with passion, finding in her works universal themes of love, family honor, and social navigation that resonate deeply across cultures. From Buenos Aires to São Paulo, women gather to discuss how Austen's heroines navigate challenges that feel surprisingly familiar—despite centuries and continents of difference.
+                </p>
+            </div>
+        </section>
+
+        <section class="country-section">
+            <div class="container">
+                <div class="country-header">
+                    <span class="country-flag">🇧🇷</span>
+                    <h2>Brazil</h2>
+                </div>
+
+                <div class="language-note">
+                    <h3>Comunidade Brasileira</h3>
+                    <p>Brazilian Austen clubs primarily operate in Portuguese, with many offering parallel English discussion groups. The strong tradition of telenovelas has created appreciation for Austen's romantic storytelling and social commentary.</p>
+                </div>
+
+                <div class="clubs-grid">
+                    <article class="club-card">
+                        <div class="club-header">
+                            <span class="club-type">Female Only</span>
+                            <h3 class="club-name">Sociedade Jane Austen do Brasil - São Paulo</h3>
+                            <p class="club-location">São Paulo • Hybrid</p>
+                        </div>
+                        <div class="club-body">
+                            <p class="club-description">Brazil's largest Austen society chapter. Women's meetings in Portuguese with scholarly presentations, theatrical readings, and annual Regency balls in São Paulo's historic venues.</p>
+                            <div class="club-details">
+                                <div class="detail"><span class="detail-icon">👥</span> 150 members</div>
+                                <div class="detail"><span class="detail-icon">📅</span> 2nd Saturday</div>
+                                <div class="detail"><span class="detail-icon">🕐</span> 3:00 PM BRT</div>
+                                <div class="detail"><span class="detail-icon">📚</span> Portuguese</div>
+                            </div>
+                            <div class="club-tags">
+                                <span class="tag">Largest in Brazil</span>
+                                <span class="tag">Regency Events</span>
+                                <span class="tag">São Paulo</span>
+                            </div>
+                        </div>
+                        <div class="club-footer">
+                            <p class="join-info">Portuguese speakers. Annual membership available.</p>
+                        </div>
+                    </article>
+
+                    <article class="club-card">
+                        <div class="club-header">
+                            <span class="club-type female-led">Female Led</span>
+                            <h3 class="club-name">Janeites do Rio</h3>
+                            <p class="club-location">Rio de Janeiro • Virtual</p>
+                        </div>
+                        <div class="club-body">
+                            <p class="club-description">Female-led virtual community connecting Cariocas and readers across Brazil. Known for lively discussions that blend literary analysis with Brazilian cultural perspectives.</p>
+                            <div class="club-details">
+                                <div class="detail"><span class="detail-icon">👥</span> 95 members</div>
+                                <div class="detail"><span class="detail-icon">📅</span> Thursdays</div>
+                                <div class="detail"><span class="detail-icon">🕐</span> 8:00 PM BRT</div>
+                                <div class="detail"><span class="detail-icon">📚</span> Portuguese</div>
+                            </div>
+                            <div class="club-tags">
+                                <span class="tag">Virtual</span>
+                                <span class="tag">Lively Discussions</span>
+                                <span class="tag">Rio</span>
+                            </div>
+                        </div>
+                        <div class="club-footer">
+                            <p class="join-info">Open to Portuguese speakers across Brazil.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="country-section">
+            <div class="container">
+                <div class="country-header">
+                    <span class="country-flag">🇦🇷</span>
+                    <h2>Argentina</h2>
+                </div>
+
+                <div class="clubs-grid">
+                    <article class="club-card">
+                        <div class="club-header">
+                            <span class="club-type">Female Only</span>
+                            <h3 class="club-name">Sociedad Jane Austen de Buenos Aires</h3>
+                            <p class="club-location">Buenos Aires • Hybrid</p>
+                        </div>
+                        <div class="club-body">
+                            <p class="club-description">Elegant women's society meeting in Buenos Aires' literary cafés and cultural centers. Strong academic tradition with visiting scholars and connections to Argentine literature departments.</p>
+                            <div class="club-details">
+                                <div class="detail"><span class="detail-icon">👥</span> 80 members</div>
+                                <div class="detail"><span class="detail-icon">📅</span> 1st & 3rd Saturday</div>
+                                <div class="detail"><span class="detail-icon">🕐</span> 5:00 PM ART</div>
+                                <div class="detail"><span class="detail-icon">📚</span> Spanish/English</div>
+                            </div>
+                            <div class="club-tags">
+                                <span class="tag">Academic</span>
+                                <span class="tag">Literary Cafés</span>
+                                <span class="tag">Buenos Aires</span>
+                            </div>
+                        </div>
+                        <div class="club-footer">
+                            <p class="join-info">Spanish speakers. English proficiency helpful.</p>
+                        </div>
+                    </article>
+
+                    <article class="club-card">
+                        <div class="club-header">
+                            <span class="club-type female-led">Female Led</span>
+                            <h3 class="club-name">Janeites del Río de la Plata</h3>
+                            <p class="club-location">Argentina & Uruguay • Virtual</p>
+                        </div>
+                        <div class="club-body">
+                            <p class="club-description">Regional female-led network connecting readers in Argentina, Uruguay, and Paraguay. Comparative discussions exploring Austen alongside River Plate literary traditions.</p>
+                            <div class="club-details">
+                                <div class="detail"><span class="detail-icon">👥</span> 65 members</div>
+                                <div class="detail"><span class="detail-icon">📅</span> Sundays</div>
+                                <div class="detail"><span class="detail-icon">🕐</span> 6:00 PM ART</div>
+                                <div class="detail"><span class="detail-icon">📚</span> Spanish</div>
+                            </div>
+                            <div class="club-tags">
+                                <span class="tag">Regional</span>
+                                <span class="tag">Comparative Lit</span>
+                                <span class="tag">Río de la Plata</span>
+                            </div>
+                        </div>
+                        <div class="club-footer">
+                            <p class="join-info">Open to Spanish speakers in the Southern Cone.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="country-section">
+            <div class="container">
+                <div class="country-header">
+                    <span class="country-flag">🇨🇱</span>
+                    <h2>Chile</h2>
+                </div>
+
+                <div class="clubs-grid">
+                    <article class="club-card">
+                        <div class="club-header">
+                            <span class="club-type">Female Only</span>
+                            <h3 class="club-name">Club de Lectura Jane Austen Chile</h3>
+                            <p class="club-location">Santiago • Hybrid</p>
+                        </div>
+                        <div class="club-body">
+                            <p class="club-description">Chile's premier women's Austen reading circle, founded by literature professors. Combines scholarly analysis with wine-and-book evenings in Santiago's Providencia district.</p>
+                            <div class="club-details">
+                                <div class="detail"><span class="detail-icon">👥</span> 55 members</div>
+                                <div class="detail"><span class="detail-icon">📅</span> 2nd Wednesday</div>
+                                <div class="detail"><span class="detail-icon">🕐</span> 7:00 PM CLT</div>
+                                <div class="detail"><span class="detail-icon">📚</span> Spanish</div>
+                            </div>
+                            <div class="club-tags">
+                                <span class="tag">Academic</span>
+                                <span class="tag">Wine & Books</span>
+                                <span class="tag">Santiago</span>
+                            </div>
+                        </div>
+                        <div class="club-footer">
+                            <p class="join-info">Spanish speakers. Academic background welcome but not required.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="country-section">
+            <div class="container">
+                <div class="country-header">
+                    <span class="country-flag">🇨🇴</span>
+                    <h2>Colombia</h2>
+                </div>
+
+                <div class="clubs-grid">
+                    <article class="club-card">
+                        <div class="club-header">
+                            <span class="club-type female-led">Female Led</span>
+                            <h3 class="club-name">Janeites Colombia</h3>
+                            <p class="club-location">Bogotá/Medellín • Virtual</p>
+                        </div>
+                        <div class="club-body">
+                            <p class="club-description">Colombia's most active female-led Austen community, with chapters in major cities. Known for passionate discussions and creative events including Austen-inspired poetry nights.</p>
+                            <div class="club-details">
+                                <div class="detail"><span class="detail-icon">👥</span> 90 members</div>
+                                <div class="detail"><span class="detail-icon">📅</span> Saturdays</div>
+                                <div class="detail"><span class="detail-icon">🕐</span> 4:00 PM COT</div>
+                                <div class="detail"><span class="detail-icon">📚</span> Spanish</div>
+                            </div>
+                            <div class="club-tags">
+                                <span class="tag">Creative Events</span>
+                                <span class="tag">Multiple Cities</span>
+                                <span class="tag">Colombia</span>
+                            </div>
+                        </div>
+                        <div class="club-footer">
+                            <p class="join-info">Open to Colombian women and Spanish speakers.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="country-section">
+            <div class="container">
+                <div class="country-header">
+                    <span class="country-flag">🇵🇪🇪🇨🇻🇪🇨🇷🇵🇦</span>
+                    <h2>Central America & Andean Region</h2>
+                </div>
+
+                <div class="clubs-grid">
+                    <article class="club-card">
+                        <div class="club-header">
+                            <span class="club-type">Female Only</span>
+                            <h3 class="club-name">Austen Andes Network</h3>
+                            <p class="club-location">Peru, Ecuador, Venezuela • Virtual</p>
+                        </div>
+                        <div class="club-body">
+                            <p class="club-description">Pan-Andean women's network connecting readers across Peru, Ecuador, and Venezuela. Explores how Austen's themes of social mobility resonate in Andean contexts.</p>
+                            <div class="club-details">
+                                <div class="detail"><span class="detail-icon">👥</span> 60 members</div>
+                                <div class="detail"><span class="detail-icon">📅</span> Sundays</div>
+                                <div class="detail"><span class="detail-icon">🕐</span> 5:00 PM PET</div>
+                                <div class="detail"><span class="detail-icon">📚</span> Spanish</div>
+                            </div>
+                            <div class="club-tags">
+                                <span class="tag">Pan-Andean</span>
+                                <span class="tag">Virtual</span>
+                                <span class="tag">Regional</span>
+                            </div>
+                        </div>
+                        <div class="club-footer">
+                            <p class="join-info">Open to women across the Andean region.</p>
+                        </div>
+                    </article>
+
+                    <article class="club-card">
+                        <div class="club-header">
+                            <span class="club-type female-led">Female Led</span>
+                            <h3 class="club-name">Central American Janeites</h3>
+                            <p class="club-location">Costa Rica, Panama, Guatemala • Virtual</p>
+                        </div>
+                        <div class="club-body">
+                            <p class="club-description">Female-led virtual community serving Central American readers. Bilingual discussions (Spanish/English) accommodate the region's diverse language preferences.</p>
+                            <div class="club-details">
+                                <div class="detail"><span class="detail-icon">👥</span> 45 members</div>
+                                <div class="detail"><span class="detail-icon">📅</span> Bi-weekly</div>
+                                <div class="detail"><span class="detail-icon">🕐</span> 7:00 PM CST</div>
+                                <div class="detail"><span class="detail-icon">📚</span> Bilingual</div>
+                            </div>
+                            <div class="club-tags">
+                                <span class="tag">Central America</span>
+                                <span class="tag">Bilingual</span>
+                                <span class="tag">Growing</span>
+                            </div>
+                        </div>
+                        <div class="club-footer">
+                            <p class="join-info">Spanish or English speakers welcome.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="country-section">
+            <div class="container">
+                <div class="country-header">
+                    <span class="country-flag">🇲🇽</span>
+                    <h2>Mexico</h2>
+                </div>
+
+                <div class="language-note">
+                    <h3>Mexican Austen Community</h3>
+                    <p>Mexico boasts one of Latin America's most active Austen communities, with clubs in every major city. The tradition of strong family bonds and social expectations creates natural connections to Austen's themes.</p>
+                </div>
+
+                <div class="clubs-grid">
+                    <article class="club-card">
+                        <div class="club-header">
+                            <span class="club-type">Female Only</span>
+                            <h3 class="club-name">Sociedad Mexicana Jane Austen</h3>
+                            <p class="club-location">Mexico City • Hybrid</p>
+                        </div>
+                        <div class="club-body">
+                            <p class="club-description">The national society's women's chapter, meeting in CDMX's cultural centers. Scholarly approach with publications, conferences, and partnerships with Mexican universities.</p>
+                            <div class="club-details">
+                                <div class="detail"><span class="detail-icon">👥</span> 120 members</div>
+                                <div class="detail"><span class="detail-icon">📅</span> 1st Saturday</div>
+                                <div class="detail"><span class="detail-icon">🕐</span> 11:00 AM CST</div>
+                                <div class="detail"><span class="detail-icon">📚</span> Spanish/English</div>
+                            </div>
+                            <div class="club-tags">
+                                <span class="tag">National Society</span>
+                                <span class="tag">Academic</span>
+                                <span class="tag">CDMX</span>
+                            </div>
+                        </div>
+                        <div class="club-footer">
+                            <p class="join-info">Membership application required. Annual dues.</p>
+                        </div>
+                    </article>
+
+                    <article class="club-card">
+                        <div class="club-header">
+                            <span class="club-type female-led">Female Led</span>
+                            <h3 class="club-name">Janeites Monterrey</h3>
+                            <p class="club-location">Monterrey, Nuevo León • Virtual</p>
+                        </div>
+                        <div class="club-body">
+                            <p class="club-description">Northern Mexico's vibrant female-led community. Evening discussions popular with working professionals, combining literary analysis with contemporary perspectives.</p>
+                            <div class="club-details">
+                                <div class="detail"><span class="detail-icon">👥</span> 70 members</div>
+                                <div class="detail"><span class="detail-icon">📅</span> Wednesdays</div>
+                                <div class="detail"><span class="detail-icon">🕐</span> 8:00 PM CST</div>
+                                <div class="detail"><span class="detail-icon">📚</span> Spanish</div>
+                            </div>
+                            <div class="club-tags">
+                                <span class="tag">Professional Women</span>
+                                <span class="tag">Evening</span>
+                                <span class="tag">Monterrey</span>
+                            </div>
+                        </div>
+                        <div class="club-footer">
+                            <p class="join-info">Open to Spanish speakers. Working professionals welcome.</p>
+                        </div>
+                    </article>
+
+                    <article class="club-card">
+                        <div class="club-header">
+                            <span class="club-type">Female Only</span>
+                            <h3 class="club-name">Las Austen de Guadalajara</h3>
+                            <p class="club-location">Guadalajara, Jalisco • Hybrid</p>
+                        </div>
+                        <div class="club-body">
+                            <p class="club-description">Intimate women's circle meeting in Guadalajara's historic center. Known for creative activities including Austen-inspired creative writing and period costume events.</p>
+                            <div class="club-details">
+                                <div class="detail"><span class="detail-icon">👥</span> 40 members</div>
+                                <div class="detail"><span class="detail-icon">📅</span> 2nd & 4th Friday</div>
+                                <div class="detail"><span class="detail-icon">🕐</span> 6:00 PM CST</div>
+                                <div class="detail"><span class="detail-icon">📚</span> Creative focus</div>
+                            </div>
+                            <div class="club-tags">
+                                <span class="tag">Creative</span>
+                                <span class="tag">Costumes</span>
+                                <span class="tag">Guadalajara</span>
+                            </div>
+                        </div>
+                        <div class="club-footer">
+                            <p class="join-info">Spanish speakers. Creative spirits especially welcome.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="country-section">
+            <div class="container">
+                <div class="country-header">
+                    <span class="country-flag">🇵🇷🇩🇴🇨🇺</span>
+                    <h2>Caribbean</h2>
+                </div>
+
+                <div class="clubs-grid">
+                    <article class="club-card">
+                        <div class="club-header">
+                            <span class="club-type female-led">Female Led</span>
+                            <h3 class="club-name">Caribbean Janeites Collective</h3>
+                            <p class="club-location">Puerto Rico, Dominican Republic • Virtual</p>
+                        </div>
+                        <div class="club-body">
+                            <p class="club-description">Female-led bilingual collective connecting Spanish and English Caribbean readers. Explores colonial and post-colonial readings of Austen with Caribbean perspectives.</p>
+                            <div class="club-details">
+                                <div class="detail"><span class="detail-icon">👥</span> 55 members</div>
+                                <div class="detail"><span class="detail-icon">📅</span> Saturdays</div>
+                                <div class="detail"><span class="detail-icon">🕐</span> 2:00 PM AST</div>
+                                <div class="detail"><span class="detail-icon">📚</span> Bilingual</div>
+                            </div>
+                            <div class="club-tags">
+                                <span class="tag">Caribbean</span>
+                                <span class="tag">Bilingual</span>
+                                <span class="tag">Post-Colonial</span>
+                            </div>
+                        </div>
+                        <div class="club-footer">
+                            <p class="join-info">Spanish and English speakers from the Caribbean welcome.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Read Jane Austen | <a href="../index.html">Complete Works</a> | <a href="../biography.html">Biography</a> | <a href="../blog/">Blog</a> | <a href="index.html">Book Clubs</a></p>
+        </div>
+    </footer>
+</body>
+</html>
