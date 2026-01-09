@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#4A6741">
+
+    <title>Mr. Darcy | Pride and Prejudice Character Analysis</title>
+    <meta name="description" content="Complete character analysis of Fitzwilliam Darcy from Pride and Prejudice. Explore his transformation from proud aristocrat to romantic hero and why he remains literature's most iconic leading man.">
+    <meta name="keywords" content="Mr. Darcy, Fitzwilliam Darcy, Pride and Prejudice, Jane Austen hero, character analysis, Pemberley">
+    <link rel="canonical" href="https://readjaneausten.com/characters/pride-and-prejudice/fitzwilliam-darcy.html">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --cream: #F7F3E9;
+            --sage-green: #9CAF88;
+            --deep-teal: #4A6741;
+            --gold: #D4AF37;
+            --burgundy: #722F37;
+            --soft-brown: #8B7355;
+            --text-dark: #2C2C2C;
+            --text-light: #666;
+            --light-sage: #B8D1A4;
+            --warm-white: #FEFCF6;
+        }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, var(--cream) 0%, #F0EBD8 100%);
+            min-height: 100vh;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+        header {
+            background: linear-gradient(135deg, var(--deep-teal) 0%, var(--sage-green) 100%);
+            color: white;
+            padding: 2rem 0;
+        }
+        nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            padding: 8px 12px;
+            display: inline-flex;
+            align-items: center;
+            min-height: 44px;
+        }
+        nav a:hover { color: white; }
+        .breadcrumb-nav {
+            background: rgba(255,255,255,0.1);
+            padding: 0.75rem 1rem;
+            margin-top: 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+        .breadcrumb-nav a, .breadcrumb-nav span { color: rgba(255,255,255,0.9); text-decoration: none; }
+        .breadcrumb-nav .separator { margin: 0 0.5rem; opacity: 0.6; }
+        .hero-content { text-align: center; padding: 1rem 0; }
+        h1 { font-size: 2.8rem; font-weight: 300; margin-bottom: 0.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .hero-subtitle { font-size: 1.1rem; opacity: 0.9; font-style: italic; }
+        .character-profile { padding: 3rem 0; background: var(--warm-white); }
+        .profile-header { display: flex; gap: 2rem; align-items: flex-start; margin-bottom: 2rem; flex-wrap: wrap; }
+        .profile-info { flex: 1; min-width: 280px; }
+        .character-role {
+            display: inline-block;
+            background: var(--gold);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+        .profile-info h2 { font-size: 2rem; color: var(--burgundy); margin-bottom: 0.5rem; }
+        .profile-info .full-name { color: var(--text-light); font-style: italic; margin-bottom: 1rem; }
+        .quick-facts {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            min-width: 250px;
+        }
+        .quick-facts h4 { color: var(--burgundy); margin-bottom: 1rem; font-size: 1rem; }
+        .quick-facts dl { display: grid; grid-template-columns: auto 1fr; gap: 0.5rem 1rem; }
+        .quick-facts dt { color: var(--text-light); font-size: 0.9rem; }
+        .quick-facts dd { color: var(--text-dark); font-size: 0.9rem; }
+        .section { padding: 3rem 0; }
+        .section:nth-child(even) { background: var(--warm-white); }
+        .section-title {
+            font-size: 1.6rem;
+            color: var(--burgundy);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--gold);
+        }
+        .section p { margin-bottom: 1.2rem; font-size: 1.05rem; line-height: 1.8; }
+        .quote-block {
+            background: white;
+            border-left: 4px solid var(--gold);
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            border-radius: 0 12px 12px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        .quote-block blockquote {
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--deep-teal);
+            line-height: 1.7;
+        }
+        .quote-block cite { display: block; margin-top: 1rem; color: var(--text-light); font-size: 0.9rem; }
+        .traits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .trait-card {
+            background: white;
+            padding: 1.25rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        .trait-card h4 { color: var(--burgundy); font-size: 1rem; margin-bottom: 0.5rem; }
+        .trait-card p { font-size: 0.9rem; color: var(--text-dark); margin: 0; }
+        .relationships-list { list-style: none; }
+        .relationships-list li {
+            padding: 1rem;
+            background: white;
+            margin-bottom: 0.75rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .relationships-list strong { color: var(--burgundy); }
+        .character-nav {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 2rem 0;
+            flex-wrap: wrap;
+        }
+        .character-nav a {
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--deep-teal);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            min-height: 48px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .character-nav a:hover { transform: translateY(-2px); }
+        footer {
+            background: var(--deep-teal);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .profile-header { flex-direction: column; }
+            .quick-facts { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html">← Pride and Prejudice Characters</a>
+            </nav>
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <a href="../../index.html">Home</a>
+                <span class="separator">›</span>
+                <a href="../index.html">Characters</a>
+                <span class="separator">›</span>
+                <a href="index.html">Pride and Prejudice</a>
+                <span class="separator">›</span>
+                <span>Mr. Darcy</span>
+            </nav>
+            <div class="hero-content">
+                <h1>Mr. Darcy</h1>
+                <p class="hero-subtitle">Literature's Most Iconic Romantic Hero</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="character-profile">
+            <div class="container">
+                <div class="profile-header">
+                    <div class="profile-info">
+                        <span class="character-role">Romantic Hero</span>
+                        <h2>Fitzwilliam Darcy</h2>
+                        <p class="full-name">Master of Pemberley, Derbyshire</p>
+                        <p>The proud and reserved hero of Pride and Prejudice, Mr. Darcy has become the template for countless romantic heroes. His journey from proud aristocrat to humble lover, and his revelation as a man of deep integrity beneath his reserved exterior, makes him one of literature's most compelling characters.</p>
+                    </div>
+                    <div class="quick-facts">
+                        <h4>Quick Facts</h4>
+                        <dl>
+                            <dt>Novel</dt>
+                            <dd>Pride and Prejudice (1813)</dd>
+                            <dt>Age</dt>
+                            <dd>28 years old</dd>
+                            <dt>Residence</dt>
+                            <dd>Pemberley, Derbyshire</dd>
+                            <dt>Income</dt>
+                            <dd>£10,000 per annum</dd>
+                            <dt>Status</dt>
+                            <dd>Wealthy landowner</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h3 class="section-title">Character Overview</h3>
+                <p>Fitzwilliam Darcy enters the novel as a figure of fascination and resentment. At the Meryton assembly, he is immediately judged proud and disagreeable, refusing to dance and declaring Elizabeth Bennet merely "tolerable." This first impression sets up the central conflict of the novel.</p>
+                <p>Yet beneath Darcy's reserve lies a man of genuine worth. His apparent pride stems partly from natural shyness and partly from the weight of his position in society. As master of Pemberley and guardian to his young sister, he bears responsibilities that have shaped him into someone cautious and reserved rather than easily amiable.</p>
+                <p>Darcy's transformation throughout the novel is not about becoming a different person, but about learning to express his true nature. Elizabeth's rejection forces him to confront how his behavior appears to others and to become, as he says, what he "ought to be." His growth into vulnerability and openness makes him all the more appealing.</p>
+
+                <div class="quote-block">
+                    <blockquote>"In vain I have struggled. It will not do. My feelings will not be repressed. You must allow me to tell you how ardently I admire and love you."</blockquote>
+                    <cite>— Mr. Darcy, first proposal to Elizabeth, Chapter 34</cite>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h3 class="section-title">Key Character Traits</h3>
+                <div class="traits-grid">
+                    <div class="trait-card">
+                        <h4>Pride</h4>
+                        <p>Darcy's pride in his position and family initially blinds him to his own behavior and the genuine worth of those he considers beneath him.</p>
+                    </div>
+                    <div class="trait-card">
+                        <h4>Intelligence</h4>
+                        <p>A well-educated man of keen perception, Darcy matches Elizabeth intellectually and is drawn to her wit and intelligence.</p>
+                    </div>
+                    <div class="trait-card">
+                        <h4>Reserve</h4>
+                        <p>His natural shyness and discomfort in company are mistaken for arrogance. He struggles to make small talk with strangers.</p>
+                    </div>
+                    <div class="trait-card">
+                        <h4>Generosity</h4>
+                        <p>Darcy is genuinely generous to those he cares for, supporting his sister, his tenants, and ultimately the Bennet family.</p>
+                    </div>
+                    <div class="trait-card">
+                        <h4>Loyalty</h4>
+                        <p>Fiercely protective of those he loves, particularly Georgiana, he acts decisively when they are threatened.</p>
+                    </div>
+                    <div class="trait-card">
+                        <h4>Integrity</h4>
+                        <p>Despite his flaws, Darcy has a strong moral compass. When confronted with his errors, he takes steps to correct them.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h3 class="section-title">Character Arc</h3>
+                <p>Darcy's character arc mirrors Elizabeth's journey of self-discovery. His first proposal reveals a man convinced of his own superiority, unable to see how his condescension appears to others. He offers marriage while simultaneously insulting Elizabeth's family and social position.</p>
+                <p>Elizabeth's fierce rejection shatters his complacency. Her accusation that he did not behave in a "gentleman-like manner" cuts him to the quick because he has always prided himself on being a gentleman. This moment forces genuine self-reflection.</p>
+                <p>Darcy's letter represents his first step toward vulnerability, explaining his actions while acknowledging his struggles with manner and expression. His later behavior—treating the Gardiners with genuine warmth, secretly resolving the Wickham scandal—shows growth into action rather than words.</p>
+                <p>By the novel's end, Darcy has learned that true gentility lies in behavior, not birth. His second proposal comes with humility, openness to rejection, and genuine gratitude when accepted. He has become worthy of Elizabeth not by changing his essential nature but by learning to express his best qualities.</p>
+
+                <div class="quote-block">
+                    <blockquote>"I have been a selfish being all my life, in practice, though not in principle... I was given good principles, but left to follow them in pride and conceit."</blockquote>
+                    <cite>— Mr. Darcy to Elizabeth, Chapter 58</cite>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h3 class="section-title">Key Relationships</h3>
+                <ul class="relationships-list">
+                    <li>
+                        <strong>Elizabeth Bennet:</strong> The love of his life, who challenges him to become better. Their relationship evolves from mutual antagonism to profound love and respect, founded on intellectual equality and moral growth.
+                    </li>
+                    <li>
+                        <strong>Charles Bingley:</strong> His closest friend, whose amiable nature contrasts with Darcy's reserve. Darcy's influence over Bingley becomes a point of contention, revealing his tendency to interfere in others' lives.
+                    </li>
+                    <li>
+                        <strong>Georgiana Darcy:</strong> His beloved younger sister, whom he guards protectively after her near-elopement with Wickham. His devotion to her shows his capacity for genuine love and care.
+                    </li>
+                    <li>
+                        <strong>George Wickham:</strong> The son of his father's steward, whose betrayal of the Darcy family makes him Darcy's nemesis. Their history reveals Darcy's capacity for both generosity and justified anger.
+                    </li>
+                    <li>
+                        <strong>Lady Catherine de Bourgh:</strong> His overbearing aunt, whose interference inadvertently helps unite him with Elizabeth. Her expectations represent the social pressures he must overcome.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h3 class="section-title">Why Darcy Endures</h3>
+                <p>Mr. Darcy has become the archetype of the romantic hero for good reason. He represents the appealing fantasy of being seen and loved by someone who initially seemed indifferent—the transformation of disdain into devotion.</p>
+                <p>Yet Darcy's appeal goes deeper than fantasy. His growth feels genuine because it is earned through struggle and self-reflection. He does not change his essential nature but learns to express his better qualities. The reserved man of the novel's beginning and the devoted lover of its end are recognizably the same person.</p>
+                <p>Darcy also appeals because he acts. When the Bennet family faces ruin through Lydia's elopement, he works tirelessly behind the scenes to resolve the crisis, asking for neither credit nor gratitude. His love manifests in deeds, not just words.</p>
+                <p>Perhaps most importantly, Darcy loves Elizabeth precisely for the qualities that make her challenging—her wit, her spirit, her refusal to flatter him. He wants not a submissive partner but an equal, someone who will "liveliness of mind" will continue to challenge and delight him for a lifetime.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="character-nav">
+                <a href="elizabeth-bennet.html">← Elizabeth Bennet</a>
+                <a href="jane-bennet.html">Jane Bennet →</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Read Jane Austen | <a href="../../index.html">Complete Works</a> | <a href="../index.html">All Characters</a></p>
+        </div>
+    </footer>
+</body>
+</html>
