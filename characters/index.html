@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#4A6741">
+
+    <!-- SEO Meta Tags -->
+    <title>Jane Austen Character Encyclopedia | Complete Character Guide</title>
+    <meta name="description" content="Explore every character from Jane Austen's six major novels. Detailed profiles of Elizabeth Bennet, Mr. Darcy, Emma Woodhouse, Anne Elliot, and over 100 more unforgettable characters.">
+    <meta name="keywords" content="Jane Austen characters, Elizabeth Bennet, Mr. Darcy, Emma Woodhouse, Pride and Prejudice characters, literary characters, Regency characters">
+    <meta name="author" content="Read Jane Austen">
+    <link rel="canonical" href="https://readjaneausten.com/characters/">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Jane Austen Character Encyclopedia">
+    <meta property="og:description" content="Complete guide to every character from Jane Austen's novels. Explore detailed profiles, relationships, and character analysis.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://readjaneausten.com/characters/">
+    <meta property="og:site_name" content="Read Jane Austen">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://readjaneausten.com/og-image.png">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jane Austen Character Encyclopedia">
+    <meta name="twitter:description" content="Complete guide to every character from Jane Austen's novels.">
+    <meta name="twitter:image" content="https://readjaneausten.com/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "CollectionPage",
+                "@id": "https://readjaneausten.com/characters/#webpage",
+                "url": "https://readjaneausten.com/characters/",
+                "name": "Jane Austen Character Encyclopedia",
+                "description": "Complete guide to every character from Jane Austen's six major novels",
+                "isPartOf": {
+                    "@id": "https://readjaneausten.com/#website"
+                },
+                "breadcrumb": {
+                    "@id": "https://readjaneausten.com/characters/#breadcrumb"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://readjaneausten.com/characters/#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://readjaneausten.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Character Encyclopedia",
+                        "item": "https://readjaneausten.com/characters/"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #F7F3E9;
+            --sage-green: #9CAF88;
+            --deep-teal: #4A6741;
+            --gold: #D4AF37;
+            --burgundy: #722F37;
+            --soft-brown: #8B7355;
+            --text-dark: #2C2C2C;
+            --text-light: #666;
+            --light-sage: #B8D1A4;
+            --warm-white: #FEFCF6;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, var(--cream) 0%, #F0EBD8 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .narrow-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--deep-teal) 0%, var(--sage-green) 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            padding: 8px 12px;
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .breadcrumb-nav {
+            background: rgba(255,255,255,0.1);
+            padding: 0.75rem 1rem;
+            margin-top: 1rem;
+            border-radius: 8px;
+        }
+
+        .breadcrumb-nav a,
+        .breadcrumb-nav span {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-nav a:hover {
+            color: white;
+        }
+
+        .breadcrumb-nav span {
+            margin: 0 0.5rem;
+            opacity: 0.6;
+        }
+
+        .hero-content {
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        .intro-section {
+            padding: 4rem 0;
+            background: var(--warm-white);
+        }
+
+        .intro-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .intro-content p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--burgundy);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 2px;
+        }
+
+        .novels-section {
+            padding: 4rem 0;
+        }
+
+        .novels-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .novel-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+            border: 1px solid rgba(156, 175, 136, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .novel-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 45px rgba(0,0,0,0.15);
+        }
+
+        .novel-card h3 {
+            font-size: 1.5rem;
+            color: var(--burgundy);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .novel-year {
+            color: var(--text-light);
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .novel-card p {
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .character-preview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .character-tag {
+            background: var(--light-sage);
+            color: var(--deep-teal);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .character-count {
+            background: var(--gold);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .stats-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--light-sage) 0%, var(--sage-green) 100%);
+            color: white;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .archetypes-section {
+            padding: 4rem 0;
+            background: var(--warm-white);
+        }
+
+        .archetypes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .archetype-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--gold);
+        }
+
+        .archetype-card h4 {
+            font-size: 1.2rem;
+            color: var(--burgundy);
+            margin-bottom: 1rem;
+        }
+
+        .archetype-card p {
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .archetype-examples {
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background: var(--deep-teal);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        footer a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .novels-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .novel-card {
+                padding: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container, .narrow-container {
+                padding: 0 15px;
+            }
+
+            .novel-card {
+                padding: 1.5rem;
+            }
+
+            .archetype-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../index.html">← Back to Complete Works</a>
+            </nav>
+            <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                <a href="../index.html">Home</a>
+                <span>›</span>
+                <span>Character Encyclopedia</span>
+            </nav>
+            <div class="hero-content">
+                <h1>Character Encyclopedia</h1>
+                <p class="hero-subtitle">Every Character from Jane Austen's Novels</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-section">
+            <div class="narrow-container">
+                <div class="intro-content">
+                    <p>Jane Austen created some of the most memorable characters in English literature. From the witty Elizabeth Bennet to the steadfast Anne Elliot, her heroines and the rich cast of supporting characters continue to captivate readers more than two centuries later.</p>
+                    <p>This encyclopedia provides detailed profiles of every significant character from Austen's six major novels, exploring their personalities, relationships, character arcs, and the themes they embody.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="novels-section">
+            <div class="container">
+                <h2 class="section-title">Characters by Novel</h2>
+                <div class="novels-grid">
+                    <a href="pride-and-prejudice/index.html" class="novel-card">
+                        <h3>Pride and Prejudice</h3>
+                        <p class="novel-year">1813</p>
+                        <p>The beloved cast of Longbourn and Pemberley, featuring one of literature's greatest love stories and most memorable family dynamics.</p>
+                        <div class="character-preview">
+                            <span class="character-tag">Elizabeth Bennet</span>
+                            <span class="character-tag">Mr. Darcy</span>
+                            <span class="character-tag">Jane Bennet</span>
+                            <span class="character-count">+8 more</span>
+                        </div>
+                    </a>
+
+                    <a href="sense-and-sensibility/index.html" class="novel-card">
+                        <h3>Sense and Sensibility</h3>
+                        <p class="novel-year">1811</p>
+                        <p>The contrasting Dashwood sisters and their suitors, exploring the tension between reason and emotion.</p>
+                        <div class="character-preview">
+                            <span class="character-tag">Elinor Dashwood</span>
+                            <span class="character-tag">Marianne Dashwood</span>
+                            <span class="character-tag">Edward Ferrars</span>
+                            <span class="character-count">+7 more</span>
+                        </div>
+                    </a>
+
+                    <a href="emma/index.html" class="novel-card">
+                        <h3>Emma</h3>
+                        <p class="novel-year">1815</p>
+                        <p>The lively society of Highbury, centered on a well-meaning but misguided matchmaker and her journey to self-awareness.</p>
+                        <div class="character-preview">
+                            <span class="character-tag">Emma Woodhouse</span>
+                            <span class="character-tag">Mr. Knightley</span>
+                            <span class="character-tag">Harriet Smith</span>
+                            <span class="character-count">+8 more</span>
+                        </div>
+                    </a>
+
+                    <a href="mansfield-park/index.html" class="novel-card">
+                        <h3>Mansfield Park</h3>
+                        <p class="novel-year">1814</p>
+                        <p>The complex world of the Bertram estate, where morality, social class, and personal integrity collide.</p>
+                        <div class="character-preview">
+                            <span class="character-tag">Fanny Price</span>
+                            <span class="character-tag">Edmund Bertram</span>
+                            <span class="character-tag">Mary Crawford</span>
+                            <span class="character-count">+9 more</span>
+                        </div>
+                    </a>
+
+                    <a href="northanger-abbey/index.html" class="novel-card">
+                        <h3>Northanger Abbey</h3>
+                        <p class="novel-year">1817</p>
+                        <p>A coming-of-age tale featuring a young heroine who must distinguish between Gothic fantasy and reality.</p>
+                        <div class="character-preview">
+                            <span class="character-tag">Catherine Morland</span>
+                            <span class="character-tag">Henry Tilney</span>
+                            <span class="character-tag">Isabella Thorpe</span>
+                            <span class="character-count">+6 more</span>
+                        </div>
+                    </a>
+
+                    <a href="persuasion/index.html" class="novel-card">
+                        <h3>Persuasion</h3>
+                        <p class="novel-year">1817</p>
+                        <p>Austen's most mature novel, exploring second chances in love and the value of constancy.</p>
+                        <div class="character-preview">
+                            <span class="character-tag">Anne Elliot</span>
+                            <span class="character-tag">Captain Wentworth</span>
+                            <span class="character-tag">Lady Russell</span>
+                            <span class="character-count">+7 more</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container">
+                <h2 class="section-title" style="color: white;">By the Numbers</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Major Novels</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Unforgettable Heroines</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">60+</span>
+                        <span class="stat-label">Major Characters</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Years of Readers</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="archetypes-section">
+            <div class="container">
+                <h2 class="section-title">Austen's Character Types</h2>
+                <div class="archetypes-grid">
+                    <div class="archetype-card">
+                        <h4>The Spirited Heroine</h4>
+                        <p>Intelligent, witty, and morally grounded women who navigate society's constraints while maintaining their integrity and growing through experience.</p>
+                        <p class="archetype-examples">Elizabeth Bennet, Emma Woodhouse, Catherine Morland</p>
+                    </div>
+
+                    <div class="archetype-card">
+                        <h4>The Reformed Hero</h4>
+                        <p>Proud or reserved gentlemen whose genuine worth becomes apparent as they learn humility and demonstrate their true character.</p>
+                        <p class="archetype-examples">Mr. Darcy, Mr. Knightley, Captain Wentworth</p>
+                    </div>
+
+                    <div class="archetype-card">
+                        <h4>The Seductive Villain</h4>
+                        <p>Charming but morally bankrupt characters whose attractive exteriors conceal selfishness, dishonesty, or worse.</p>
+                        <p class="archetype-examples">George Wickham, John Willoughby, Henry Crawford</p>
+                    </div>
+
+                    <div class="archetype-card">
+                        <h4>The Comic Relief</h4>
+                        <p>Absurd, pompous, or foolish characters whose behavior provides humor while often serving as social satire.</p>
+                        <p class="archetype-examples">Mr. Collins, Mrs. Bennet, Miss Bates</p>
+                    </div>
+
+                    <div class="archetype-card">
+                        <h4>The Steady Suitor</h4>
+                        <p>Honorable men of quieter virtues who may be overlooked initially but prove their worth through constancy and integrity.</p>
+                        <p class="archetype-examples">Colonel Brandon, Edward Ferrars, Edmund Bertram</p>
+                    </div>
+
+                    <div class="archetype-card">
+                        <h4>The Sensible Sister</h4>
+                        <p>Calm, rational women who balance their more impetuous siblings or friends while managing their own quieter struggles.</p>
+                        <p class="archetype-examples">Elinor Dashwood, Jane Bennet, Anne Elliot</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Read Jane Austen | <a href="../index.html">Complete Works</a> | <a href="../biography.html">Biography</a></p>
+        </div>
+    </footer>
+</body>
+</html>
