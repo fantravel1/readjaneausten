@@ -49,6 +49,14 @@
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(156, 175, 136, 0.3); }
         .character-nav a { color: var(--deep-teal); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; background: var(--cream); }
         .character-nav a:hover { background: var(--light-sage); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .quick-facts { grid-template-columns: 1fr 1fr; } }
@@ -173,6 +181,29 @@
                     <p>Frederick's role in exposing Isabella serves the novel's broader concern with reading character correctly. Catherine cannot believe Frederick would deliberately pursue an engaged woman; she cannot believe Isabella would encourage him. Both beliefs prove wrong. The novel teaches Catherine&mdash;and the reader&mdash;that people are often exactly as bad as cynicism suggests, though rarely in the gothic modes fiction describes.</p>
 
                     <p>By the novel's end, Frederick has disappeared back to his regiment, his flirtation finished, his consequences escaped. He suffers nothing for his carelessness; Isabella suffers everything. The asymmetry is deliberate: Austen shows that fashionable men can behave badly without penalty while the women they toy with pay the price.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h2 class="section-title">Related Characters</h2>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Tilney Family</h4>
+                        <ul>
+                            <li><a href="general-tilney.html">General Tilney</a> - His father</li>
+                            <li><a href="henry-tilney.html">Henry Tilney</a> - His younger brother</li>
+                            <li><a href="eleanor-tilney.html">Eleanor Tilney</a> - His sister</li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>His Flirtation</h4>
+                        <ul>
+                            <li><a href="isabella-thorpe.html">Isabella Thorpe</a> - His target</li>
+                            <li><a href="james-morland.html">James Morland</a> - Her jilted fiance</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

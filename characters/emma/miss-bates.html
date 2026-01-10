@@ -49,6 +49,14 @@
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(156, 175, 136, 0.3); }
         .character-nav a { color: var(--deep-teal); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; background: var(--cream); }
         .character-nav a:hover { background: var(--light-sage); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .quick-facts { grid-template-columns: 1fr 1fr; } }
@@ -167,10 +175,10 @@
                 <h2 class="section-title">Key Relationships</h2>
                 <div class="content-block">
                     <ul class="relationships-list">
-                        <li><span class="relationship-name">Jane Fairfax:</span> Her beloved niece, whose accomplishments and prospects form the center of Miss Bates's conversation and concern. Jane's happiness means everything to her.</li>
+                        <li><span class="relationship-name"><a href="jane-fairfax.html">Jane Fairfax</a>:</span> Her beloved niece, whose accomplishments and prospects form the center of Miss Bates's conversation and concern. Jane's happiness means everything to her.</li>
                         <li><span class="relationship-name">Mrs. Bates:</span> Her elderly, nearly deaf mother, for whom she cares devotedly in their modest lodgings above a shop.</li>
-                        <li><span class="relationship-name">Emma Woodhouse:</span> A neighbor whose occasional kindnesses Miss Bates receives with excessive gratitude, making Emma's public insult particularly painful.</li>
-                        <li><span class="relationship-name">Mr. Knightley:</span> A true friend whose quiet acts of generosity (like sending apples) represent genuine rather than condescending charity.</li>
+                        <li><span class="relationship-name"><a href="emma-woodhouse.html">Emma Woodhouse</a>:</span> A neighbor whose occasional kindnesses Miss Bates receives with excessive gratitude, making Emma's public insult particularly painful.</li>
+                        <li><span class="relationship-name"><a href="george-knightley.html">Mr. Knightley</a>:</span> A true friend whose quiet acts of generosity (like sending apples) represent genuine rather than condescending charity.</li>
                         <li><span class="relationship-name">Highbury Society:</span> She moves through the village as a welcome if verbose presence, genuinely interested in everyone's affairs and wishing everyone well.</li>
                     </ul>
                 </div>
@@ -186,6 +194,28 @@
                     <p>Yet Austen inverts this apparent cautionary tale. Miss Bates may lack money, beauty, and wit, but she possesses what Emma lacks: genuine contentment, sincere goodwill, and the ability to find happiness in simple blessings. Her gratitude is not servility but wisdom—an understanding that happiness comes from within rather than from circumstances.</p>
 
                     <p>Through Miss Bates, Austen critiques her own society's values. The Highbury world that tolerates Miss Bates while slightly despising her, that accepts her presence while rolling its eyes at her conversation, is revealed as morally inferior to the woman it condescends to. Emma's journey toward maturity requires learning to see Miss Bates as she truly is: not a comic figure to be endured, but a model of Christian charity to be emulated.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 style="font-size: 1.8rem; color: var(--burgundy); text-align: center; margin-bottom: 1rem;">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Highbury Society</h4>
+                        <ul>
+                            <li><a href="jane-fairfax.html">Jane Fairfax</a></li>
+                            <li><a href="emma-woodhouse.html">Emma Woodhouse</a></li>
+                            <li><a href="george-knightley.html">Mr. Knightley</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Comic Talkers</h4>
+                        <ul>
+                            <li><a href="../persuasion/mary-musgrove.html">Mary Musgrove</a> <span class="novel-tag">Persuasion</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

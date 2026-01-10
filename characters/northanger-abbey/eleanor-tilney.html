@@ -155,6 +155,14 @@
             align-items: center;
         }
         .character-nav a:hover { transform: translateY(-2px); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer {
             background: var(--deep-teal);
             color: white;
@@ -285,13 +293,13 @@
                 <h3 class="section-title">Key Relationships</h3>
                 <ul class="relationships-list">
                     <li>
-                        <strong>Catherine Morland:</strong> Her genuine friend, whom she welcomes to Northanger Abbey and mourns when forced to send away. Their friendship survives General Tilney's interference.
+                        <strong><a href="catherine-morland.html">Catherine Morland</a>:</strong> Her genuine friend, whom she welcomes to Northanger Abbey and mourns when forced to send away. Their friendship survives General Tilney's interference.
                     </li>
                     <li>
-                        <strong>Henry Tilney:</strong> Her beloved brother, with whom she shares intellectual companionship and mutual affection. Their warm sibling relationship contrasts with the Thorpes' mercenary connection.
+                        <strong><a href="henry-tilney.html">Henry Tilney</a>:</strong> Her beloved brother, with whom she shares intellectual companionship and mutual affection. Their warm sibling relationship contrasts with the Thorpes' mercenary connection.
                     </li>
                     <li>
-                        <strong>General Tilney:</strong> Her tyrannical father, whose authority she must obey even when it wounds her. Her suffering under his rule provides the novel's real oppression.
+                        <strong><a href="general-tilney.html">General Tilney</a>:</strong> Her tyrannical father, whose authority she must obey even when it wounds her. Her suffering under his rule provides the novel's real oppression.
                     </li>
                     <li>
                         <strong>The Viscount:</strong> The man she loves and eventually marries when his unexpected inheritance makes him acceptable to General Tilney. Her happiness enables the novel's resolution.
@@ -310,6 +318,28 @@
                 <p>Yet this "convenient" ending carries thematic weight. Eleanor has earned her happiness through patience and virtue; the viscount has earned his through constancy in loving her despite his lack of fortune. Their reward may be luck, but it is luck that falls on the deserving.</p>
                 <p>Eleanor's fate also comments on the novel's treatment of Gothic conventions. She was the real prisoner at Northanger Abbey—not in chains but in obedience, not in dungeons but in drawing rooms. Her liberation comes not through heroic rescue but through the prosaic mechanism of inheritance. The novel suggests that real oppression and real freedom operate through social and economic structures, not supernatural interventions.</p>
                 <p>In the end, Eleanor Tilney represents what Catherine learns to value: genuine friendship, quiet virtue, and real feeling. She is the true friend Catherine sought—not in the effusive declarations of Isabella Thorpe, but in the steady kindness of a woman who asks nothing and gives much.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Tilney Family</h4>
+                        <ul>
+                            <li><a href="henry-tilney.html">Henry Tilney</a> - Her beloved brother</li>
+                            <li><a href="general-tilney.html">General Tilney</a> - Her tyrannical father</li>
+                            <li><a href="captain-tilney.html">Captain Tilney</a> - Her older brother</li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Friends</h4>
+                        <ul>
+                            <li><a href="catherine-morland.html">Catherine Morland</a> - Her genuine friend</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

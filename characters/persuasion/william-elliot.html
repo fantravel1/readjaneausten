@@ -155,6 +155,14 @@
             align-items: center;
         }
         .character-nav a:hover { transform: translateY(-2px); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer {
             background: var(--deep-teal);
             color: white;
@@ -286,19 +294,19 @@
                 <h3 class="section-title">Key Relationships</h3>
                 <ul class="relationships-list">
                     <li>
-                        <strong>Anne Elliot:</strong> The object of his calculated pursuit. Anne's instinctive distrust of him proves justified when his mercenary motives are revealed.
+                        <strong><a href="anne-elliot.html">Anne Elliot</a>:</strong> The object of his calculated pursuit. Anne's instinctive distrust of him proves justified when his mercenary motives are revealed.
                     </li>
                     <li>
-                        <strong>Sir Walter Elliot:</strong> His foolish cousin, easily flattered into welcoming the heir who once scorned him. Sir Walter never suspects William Elliot's true motives.
+                        <strong><a href="sir-walter-elliot.html">Sir Walter Elliot</a>:</strong> His foolish cousin, easily flattered into welcoming the heir who once scorned him. Sir Walter never suspects William Elliot's true motives.
                     </li>
                     <li>
-                        <strong>Mrs. Smith:</strong> His former victim, whose husband he exploited and then abandoned. Her revelations to Anne expose his true character.
+                        <strong><a href="mrs-smith.html">Mrs. Smith</a>:</strong> His former victim, whose husband he exploited and then abandoned. Her revelations to Anne expose his true character.
                     </li>
                     <li>
                         <strong>Mrs. Clay:</strong> His eventual accomplice, with whom he departs Bath. Their alliance suggests shared mercenary values and mutual usefulness.
                     </li>
                     <li>
-                        <strong>Lady Russell:</strong> Anne's godmother, who is completely taken in by his manner. Her approval of him shows the limits of her judgment.
+                        <strong><a href="lady-russell.html">Lady Russell</a>:</strong> Anne's godmother, who is completely taken in by his manner. Her approval of him shows the limits of her judgment.
                     </li>
                 </ul>
             </div>
@@ -311,6 +319,36 @@
                 <p>Anne's ability to see through him where others fail reflects her mature judgment. Unlike Elizabeth Bennet, who initially trusted Wickham's charm, Anne is skeptical from the start. Her experience has taught her that perfect agreeableness often signals perfect emptiness.</p>
                 <p>William Elliot also serves a structural function: his pursuit of Anne creates the jealousy that finally pushes Wentworth to declare himself. Without the threat of losing Anne to her cousin, Wentworth might have maintained his proud distance indefinitely. William Elliot's villainy thus inadvertently enables the happy ending he sought to prevent.</p>
                 <p>His final fate—exile with Mrs. Clay, scheming presumably continuing—denies readers the satisfaction of seeing him punished. But this refusal of dramatic justice is itself realistic. Men like William Elliot often prosper in the world, and Austen will not pretend otherwise. His continued existence on the novel's margins reminds us that not all stories end with the villain defeated.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Elliot Family</h4>
+                        <ul>
+                            <li><a href="sir-walter-elliot.html">Sir Walter Elliot</a> <span class="novel-tag">cousin</span></li>
+                            <li><a href="anne-elliot.html">Anne Elliot</a> <span class="novel-tag">pursued</span></li>
+                            <li><a href="elizabeth-elliot.html">Elizabeth Elliot</a> <span class="novel-tag">cousin</span></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Associates & Victims</h4>
+                        <ul>
+                            <li><a href="mrs-smith.html">Mrs. Smith</a> <span class="novel-tag">victim</span></li>
+                            <li><a href="lady-russell.html">Lady Russell</a> <span class="novel-tag">deceived</span></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Similar Villains</h4>
+                        <ul>
+                            <li><a href="../pride-and-prejudice/george-wickham.html">George Wickham</a> <span class="novel-tag">Pride and Prejudice</span></li>
+                            <li><a href="../mansfield-park/henry-crawford.html">Henry Crawford</a> <span class="novel-tag">Mansfield Park</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

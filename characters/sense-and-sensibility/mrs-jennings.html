@@ -49,6 +49,14 @@
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(156, 175, 136, 0.3); }
         .character-nav a { color: var(--deep-teal); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; background: var(--cream); }
         .character-nav a:hover { background: var(--light-sage); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .quick-facts { grid-template-columns: 1fr 1fr; } }
@@ -169,9 +177,9 @@
                     <ul class="relationships-list">
                         <li><span class="relationship-name">Lady Middleton:</span> Her daughter, whose cold elegance contrasts with her mother's warm vulgarity. They represent opposite values.</li>
                         <li><span class="relationship-name">Sir John Middleton:</span> Her son-in-law, who shares her sociability if not her matchmaking obsession.</li>
-                        <li><span class="relationship-name">Elinor Dashwood:</span> Whom she initially embarrasses with teasing but comes to genuinely appreciate and assist.</li>
-                        <li><span class="relationship-name">Marianne Dashwood:</span> Whom she nurses through heartbreak with clumsy but sincere compassion.</li>
-                        <li><span class="relationship-name">Colonel Brandon:</span> Whose devotion to Marianne she enthusiastically supports, promoting the match with characteristic bluntness.</li>
+                        <li><span class="relationship-name"><a href="elinor-dashwood.html">Elinor Dashwood</a>:</span> Whom she initially embarrasses with teasing but comes to genuinely appreciate and assist.</li>
+                        <li><span class="relationship-name"><a href="marianne-dashwood.html">Marianne Dashwood</a>:</span> Whom she nurses through heartbreak with clumsy but sincere compassion.</li>
+                        <li><span class="relationship-name"><a href="colonel-brandon.html">Colonel Brandon</a>:</span> Whose devotion to Marianne she enthusiastically supports, promoting the match with characteristic bluntness.</li>
                     </ul>
                 </div>
             </div>
@@ -186,6 +194,28 @@
                     <p>She also represents a certain kind of social mobility. Her wealth comes from trade (her late husband was "in trade in a less elegant part of the town"), and her manners retain traces of her origins. Yet her money gives her position, and her good nature wins genuine affection. She may not be elegant, but she is welcomed everywhere.</p>
 
                     <p>Finally, Mrs. Jennings challenges simple associations between class and worth. The elegant Fanny Dashwood is cruel; the vulgar Mrs. Jennings is kind. Lady Middleton's refinement produces coldness; Mrs. Jennings's bluntness coexists with warmth. The novel refuses to equate breeding with virtue—and Mrs. Jennings is its most pointed example of why.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Dashwood Sisters</h4>
+                        <ul>
+                            <li><a href="elinor-dashwood.html">Elinor Dashwood</a></li>
+                            <li><a href="marianne-dashwood.html">Marianne Dashwood</a></li>
+                            <li><a href="mrs-dashwood.html">Mrs. Dashwood</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Social Connections</h4>
+                        <ul>
+                            <li><a href="colonel-brandon.html">Colonel Brandon</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

@@ -49,6 +49,14 @@
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(156, 175, 136, 0.3); }
         .character-nav a { color: var(--deep-teal); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; background: var(--cream); }
         .character-nav a:hover { background: var(--light-sage); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .quick-facts { grid-template-columns: 1fr 1fr; } }
@@ -173,6 +181,30 @@
                     <p>This outcome subtly challenges Wentworth's simplistic opposition between firmness and yielding. Henrietta's firmness would have led her astray; her yielding returns her to happiness. Sometimes being persuaded is wisdom rather than weakness. The contrast with Louisa, whose firm insistence on jumping leads to disaster, reinforces this point.</p>
 
                     <p>Henrietta ends the novel quietly engaged to Charles Hayter, her small drama resolved without crisis or transformation. In a story about second chances and recovered love, she represents the simpler path: recognizing one's true attachment before it's too late to act on it.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h2 class="section-title">Related Characters</h2>
+                <div class="content-block">
+                    <div class="related-grid">
+                        <div class="related-group">
+                            <h4>Musgrove Family</h4>
+                            <ul>
+                                <li><a href="louisa-musgrove.html">Louisa Musgrove</a> <span class="novel-tag">sister</span></li>
+                                <li><a href="charles-musgrove.html">Charles Musgrove</a> <span class="novel-tag">brother</span></li>
+                                <li><a href="mary-musgrove.html">Mary Musgrove</a> <span class="novel-tag">sister-in-law</span></li>
+                            </ul>
+                        </div>
+                        <div class="related-group">
+                            <h4>Romantic Interest</h4>
+                            <ul>
+                                <li><a href="captain-wentworth.html">Captain Wentworth</a> <span class="novel-tag">temporary attraction</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

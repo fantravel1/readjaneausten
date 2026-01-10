@@ -49,6 +49,14 @@
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(156, 175, 136, 0.3); }
         .character-nav a { color: var(--deep-teal); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; background: var(--cream); }
         .character-nav a:hover { background: var(--light-sage); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .quick-facts { grid-template-columns: 1fr 1fr; } }
@@ -167,11 +175,11 @@
                 <h2 class="section-title">Key Relationships</h2>
                 <div class="content-block">
                     <ul class="relationships-list">
-                        <li><span class="relationship-name">Captain Wentworth:</span> Her initial romantic interest, who admires her spirit but ultimately recognizes she is not Anne. His guilt over her injury complicates his eventual disengagement.</li>
-                        <li><span class="relationship-name">Captain Benwick:</span> Her eventual fiancé, whom she meets during her convalescence at Lyme. Their match surprises everyone but seems suitable for the new, quieter Louisa.</li>
-                        <li><span class="relationship-name">Henrietta Musgrove:</span> Her sister, with whom she was previously inseparable and nearly interchangeable. Their relationship may shift as both marry.</li>
-                        <li><span class="relationship-name">Anne Elliot:</span> Her quiet rival, whose calm competence during the crisis on the Cobb contrasts with Louisa's helplessness.</li>
-                        <li><span class="relationship-name">The Harvilles:</span> The naval family who nurse her back to health at Lyme, facilitating her acquaintance with Benwick.</li>
+                        <li><span class="relationship-name"><a href="captain-wentworth.html">Captain Wentworth</a>:</span> Her initial romantic interest, who admires her spirit but ultimately recognizes she is not Anne. His guilt over her injury complicates his eventual disengagement.</li>
+                        <li><span class="relationship-name"><a href="captain-benwick.html">Captain Benwick</a>:</span> Her eventual fiancé, whom she meets during her convalescence at Lyme. Their match surprises everyone but seems suitable for the new, quieter Louisa.</li>
+                        <li><span class="relationship-name"><a href="henrietta-musgrove.html">Henrietta Musgrove</a>:</span> Her sister, with whom she was previously inseparable and nearly interchangeable. Their relationship may shift as both marry.</li>
+                        <li><span class="relationship-name"><a href="anne-elliot.html">Anne Elliot</a>:</span> Her quiet rival, whose calm competence during the crisis on the Cobb contrasts with Louisa's helplessness.</li>
+                        <li><span class="relationship-name"><a href="captain-harville.html">The Harvilles</a>:</span> The naval family who nurse her back to health at Lyme, facilitating her acquaintance with Benwick.</li>
                     </ul>
                 </div>
             </div>
@@ -188,6 +196,38 @@
                     <p>Louisa's transformation after her fall—from spirited to subdued, from headstrong to reflective—carries ambiguous meaning. On one hand, she seems diminished, her liveliness replaced by something quieter. On the other, she may have gained the wisdom that her former impetuosity lacked. Her match with the melancholy, literary Benwick suggests she has developed depths she previously lacked.</p>
 
                     <p>The novel leaves readers to judge whether this transformation represents loss or growth—or perhaps both. Louisa will never again be the girl who insisted on jumping; whether the woman she becomes is happier remains unclear.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h2 class="section-title">Related Characters</h2>
+                <div class="content-block">
+                    <div class="related-grid">
+                        <div class="related-group">
+                            <h4>Musgrove Family</h4>
+                            <ul>
+                                <li><a href="henrietta-musgrove.html">Henrietta Musgrove</a> <span class="novel-tag">sister</span></li>
+                                <li><a href="charles-musgrove.html">Charles Musgrove</a> <span class="novel-tag">brother</span></li>
+                                <li><a href="mary-musgrove.html">Mary Musgrove</a> <span class="novel-tag">sister-in-law</span></li>
+                            </ul>
+                        </div>
+                        <div class="related-group">
+                            <h4>Romantic Connections</h4>
+                            <ul>
+                                <li><a href="captain-wentworth.html">Captain Wentworth</a> <span class="novel-tag">temporary interest</span></li>
+                                <li><a href="captain-benwick.html">Captain Benwick</a> <span class="novel-tag">fiancé</span></li>
+                            </ul>
+                        </div>
+                        <div class="related-group">
+                            <h4>Naval Circle</h4>
+                            <ul>
+                                <li><a href="captain-harville.html">Captain Harville</a> <span class="novel-tag">host at Lyme</span></li>
+                                <li><a href="anne-elliot.html">Anne Elliot</a> <span class="novel-tag">heroine</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

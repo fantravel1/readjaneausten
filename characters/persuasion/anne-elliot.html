@@ -155,6 +155,14 @@
             align-items: center;
         }
         .character-nav a:hover { transform: translateY(-2px); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer {
             background: var(--deep-teal);
             color: white;
@@ -286,19 +294,19 @@
                 <h3 class="section-title">Key Relationships</h3>
                 <ul class="relationships-list">
                     <li>
-                        <strong>Captain Wentworth:</strong> The great love of her life. Their reunion after eight years of separation forms the novel's emotional core. His journey from anger to renewed love mirrors her journey from regret to hope.
+                        <strong><a href="captain-wentworth.html">Captain Wentworth</a>:</strong> The great love of her life. Their reunion after eight years of separation forms the novel's emotional core. His journey from anger to renewed love mirrors her journey from regret to hope.
                     </li>
                     <li>
-                        <strong>Lady Russell:</strong> Her godmother and the woman who persuaded her against Wentworth. Anne loves Lady Russell while recognizing her snobbery and the harm her advice caused.
+                        <strong><a href="lady-russell.html">Lady Russell</a>:</strong> Her godmother and the woman who persuaded her against Wentworth. Anne loves Lady Russell while recognizing her snobbery and the harm her advice caused.
                     </li>
                     <li>
-                        <strong>Sir Walter Elliot:</strong> Her vain, foolish father who values neither Anne's intelligence nor her worth. His neglect has shaped her into someone who expects nothing for herself.
+                        <strong><a href="sir-walter-elliot.html">Sir Walter Elliot</a>:</strong> Her vain, foolish father who values neither Anne's intelligence nor her worth. His neglect has shaped her into someone who expects nothing for herself.
                     </li>
                     <li>
-                        <strong>Mrs. Smith:</strong> Her old school friend, now impoverished and widowed. Anne's loyalty to Mrs. Smith, despite her family's disapproval, reveals her genuine values.
+                        <strong><a href="mrs-smith.html">Mrs. Smith</a>:</strong> Her old school friend, now impoverished and widowed. Anne's loyalty to Mrs. Smith, despite her family's disapproval, reveals her genuine values.
                     </li>
                     <li>
-                        <strong>William Elliot:</strong> Her calculating cousin, whose charm conceals ulterior motives. Anne sees through him where others are deceived.
+                        <strong><a href="william-elliot.html">William Elliot</a>:</strong> Her calculating cousin, whose charm conceals ulterior motives. Anne sees through him where others are deceived.
                     </li>
                 </ul>
             </div>
@@ -311,6 +319,38 @@
                 <p>Yet the novel also suggests that Anne's acquiescence cost her something essential. Her years of suffering, her faded bloom, her invisible existence within her family—all follow from that single act of yielding her judgment to another's. The lesson seems to be that while respecting one's elders is proper, abandoning one's own perception is dangerous.</p>
                 <p>Anne's final happiness comes not from learning to resist persuasion entirely, but from trusting herself. When she speaks of women's constancy to Harville, she is claiming her right to know her own heart. When she accepts Wentworth again, she does so on her own authority, not seeking Lady Russell's approval until after the fact.</p>
                 <p>In this, Anne represents Austen's most mature vision of female development. She is not transformed by love but vindicated by it; she does not change so much as finally receive recognition for what she has always been. Her reward is not just Wentworth's love but her own conviction that she was right to love, right to wait, right to trust her heart.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Elliot Family</h4>
+                        <ul>
+                            <li><a href="sir-walter-elliot.html">Sir Walter Elliot</a> <span class="novel-tag">father</span></li>
+                            <li><a href="elizabeth-elliot.html">Elizabeth Elliot</a> <span class="novel-tag">elder sister</span></li>
+                            <li><a href="mary-musgrove.html">Mary Musgrove</a> <span class="novel-tag">younger sister</span></li>
+                            <li><a href="william-elliot.html">William Elliot</a> <span class="novel-tag">cousin & heir</span></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Romantic & Advisors</h4>
+                        <ul>
+                            <li><a href="captain-wentworth.html">Captain Wentworth</a> <span class="novel-tag">hero</span></li>
+                            <li><a href="lady-russell.html">Lady Russell</a> <span class="novel-tag">godmother</span></li>
+                            <li><a href="mrs-smith.html">Mrs. Smith</a> <span class="novel-tag">old friend</span></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Similar Heroines</h4>
+                        <ul>
+                            <li><a href="../sense-and-sensibility/elinor-dashwood.html">Elinor Dashwood</a> <span class="novel-tag">Sense and Sensibility</span></li>
+                            <li><a href="../mansfield-park/fanny-price.html">Fanny Price</a> <span class="novel-tag">Mansfield Park</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

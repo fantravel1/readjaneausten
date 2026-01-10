@@ -31,6 +31,14 @@
         .quote-block blockquote { font-size: 1.15rem; font-style: italic; color: var(--deep-teal); }
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; flex-wrap: wrap; gap: 1rem; }
         .character-nav a { background: white; padding: 1rem 1.5rem; border-radius: 10px; text-decoration: none; color: var(--deep-teal); box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
     </style>
@@ -67,6 +75,35 @@
                 <div class="quote-block">
                     <blockquote>"Tell her of my misery and my penitence—tell her that my heart was never inconstant to her."</blockquote>
                     <cite>— Willoughby's confession to Elinor</cite>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Romantic Connections</h4>
+                        <ul>
+                            <li><a href="marianne-dashwood.html">Marianne Dashwood</a></li>
+                            <li><a href="colonel-brandon.html">Colonel Brandon</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Dashwood Family</h4>
+                        <ul>
+                            <li><a href="elinor-dashwood.html">Elinor Dashwood</a></li>
+                            <li><a href="mrs-dashwood.html">Mrs. Dashwood</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Similar Characters Across Novels</h4>
+                        <ul>
+                            <li><a href="../pride-and-prejudice/george-wickham.html">George Wickham</a> <span class="novel-tag">Pride & Prejudice</span></li>
+                            <li><a href="../mansfield-park/henry-crawford.html">Henry Crawford</a> <span class="novel-tag">Mansfield Park</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

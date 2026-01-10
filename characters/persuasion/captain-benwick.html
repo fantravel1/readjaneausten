@@ -49,6 +49,14 @@
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(156, 175, 136, 0.3); }
         .character-nav a { color: var(--deep-teal); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; background: var(--cream); }
         .character-nav a:hover { background: var(--light-sage); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .quick-facts { grid-template-columns: 1fr 1fr; } }
@@ -168,10 +176,10 @@
                 <div class="content-block">
                     <ul class="relationships-list">
                         <li><span class="relationship-name">Fanny Harville:</span> His deceased fiancée, whose death has shaped his melancholy identity. Their engagement had been long, waiting for his fortune to be made.</li>
-                        <li><span class="relationship-name">Captain Harville:</span> His close friend and Fanny's brother, who continues to shelter him at Lyme. Harville's own constancy to his wife provides an implicit contrast.</li>
-                        <li><span class="relationship-name">Anne Elliot:</span> A sympathetic listener who shares his literary interests and offers gentle advice. Their conversations about grief create brief intimacy.</li>
-                        <li><span class="relationship-name">Louisa Musgrove:</span> His eventual fiancée, whom he nurses during her convalescence after the Cobb accident. Their engagement surprises everyone.</li>
-                        <li><span class="relationship-name">Captain Wentworth:</span> A brother officer who privately judges his recovery as too quick, measuring Benwick against his own standard of devotion.</li>
+                        <li><span class="relationship-name"><a href="captain-harville.html">Captain Harville</a>:</span> His close friend and Fanny's brother, who continues to shelter him at Lyme. Harville's own constancy to his wife provides an implicit contrast.</li>
+                        <li><span class="relationship-name"><a href="anne-elliot.html">Anne Elliot</a>:</span> A sympathetic listener who shares his literary interests and offers gentle advice. Their conversations about grief create brief intimacy.</li>
+                        <li><span class="relationship-name"><a href="louisa-musgrove.html">Louisa Musgrove</a>:</span> His eventual fiancée, whom he nurses during her convalescence after the Cobb accident. Their engagement surprises everyone.</li>
+                        <li><span class="relationship-name"><a href="captain-wentworth.html">Captain Wentworth</a>:</span> A brother officer who privately judges his recovery as too quick, measuring Benwick against his own standard of devotion.</li>
                     </ul>
                 </div>
             </div>
@@ -186,6 +194,31 @@
                     <p>Benwick also represents a certain kind of Romantic sensibility that Austen views with gentle skepticism. His love of melancholy poetry may express genuine feeling, but it may also substitute for genuine feeling—providing scripts for emotion rather than emotion itself. Anne's advice to read "more prose" suggests the danger of feeding grief rather than learning to live with it.</p>
 
                     <p>Finally, Benwick's match with Louisa quietly reinforces the novel's values. Louisa, whose fall from the Cobb transformed her from lively to subdued, seems now suited to the quiet, literary Benwick in a way she never was to the energetic Wentworth. The match may lack the grand passion of Anne and Wentworth's reunion, but it promises its own kind of companionable happiness.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h2 class="section-title">Related Characters</h2>
+                <div class="content-block">
+                    <div class="related-grid">
+                        <div class="related-group">
+                            <h4>Naval Characters</h4>
+                            <ul>
+                                <li><a href="captain-wentworth.html">Captain Wentworth</a> <span class="novel-tag">brother officer</span></li>
+                                <li><a href="captain-harville.html">Captain Harville</a> <span class="novel-tag">close friend</span></li>
+                                <li><a href="the-crofts.html">The Crofts</a> <span class="novel-tag">naval family</span></li>
+                            </ul>
+                        </div>
+                        <div class="related-group">
+                            <h4>Romantic Connections</h4>
+                            <ul>
+                                <li><a href="louisa-musgrove.html">Louisa Musgrove</a> <span class="novel-tag">fiancée</span></li>
+                                <li><a href="anne-elliot.html">Anne Elliot</a> <span class="novel-tag">literary friend</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

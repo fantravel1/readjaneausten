@@ -155,6 +155,14 @@
             align-items: center;
         }
         .character-nav a:hover { transform: translateY(-2px); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer {
             background: var(--deep-teal);
             color: white;
@@ -286,19 +294,19 @@
                 <h3 class="section-title">Key Relationships</h3>
                 <ul class="relationships-list">
                     <li>
-                        <strong>Elizabeth Bennet:</strong> The love of his life, who challenges him to become better. Their relationship evolves from mutual antagonism to profound love and respect, founded on intellectual equality and moral growth.
+                        <strong><a href="elizabeth-bennet.html">Elizabeth Bennet</a>:</strong> The love of his life, who challenges him to become better. Their relationship evolves from mutual antagonism to profound love and respect, founded on intellectual equality and moral growth.
                     </li>
                     <li>
-                        <strong>Charles Bingley:</strong> His closest friend, whose amiable nature contrasts with Darcy's reserve. Darcy's influence over Bingley becomes a point of contention, revealing his tendency to interfere in others' lives.
+                        <strong><a href="charles-bingley.html">Charles Bingley</a>:</strong> His closest friend, whose amiable nature contrasts with Darcy's reserve. Darcy's influence over Bingley becomes a point of contention, revealing his tendency to interfere in others' lives.
                     </li>
                     <li>
-                        <strong>Georgiana Darcy:</strong> His beloved younger sister, whom he guards protectively after her near-elopement with Wickham. His devotion to her shows his capacity for genuine love and care.
+                        <strong><a href="georgiana-darcy.html">Georgiana Darcy</a>:</strong> His beloved younger sister, whom he guards protectively after her near-elopement with Wickham. His devotion to her shows his capacity for genuine love and care.
                     </li>
                     <li>
-                        <strong>George Wickham:</strong> The son of his father's steward, whose betrayal of the Darcy family makes him Darcy's nemesis. Their history reveals Darcy's capacity for both generosity and justified anger.
+                        <strong><a href="george-wickham.html">George Wickham</a>:</strong> The son of his father's steward, whose betrayal of the Darcy family makes him Darcy's nemesis. Their history reveals Darcy's capacity for both generosity and justified anger.
                     </li>
                     <li>
-                        <strong>Lady Catherine de Bourgh:</strong> His overbearing aunt, whose interference inadvertently helps unite him with Elizabeth. Her expectations represent the social pressures he must overcome.
+                        <strong><a href="lady-catherine-de-bourgh.html">Lady Catherine de Bourgh</a>:</strong> His overbearing aunt, whose interference inadvertently helps unite him with Elizabeth. Her expectations represent the social pressures he must overcome.
                     </li>
                 </ul>
             </div>
@@ -311,6 +319,32 @@
                 <p>Yet Darcy's appeal goes deeper than fantasy. His growth feels genuine because it is earned through struggle and self-reflection. He does not change his essential nature but learns to express his better qualities. The reserved man of the novel's beginning and the devoted lover of its end are recognizably the same person.</p>
                 <p>Darcy also appeals because he acts. When the Bennet family faces ruin through Lydia's elopement, he works tirelessly behind the scenes to resolve the crisis, asking for neither credit nor gratitude. His love manifests in deeds, not just words.</p>
                 <p>Perhaps most importantly, Darcy loves Elizabeth precisely for the qualities that make her challenging—her wit, her spirit, her refusal to flatter him. He wants not a submissive partner but an equal, someone who will "liveliness of mind" will continue to challenge and delight him for a lifetime.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Family & Close Connections</h4>
+                        <ul>
+                            <li><a href="elizabeth-bennet.html">Elizabeth Bennet</a> <span class="novel-tag">His beloved</span></li>
+                            <li><a href="georgiana-darcy.html">Georgiana Darcy</a> <span class="novel-tag">His sister</span></li>
+                            <li><a href="colonel-fitzwilliam.html">Colonel Fitzwilliam</a> <span class="novel-tag">His cousin</span></li>
+                            <li><a href="lady-catherine-de-bourgh.html">Lady Catherine de Bourgh</a> <span class="novel-tag">His aunt</span></li>
+                            <li><a href="charles-bingley.html">Charles Bingley</a> <span class="novel-tag">Best friend</span></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Similar Romantic Heroes</h4>
+                        <ul>
+                            <li><a href="../emma/george-knightley.html">Mr. Knightley</a> <span class="novel-tag">Emma</span></li>
+                            <li><a href="../persuasion/captain-wentworth.html">Captain Wentworth</a> <span class="novel-tag">Persuasion</span></li>
+                            <li><a href="../sense-and-sensibility/colonel-brandon.html">Colonel Brandon</a> <span class="novel-tag">Sense and Sensibility</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

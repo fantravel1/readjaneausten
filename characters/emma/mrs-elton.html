@@ -49,6 +49,14 @@
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(156, 175, 136, 0.3); }
         .character-nav a { color: var(--deep-teal); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; background: var(--cream); }
         .character-nav a:hover { background: var(--light-sage); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .quick-facts { grid-template-columns: 1fr 1fr; } }
@@ -167,10 +175,10 @@
                 <h2 class="section-title">Key Relationships</h2>
                 <div class="content-block">
                     <ul class="relationships-list">
-                        <li><span class="relationship-name">Mr. Elton:</span> Her husband, the Highbury vicar, who married her for her ten thousand pounds. They seem well-matched in their shallow pretensions and mutual satisfaction.</li>
-                        <li><span class="relationship-name">Jane Fairfax:</span> Her victim, whom she treats as a protégée to be displayed and assisted despite Jane's clear discomfort with her attentions.</li>
-                        <li><span class="relationship-name">Emma Woodhouse:</span> Her rival for social dominance in Highbury. Mrs. Elton immediately identifies Emma as competition and sets about establishing her own superiority.</li>
-                        <li><span class="relationship-name">Mr. Knightley:</span> Whom she offensively calls simply "Knightley," familiarity he tolerates with barely concealed irritation.</li>
+                        <li><span class="relationship-name"><a href="mr-elton.html">Mr. Elton</a>:</span> Her husband, the Highbury vicar, who married her for her ten thousand pounds. They seem well-matched in their shallow pretensions and mutual satisfaction.</li>
+                        <li><span class="relationship-name"><a href="jane-fairfax.html">Jane Fairfax</a>:</span> Her victim, whom she treats as a protégée to be displayed and assisted despite Jane's clear discomfort with her attentions.</li>
+                        <li><span class="relationship-name"><a href="emma-woodhouse.html">Emma Woodhouse</a>:</span> Her rival for social dominance in Highbury. Mrs. Elton immediately identifies Emma as competition and sets about establishing her own superiority.</li>
+                        <li><span class="relationship-name"><a href="george-knightley.html">Mr. Knightley</a>:</span> Whom she offensively calls simply "Knightley," familiarity he tolerates with barely concealed irritation.</li>
                         <li><span class="relationship-name">The Sucklings:</span> Her brother-in-law and sister, whose Maple Grove estate she references in nearly every conversation as proof of her connections.</li>
                     </ul>
                 </div>
@@ -188,6 +196,23 @@
                     <p>Mrs. Elton also embodies a certain moment in English social history—the rising commercial class that made its money in trade (her father was a Bristol merchant) seeking to establish itself as gentry. Her anxious display of wealth and connections reflects the insecurity of this position. She must constantly prove her status because it isn't naturally acknowledged.</p>
 
                     <p>The novel ends with Mrs. Elton unchanged—still boasting, still patronizing, still insufferably certain of her own superiority. Unlike Emma, she is incapable of growth. This stasis makes her a comic figure rather than a moral one: she exists to be laughed at, not learned from.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 style="font-size: 1.8rem; color: var(--burgundy); text-align: center; margin-bottom: 1rem;">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Highbury Society</h4>
+                        <ul>
+                            <li><a href="mr-elton.html">Mr. Elton</a></li>
+                            <li><a href="jane-fairfax.html">Jane Fairfax</a></li>
+                            <li><a href="emma-woodhouse.html">Emma Woodhouse</a></li>
+                            <li><a href="george-knightley.html">Mr. Knightley</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

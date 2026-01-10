@@ -42,6 +42,14 @@
         .quote-block cite { display: block; margin-top: 1rem; color: var(--text-light); font-size: 0.9rem; }
         .character-nav { display: flex; justify-content: space-between; gap: 1rem; padding: 2rem 0; flex-wrap: wrap; }
         .character-nav a { background: white; padding: 1rem 1.5rem; border-radius: 10px; text-decoration: none; color: var(--deep-teal); box-shadow: 0 3px 10px rgba(0,0,0,0.1); min-height: 48px; display: inline-flex; align-items: center; }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .profile-header { flex-direction: column; } }
@@ -113,9 +121,42 @@
         <section class="section">
             <div class="container">
                 <h3 class="section-title">Key Relationships</h3>
-                <p><strong>Edward Ferrars:</strong> The quiet, honorable man she loves. Their courtship is subdued, marked more by silent understanding than passionate declaration, but their mutual regard is deep and genuine.</p>
-                <p><strong>Marianne Dashwood:</strong> Her younger sister, whose opposite temperament creates both conflict and complementarity. Elinor's steady presence helps Marianne through her crisis, while Marianne's intensity illuminates what Elinor conceals.</p>
-                <p><strong>Lucy Steele:</strong> Her rival and tormentor, who reveals the secret engagement partly from jealousy and partly from malice. Elinor must maintain courtesy toward Lucy while bleeding internally.</p>
+                <p><strong><a href="edward-ferrars.html">Edward Ferrars</a>:</strong> The quiet, honorable man she loves. Their courtship is subdued, marked more by silent understanding than passionate declaration, but their mutual regard is deep and genuine.</p>
+                <p><strong><a href="marianne-dashwood.html">Marianne Dashwood</a>:</strong> Her younger sister, whose opposite temperament creates both conflict and complementarity. Elinor's steady presence helps Marianne through her crisis, while Marianne's intensity illuminates what Elinor conceals.</p>
+                <p><strong><a href="lucy-steele.html">Lucy Steele</a>:</strong> Her rival and tormentor, who reveals the secret engagement partly from jealousy and partly from malice. Elinor must maintain courtesy toward Lucy while bleeding internally.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Dashwood Family</h4>
+                        <ul>
+                            <li><a href="marianne-dashwood.html">Marianne Dashwood</a></li>
+                            <li><a href="margaret-dashwood.html">Margaret Dashwood</a></li>
+                            <li><a href="mrs-dashwood.html">Mrs. Dashwood</a></li>
+                            <li><a href="john-dashwood.html">John Dashwood</a></li>
+                            <li><a href="fanny-dashwood.html">Fanny Dashwood</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Romantic Connections</h4>
+                        <ul>
+                            <li><a href="edward-ferrars.html">Edward Ferrars</a></li>
+                            <li><a href="lucy-steele.html">Lucy Steele</a></li>
+                            <li><a href="robert-ferrars.html">Robert Ferrars</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Similar Characters Across Novels</h4>
+                        <ul>
+                            <li><a href="../pride-and-prejudice/jane-bennet.html">Jane Bennet</a> <span class="novel-tag">Pride & Prejudice</span></li>
+                            <li><a href="../persuasion/anne-elliot.html">Anne Elliot</a> <span class="novel-tag">Persuasion</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

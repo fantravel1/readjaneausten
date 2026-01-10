@@ -49,6 +49,14 @@
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(156, 175, 136, 0.3); }
         .character-nav a { color: var(--deep-teal); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; background: var(--cream); }
         .character-nav a:hover { background: var(--light-sage); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .quick-facts { grid-template-columns: 1fr 1fr; } }
@@ -162,10 +170,10 @@
                 <h2 class="section-title">Key Relationships</h2>
                 <div class="content-block">
                     <ul class="relationships-list">
-                        <li><span class="relationship-name">Anne Elliot:</span> Her elder sister, whom she treats as a useful companion and nurse. Anne's visits "cure" Mary's ailments because they provide the attention she craves.</li>
-                        <li><span class="relationship-name">Charles Musgrove:</span> Her husband, with whom she shares little genuine intimacy. Their marriage is comfortable but lacks depth on both sides.</li>
+                        <li><span class="relationship-name"><a href="anne-elliot.html">Anne Elliot</a>:</span> Her elder sister, whom she treats as a useful companion and nurse. Anne's visits "cure" Mary's ailments because they provide the attention she craves.</li>
+                        <li><span class="relationship-name"><a href="charles-musgrove.html">Charles Musgrove</a>:</span> Her husband, with whom she shares little genuine intimacy. Their marriage is comfortable but lacks depth on both sides.</li>
                         <li><span class="relationship-name">The Musgrove Family:</span> Her in-laws, whom she simultaneously looks down upon (for their inferior rank) and envies (for their warmth and connection).</li>
-                        <li><span class="relationship-name">Sir Walter & Elizabeth:</span> Her father and sister, who largely ignore her. She resents their neglect while still craving their approval.</li>
+                        <li><span class="relationship-name"><a href="sir-walter-elliot.html">Sir Walter</a> & <a href="elizabeth-elliot.html">Elizabeth</a>:</span> Her father and sister, who largely ignore her. She resents their neglect while still craving their approval.</li>
                         <li><span class="relationship-name">Her Children:</span> Charles and Walter, whom she spoils and neglects by turns, neither disciplining them nor truly attending to them.</li>
                     </ul>
                 </div>
@@ -181,6 +189,32 @@
                     <p>In the novel's economy of happiness, Mary's discontent serves as a counterpoint to Anne's patient endurance. Both sisters have reason to be unhappy: Anne has lost her love; Mary has found a merely adequate marriage. But where Anne grows through suffering into wisdom, Mary only compounds her unhappiness through constant complaint.</p>
 
                     <p>The novel ends with Mary satisfied—not because her circumstances have improved, but because Anne's marriage to Captain Wentworth gives her something to boast about. "Anne had no Uppercross Hall before her, no landed estate, no headship of a family," but Mary can claim connection to a rising naval hero. That this externality makes Mary happy says everything about her values—and nothing about genuine contentment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h2 class="section-title">Related Characters</h2>
+                <div class="content-block">
+                    <div class="related-grid">
+                        <div class="related-group">
+                            <h4>Elliot Family</h4>
+                            <ul>
+                                <li><a href="anne-elliot.html">Anne Elliot</a> <span class="novel-tag">elder sister</span></li>
+                                <li><a href="sir-walter-elliot.html">Sir Walter Elliot</a> <span class="novel-tag">father</span></li>
+                                <li><a href="elizabeth-elliot.html">Elizabeth Elliot</a> <span class="novel-tag">eldest sister</span></li>
+                            </ul>
+                        </div>
+                        <div class="related-group">
+                            <h4>Musgrove Family</h4>
+                            <ul>
+                                <li><a href="charles-musgrove.html">Charles Musgrove</a> <span class="novel-tag">husband</span></li>
+                                <li><a href="louisa-musgrove.html">Louisa Musgrove</a> <span class="novel-tag">sister-in-law</span></li>
+                                <li><a href="henrietta-musgrove.html">Henrietta Musgrove</a> <span class="novel-tag">sister-in-law</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

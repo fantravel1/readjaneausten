@@ -49,6 +49,14 @@
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(156, 175, 136, 0.3); }
         .character-nav a { color: var(--deep-teal); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; background: var(--cream); }
         .character-nav a:hover { background: var(--light-sage); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .quick-facts { grid-template-columns: 1fr 1fr; } }
@@ -167,11 +175,11 @@
                 <h2 class="section-title">Key Relationships</h2>
                 <div class="content-block">
                     <ul class="relationships-list">
-                        <li><span class="relationship-name">Emma Woodhouse:</span> Mrs. Weston's beloved former charge, whom she raised and still guides—though perhaps with too gentle a hand.</li>
-                        <li><span class="relationship-name">Frank Churchill:</span> Mr. Weston's son from his first marriage, raised by the Churchill family. His father's eager anticipation of his visits forms a running thread.</li>
-                        <li><span class="relationship-name">Mr. Knightley:</span> A friend whose clearer judgment sometimes contrasts with the Westons' wishful optimism about Emma and Frank.</li>
-                        <li><span class="relationship-name">Mr. Woodhouse:</span> Whose constant mourning for "poor Miss Taylor" they bear with patience and affection.</li>
-                        <li><span class="relationship-name">Jane Fairfax:</span> Whose situation as a prospective governess reminds readers what Mrs. Weston escaped through her fortunate marriage.</li>
+                        <li><span class="relationship-name"><a href="emma-woodhouse.html">Emma Woodhouse</a>:</span> Mrs. Weston's beloved former charge, whom she raised and still guides—though perhaps with too gentle a hand.</li>
+                        <li><span class="relationship-name"><a href="frank-churchill.html">Frank Churchill</a>:</span> Mr. Weston's son from his first marriage, raised by the Churchill family. His father's eager anticipation of his visits forms a running thread.</li>
+                        <li><span class="relationship-name"><a href="george-knightley.html">Mr. Knightley</a>:</span> A friend whose clearer judgment sometimes contrasts with the Westons' wishful optimism about Emma and Frank.</li>
+                        <li><span class="relationship-name"><a href="mr-woodhouse.html">Mr. Woodhouse</a>:</span> Whose constant mourning for "poor Miss Taylor" they bear with patience and affection.</li>
+                        <li><span class="relationship-name"><a href="jane-fairfax.html">Jane Fairfax</a>:</span> Whose situation as a prospective governess reminds readers what Mrs. Weston escaped through her fortunate marriage.</li>
                     </ul>
                 </div>
             </div>
@@ -186,6 +194,24 @@
                     <p>Mrs. Weston's transition from governess to wife illuminates the novel's concern with women's limited options. She was fortunate; Jane Fairfax faces the same future without the same prospects. The contrast between their situations—one happily settled, one dreading servitude—underscores how much women's fates depend on chance and circumstance.</p>
 
                     <p>Together, the Westons also demonstrate the limitations of parental affection. Both are too partial to their attachments—she to Emma, he to Frank—to see clearly. Their love, though genuine, doesn't always serve truth. Mr. Knightley, who loves Emma without blind spots, offers the corrective their fondness lacks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 style="font-size: 1.8rem; color: var(--burgundy); text-align: center; margin-bottom: 1rem;">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Highbury Society</h4>
+                        <ul>
+                            <li><a href="emma-woodhouse.html">Emma Woodhouse</a></li>
+                            <li><a href="frank-churchill.html">Frank Churchill</a></li>
+                            <li><a href="george-knightley.html">Mr. Knightley</a></li>
+                            <li><a href="mr-woodhouse.html">Mr. Woodhouse</a></li>
+                            <li><a href="jane-fairfax.html">Jane Fairfax</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

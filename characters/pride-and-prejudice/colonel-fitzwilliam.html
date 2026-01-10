@@ -49,6 +49,14 @@
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(156, 175, 136, 0.3); }
         .character-nav a { color: var(--deep-teal); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; background: var(--cream); }
         .character-nav a:hover { background: var(--light-sage); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .quick-facts { grid-template-columns: 1fr 1fr; } }
@@ -148,7 +156,7 @@
             <div class="container">
                 <h2 class="section-title">The Crucial Revelation</h2>
                 <div class="content-block">
-                    <p>Colonel Fitzwilliam's most significant act is inadvertent: he reveals to Elizabeth that Darcy has recently "saved" a friend from an "imprudent marriage." Elizabeth immediately recognizes the friend as Bingley, the object as Jane. The revelation crystallizes her anger at Darcy, providing specific grievance to compound her general dislike.</p>
+                    <p>Colonel Fitzwilliam's most significant act is inadvertent: he reveals to <a href="elizabeth-bennet.html">Elizabeth</a> that <a href="fitzwilliam-darcy.html">Darcy</a> has recently "saved" a friend from an "imprudent marriage." Elizabeth immediately recognizes the friend as <a href="charles-bingley.html">Bingley</a>, the object as <a href="jane-bennet.html">Jane</a>. The revelation crystallizes her anger at Darcy, providing specific grievance to compound her general dislike.</p>
 
                     <div class="quote-block">
                         "There were some very strong objections against the lady."
@@ -171,6 +179,29 @@
                     <p>He also illuminates the economic constraints on marriage. Unlike Darcy, who can marry where he chooses, the Colonel must marry money. His frank acknowledgment that he cannot afford to marry for love, however much he might wish to, reminds us that Austen's marriage plots operate within strict financial parameters. Elizabeth's lack of fortune excludes her from consideration by otherwise suitable men.</p>
 
                     <p>Finally, the Colonel raises an implicit question: Would Elizabeth have preferred him to Darcy, had circumstances been different? His easy manner, his appreciation of her wit, his warmth all suggest compatibility. Yet the novel gives us no real opportunity to explore this alternative. The Colonel appears, charms, reveals crucial information, and largely disappears—a might-have-been that never quite becomes a possibility.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Family & Connections</h4>
+                        <ul>
+                            <li><a href="fitzwilliam-darcy.html">Mr. Darcy</a> <span class="novel-tag">His cousin</span></li>
+                            <li><a href="georgiana-darcy.html">Georgiana Darcy</a> <span class="novel-tag">Co-guardian</span></li>
+                            <li><a href="lady-catherine-de-bourgh.html">Lady Catherine</a> <span class="novel-tag">His aunt</span></li>
+                            <li><a href="elizabeth-bennet.html">Elizabeth Bennet</a> <span class="novel-tag">Charmed her</span></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Similar Amiable Officers</h4>
+                        <ul>
+                            <li><a href="../persuasion/captain-wentworth.html">Captain Wentworth</a> <span class="novel-tag">Persuasion</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

@@ -49,6 +49,14 @@
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(156, 175, 136, 0.3); }
         .character-nav a { color: var(--deep-teal); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; background: var(--cream); }
         .character-nav a:hover { background: var(--light-sage); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .quick-facts { grid-template-columns: 1fr 1fr; } }
@@ -168,7 +176,7 @@
                 <div class="content-block">
                     <ul class="relationships-list">
                         <li><span class="relationship-name">Mr. Allen:</span> Her husband, who provides the sensible guidance she cannot. His opinions carry weight; hers concern only fabric.</li>
-                        <li><span class="relationship-name">Catherine Morland:</span> Her young charge, whom she likes well enough but cannot actually protect or guide through society's dangers.</li>
+                        <li><span class="relationship-name"><a href="catherine-morland.html">Catherine Morland</a>:</span> Her young charge, whom she likes well enough but cannot actually protect or guide through society's dangers.</li>
                         <li><span class="relationship-name">Mrs. Thorpe:</span> An old school friend whose reacquaintance in Bath delights Mrs. Allen—finally, someone to talk to about dress!</li>
                         <li><span class="relationship-name">Bath Society:</span> Her natural habitat. The assemblies and pump rooms provide endless opportunities for fashion observation.</li>
                     </ul>
@@ -187,6 +195,21 @@
                     <p>She also highlights Catherine's vulnerability as a young woman entering society without proper guidance. The Gothic novels Catherine reads are full of dangers; the real world has dangers too, though different ones. Isabella's manipulations, John Thorpe's lies, General Tilney's mercenary calculations—Catherine faces these threats essentially alone. That she emerges unharmed owes nothing to Mrs. Allen and everything to Catherine's own fundamental decency.</p>
 
                     <p>Finally, Mrs. Allen allows Austen to satirize the chaperone convention itself. In sentimental novels, wise older women guide innocent heroines through dangerous waters. In reality, Austen suggests, chaperones may be as useless as Mrs. Allen—physically present but mentally absent, officially responsible but practically negligent.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h2 class="section-title">Related Characters</h2>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Her Ward</h4>
+                        <ul>
+                            <li><a href="catherine-morland.html">Catherine Morland</a> - Her ineffectually chaperoned charge</li>
+                            <li><a href="james-morland.html">James Morland</a> - Catherine's brother</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

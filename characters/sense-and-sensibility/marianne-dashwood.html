@@ -42,6 +42,14 @@
         .quote-block cite { display: block; margin-top: 1rem; color: var(--text-light); font-size: 0.9rem; }
         .character-nav { display: flex; justify-content: space-between; gap: 1rem; padding: 2rem 0; flex-wrap: wrap; }
         .character-nav a { background: white; padding: 1rem 1.5rem; border-radius: 10px; text-decoration: none; color: var(--deep-teal); box-shadow: 0 3px 10px rgba(0,0,0,0.1); min-height: 48px; display: inline-flex; align-items: center; }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .profile-header { flex-direction: column; } }
@@ -116,6 +124,37 @@
                 <p>Marianne's near-fatal illness marks the turning point in her development. Facing death, she recognizes how her self-indulgent grief has affected those who love her, particularly Elinor. She vows to live differently, governing her feelings rather than being governed by them.</p>
                 <p>Her eventual marriage to Colonel Brandon represents this transformation. The man she once dismissed as too old for passion proves capable of steady, enduring love. She learns that romantic intensity is not the only form feeling can take.</p>
                 <p>Yet the novel does not entirely condemn Marianne's sensibility. Her passion and expressiveness are genuine virtues; she merely needs to temper them with prudence. The ideal, Austen suggests, combines Elinor's sense with Marianne's depth of feeling.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Dashwood Family</h4>
+                        <ul>
+                            <li><a href="elinor-dashwood.html">Elinor Dashwood</a></li>
+                            <li><a href="margaret-dashwood.html">Margaret Dashwood</a></li>
+                            <li><a href="mrs-dashwood.html">Mrs. Dashwood</a></li>
+                            <li><a href="john-dashwood.html">John Dashwood</a></li>
+                            <li><a href="fanny-dashwood.html">Fanny Dashwood</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Suitors & Rivals</h4>
+                        <ul>
+                            <li><a href="john-willoughby.html">John Willoughby</a></li>
+                            <li><a href="colonel-brandon.html">Colonel Brandon</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Similar Characters Across Novels</h4>
+                        <ul>
+                            <li><a href="../northanger-abbey/catherine-morland.html">Catherine Morland</a> <span class="novel-tag">Northanger Abbey</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

@@ -32,6 +32,14 @@
         .quote-block cite { display: block; margin-top: 1rem; color: var(--text-light); font-size: 0.9rem; }
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; flex-wrap: wrap; gap: 1rem; }
         .character-nav a { background: white; padding: 1rem 1.5rem; border-radius: 10px; text-decoration: none; color: var(--deep-teal); box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
     </style>
@@ -78,6 +86,30 @@
                 <p>Emma is Austen's most psychologically complex heroine. Unlike Elizabeth Bennet, whose flaws are relatively minor, Emma is genuinely wrong in ways that hurt people. Yet she is also genuinely good at heart, capable of growth, and ultimately lovable.</p>
                 <p>Her appeal lies in her vitality and her journey. We watch her make mistakes, suffer consequences, and choose to become better. Her happy ending feels earned because she has done the difficult work of self-examination.</p>
                 <p>Austen's affection for her flawed creation is evident. "I am going to take a heroine whom no one but myself will much like," she warned, but readers have loved Emma for two centuries—perhaps because her journey from complacency to self-knowledge mirrors our own.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 style="font-size: 1.8rem; color: var(--burgundy); text-align: center; margin-bottom: 1rem;">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Highbury Society</h4>
+                        <ul>
+                            <li><a href="george-knightley.html">Mr. Knightley</a></li>
+                            <li><a href="harriet-smith.html">Harriet Smith</a></li>
+                            <li><a href="frank-churchill.html">Frank Churchill</a></li>
+                            <li><a href="jane-fairfax.html">Jane Fairfax</a></li>
+                            <li><a href="mr-woodhouse.html">Mr. Woodhouse</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Similar Characters</h4>
+                        <ul>
+                            <li><a href="../pride-and-prejudice/elizabeth-bennet.html">Elizabeth Bennet</a> <span class="novel-tag">Pride and Prejudice</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

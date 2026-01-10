@@ -42,6 +42,14 @@
         .quote-block cite { display: block; margin-top: 1rem; color: var(--text-light); font-size: 0.9rem; }
         .character-nav { display: flex; justify-content: space-between; gap: 1rem; padding: 2rem 0; flex-wrap: wrap; }
         .character-nav a { background: white; padding: 1rem 1.5rem; border-radius: 10px; text-decoration: none; color: var(--deep-teal); box-shadow: 0 3px 10px rgba(0,0,0,0.1); min-height: 48px; display: inline-flex; align-items: center; }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .profile-header { flex-direction: column; } }
@@ -104,9 +112,9 @@
         <section class="section">
             <div class="container">
                 <h3 class="section-title">The Proposal</h3>
-                <p>Mr. Collins's proposal to Elizabeth is one of the most comic scenes in English literature. He approaches it as a business transaction, listing his reasons for marrying with no reference to affection: it is right for a clergyman to marry; Lady Catherine has recommended it; and he wishes to make amends for inheriting Longbourn.</p>
+                <p>Mr. Collins's proposal to <a href="elizabeth-bennet.html">Elizabeth</a> is one of the most comic scenes in English literature. He approaches it as a business transaction, listing his reasons for marrying with no reference to affection: it is right for a clergyman to marry; <a href="lady-catherine-de-bourgh.html">Lady Catherine</a> has recommended it; and he wishes to make amends for inheriting Longbourn.</p>
                 <p>His certainty of acceptance is monumental. When Elizabeth refuses him, he assumes she is being coy—"the usual practice of elegant females." It takes repeated, increasingly firm rejections before he begins to believe she means it, and even then he attributes her refusal to a desire to "increase his love by suspense."</p>
-                <p>His rapid transfer of affections to Charlotte Lucas—within three days of Elizabeth's rejection—reveals that his "feelings" were never engaged at all. Marriage for Mr. Collins is entirely about his own consequence, not about the woman involved.</p>
+                <p>His rapid transfer of affections to <a href="charlotte-lucas.html">Charlotte Lucas</a>—within three days of Elizabeth's rejection—reveals that his "feelings" were never engaged at all. Marriage for Mr. Collins is entirely about his own consequence, not about the woman involved.</p>
             </div>
         </section>
 
@@ -116,6 +124,30 @@
                 <p>Mr. Collins provides some of the novel's richest comedy, but he also serves serious thematic purposes. His proposal to Elizabeth clarifies what she refuses to accept: a marriage without love or respect, entered into for purely practical reasons.</p>
                 <p>His character also satirizes the church of Austen's day. Mr. Collins has no genuine religious feeling; his concern is entirely with the social aspects of his position. His sermons, we learn, are composed with an eye to flattering Lady Catherine rather than edifying his congregation.</p>
                 <p>His marriage to Charlotte shows what happens when a sensible woman accepts a foolish man for economic security. Charlotte's pragmatic acceptance of her situation—creating spaces where she need not see her husband—is both comic and slightly melancholy.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Key Relationships</h4>
+                        <ul>
+                            <li><a href="charlotte-lucas.html">Charlotte Lucas</a> <span class="novel-tag">His wife</span></li>
+                            <li><a href="lady-catherine-de-bourgh.html">Lady Catherine de Bourgh</a> <span class="novel-tag">His patroness</span></li>
+                            <li><a href="elizabeth-bennet.html">Elizabeth Bennet</a> <span class="novel-tag">Rejected him</span></li>
+                            <li><a href="mr-bennet.html">Mr. Bennet</a> <span class="novel-tag">His cousin</span></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Similar Comic Figures</h4>
+                        <ul>
+                            <li><a href="../emma/mr-elton.html">Mr. Elton</a> <span class="novel-tag">Emma</span></li>
+                            <li><a href="../northanger-abbey/john-thorpe.html">John Thorpe</a> <span class="novel-tag">Northanger Abbey</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

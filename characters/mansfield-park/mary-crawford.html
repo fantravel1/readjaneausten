@@ -155,6 +155,14 @@
             align-items: center;
         }
         .character-nav a:hover { transform: translateY(-2px); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer {
             background: var(--deep-teal);
             color: white;
@@ -286,13 +294,13 @@
                 <h3 class="section-title">Key Relationships</h3>
                 <ul class="relationships-list">
                     <li>
-                        <strong>Edmund Bertram:</strong> The man she nearly captures. Mary's genuine feelings for Edmund war with her inability to respect his values. She wants him to be different than he is.
+                        <strong><a href="edmund-bertram.html">Edmund Bertram</a>:</strong> The man she nearly captures. Mary's genuine feelings for Edmund war with her inability to respect his values. She wants him to be different than he is.
                     </li>
                     <li>
-                        <strong>Henry Crawford:</strong> Her brother and co-conspirator. Mary and Henry share the same worldly values, though Mary has more capacity for self-reflection about their limitations.
+                        <strong><a href="henry-crawford.html">Henry Crawford</a>:</strong> Her brother and co-conspirator. Mary and Henry share the same worldly values, though Mary has more capacity for self-reflection about their limitations.
                     </li>
                     <li>
-                        <strong>Fanny Price:</strong> Her rival and opposite. Mary is kind to Fanny, perhaps recognizing the goodness she herself lacks. Their contrasting characters illuminate the novel's moral framework.
+                        <strong><a href="fanny-price.html">Fanny Price</a>:</strong> Her rival and opposite. Mary is kind to Fanny, perhaps recognizing the goodness she herself lacks. Their contrasting characters illuminate the novel's moral framework.
                     </li>
                     <li>
                         <strong>Mrs. Grant:</strong> Her half-sister, whose happy marriage Mary struggles to believe in. Mrs. Grant provides Mary with respectability while enabling her flirtations.
@@ -311,6 +319,33 @@
                 <p>Mary's wit is never innocent. Her jokes about admirals and "Rears and Vices" hint at sexual corruption. Her dismissal of the clergy insults Edmund's calling. Her quips about marriage reveal a transactional view of human relationships. Every clever remark carries a moral payload.</p>
                 <p>What makes Mary tragic rather than simply contemptible is her awareness of what she might have been. She recognizes Edmund's goodness even while being unable to value it properly. Her final interview with him, where she argues that Henry and Maria should simply have married, shows not malice but genuine moral blindness—she truly cannot see what she does wrong.</p>
                 <p>Mary Crawford remains one of Austen's most debated characters. Some readers find her more appealing than Fanny; others see her as the novel's true villain. Perhaps she is best understood as a warning: that wit without wisdom, charm without principle, leads only to emptiness.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>The Crawfords</h4>
+                        <ul>
+                            <li><a href="henry-crawford.html">Henry Crawford</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Romantic Interests</h4>
+                        <ul>
+                            <li><a href="edmund-bertram.html">Edmund Bertram</a></li>
+                            <li><a href="fanny-price.html">Fanny Price</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Sophisticated Worldly Women</h4>
+                        <ul>
+                            <li><a href="../pride-and-prejudice/caroline-bingley.html">Caroline Bingley</a> <span class="novel-tag">Pride and Prejudice</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

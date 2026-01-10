@@ -42,6 +42,14 @@
         .quote-block cite { display: block; margin-top: 1rem; color: var(--text-light); font-size: 0.9rem; }
         .character-nav { display: flex; justify-content: space-between; gap: 1rem; padding: 2rem 0; flex-wrap: wrap; }
         .character-nav a { background: white; padding: 1rem 1.5rem; border-radius: 10px; text-decoration: none; color: var(--deep-teal); box-shadow: 0 3px 10px rgba(0,0,0,0.1); min-height: 48px; display: inline-flex; align-items: center; }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .profile-header { flex-direction: column; } }
@@ -104,7 +112,7 @@
         <section class="section">
             <div class="container">
                 <h3 class="section-title">The Marriage Decision</h3>
-                <p>Charlotte's acceptance of Mr. Collins shocks Elizabeth, who cannot understand how her intelligent friend could marry such a ridiculous man. Elizabeth's reaction reveals her own romantic assumptions: she cannot imagine marriage without love and respect.</p>
+                <p>Charlotte's acceptance of <a href="mr-collins.html">Mr. Collins</a> shocks <a href="elizabeth-bennet.html">Elizabeth</a>, who cannot understand how her intelligent friend could marry such a ridiculous man. Elizabeth's reaction reveals her own romantic assumptions: she cannot imagine marriage without love and respect.</p>
                 <p>But Charlotte's reasoning is sound within her circumstances. At twenty-seven, with no beauty, fortune, or prospects, she faces a future of dependency on her family. Mr. Collins offers a comfortable home, respectable status, and—crucially—an establishment of her own. These are not nothing.</p>
                 <p>When Elizabeth visits Hunsford, she sees how Charlotte manages her marriage. Charlotte has arranged the house so that she need not spend much time with her husband; she encourages his gardening and his time at Rosings. It is not a happy marriage, but it is a functional one, and Charlotte is "tolerably composed."</p>
             </div>
@@ -116,6 +124,29 @@
                 <p>Charlotte's choice illuminates the novel's central themes of marriage and economic necessity. Her acceptance of Mr. Collins shows what Elizabeth refuses: a marriage of convenience without love. This makes Elizabeth's eventual acceptance of Darcy more meaningful—she holds out for love and gets it.</p>
                 <p>Yet Austen does not condemn Charlotte. The narration treats her with sympathy, acknowledging that her choice, while not ideal, is reasonable given her options. Charlotte is not a romantic heroine, but she is not a fool either. She has made the best of a limited situation.</p>
                 <p>Charlotte's marriage also highlights the difference between Elizabeth's situation and that of many women. Elizabeth can afford her romantic ideals because she has options—youth, wit, beauty. Charlotte, lacking these advantages, must be practical or risk lifelong dependency.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Key Relationships</h4>
+                        <ul>
+                            <li><a href="mr-collins.html">Mr. Collins</a> <span class="novel-tag">Her husband</span></li>
+                            <li><a href="elizabeth-bennet.html">Elizabeth Bennet</a> <span class="novel-tag">Best friend</span></li>
+                            <li><a href="lady-catherine-de-bourgh.html">Lady Catherine</a> <span class="novel-tag">Neighbor</span></li>
+                            <li><a href="fitzwilliam-darcy.html">Mr. Darcy</a> <span class="novel-tag">Visitor</span></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Similar Pragmatic Characters</h4>
+                        <ul>
+                            <li><a href="../mansfield-park/mary-crawford.html">Mary Crawford</a> <span class="novel-tag">Mansfield Park</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

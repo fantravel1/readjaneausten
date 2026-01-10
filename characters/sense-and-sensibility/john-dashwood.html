@@ -49,6 +49,14 @@
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(156, 175, 136, 0.3); }
         .character-nav a { color: var(--deep-teal); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; background: var(--cream); }
         .character-nav a:hover { background: var(--light-sage); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .quick-facts { grid-template-columns: 1fr 1fr; } }
@@ -167,11 +175,11 @@
                 <h2 class="section-title">Key Relationships</h2>
                 <div class="content-block">
                     <ul class="relationships-list">
-                        <li><span class="relationship-name">Fanny Dashwood:</span> His wife, whose grasping nature dominates their household. John cannot resist her arguments, and she ensures he never tries.</li>
-                        <li><span class="relationship-name">Elinor, Marianne, & Margaret:</span> His half-sisters, whom he fails despite genuine if weak affection. He wishes them well—just not at any cost to himself.</li>
-                        <li><span class="relationship-name">Mrs. Dashwood:</span> His stepmother, whom he barely provides for despite his father's dying wish. She relocates to Barton Cottage rather than endure Fanny's presence.</li>
-                        <li><span class="relationship-name">Edward Ferrars:</span> His brother-in-law, whose attachment to Elinor Fanny fiercely opposes. John accepts his wife's view without question.</li>
-                        <li><span class="relationship-name">Colonel Brandon:</span> A wealthy neighbor whose interest in Marianne John calculates in purely financial terms.</li>
+                        <li><span class="relationship-name"><a href="fanny-dashwood.html">Fanny Dashwood</a>:</span> His wife, whose grasping nature dominates their household. John cannot resist her arguments, and she ensures he never tries.</li>
+                        <li><span class="relationship-name"><a href="elinor-dashwood.html">Elinor</a>, <a href="marianne-dashwood.html">Marianne</a>, & <a href="margaret-dashwood.html">Margaret</a>:</span> His half-sisters, whom he fails despite genuine if weak affection. He wishes them well—just not at any cost to himself.</li>
+                        <li><span class="relationship-name"><a href="mrs-dashwood.html">Mrs. Dashwood</a>:</span> His stepmother, whom he barely provides for despite his father's dying wish. She relocates to Barton Cottage rather than endure Fanny's presence.</li>
+                        <li><span class="relationship-name"><a href="edward-ferrars.html">Edward Ferrars</a>:</span> His brother-in-law, whose attachment to Elinor Fanny fiercely opposes. John accepts his wife's view without question.</li>
+                        <li><span class="relationship-name"><a href="colonel-brandon.html">Colonel Brandon</a>:</span> A wealthy neighbor whose interest in Marianne John calculates in purely financial terms.</li>
                     </ul>
                 </div>
             </div>
@@ -188,6 +196,37 @@
                     <p>Perhaps most significantly, John illustrates self-deception's power. He believes himself generous, affectionate, dutiful—because he maintains the outward forms of these virtues. He visits, he inquires, he expresses concern. That his actions consistently fail his family while enriching himself never penetrates his comfortable self-regard.</p>
 
                     <p>Austen offers no punishment for John Dashwood. He prospers, inherits additional wealth through his wife's family, and never faces consequences for his failures. This is perhaps her most devastating commentary: in a mercenary world, mercenary values succeed.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Half-Sisters</h4>
+                        <ul>
+                            <li><a href="elinor-dashwood.html">Elinor Dashwood</a></li>
+                            <li><a href="marianne-dashwood.html">Marianne Dashwood</a></li>
+                            <li><a href="margaret-dashwood.html">Margaret Dashwood</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Immediate Family</h4>
+                        <ul>
+                            <li><a href="fanny-dashwood.html">Fanny Dashwood</a></li>
+                            <li><a href="mrs-dashwood.html">Mrs. Dashwood</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Extended Family</h4>
+                        <ul>
+                            <li><a href="edward-ferrars.html">Edward Ferrars</a></li>
+                            <li><a href="mrs-ferrars.html">Mrs. Ferrars</a></li>
+                            <li><a href="robert-ferrars.html">Robert Ferrars</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>

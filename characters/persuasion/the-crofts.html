@@ -49,6 +49,14 @@
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(156, 175, 136, 0.3); }
         .character-nav a { color: var(--deep-teal); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; background: var(--cream); }
         .character-nav a:hover { background: var(--light-sage); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .quick-facts { grid-template-columns: 1fr 1fr; } }
@@ -167,10 +175,10 @@
                 <h2 class="section-title">Key Relationships</h2>
                 <div class="content-block">
                     <ul class="relationships-list">
-                        <li><span class="relationship-name">Captain Wentworth:</span> Mrs. Croft's brother, whose romantic situation she watches with sisterly concern. She facilitates his eventual reunion with Anne.</li>
-                        <li><span class="relationship-name">Anne Elliot:</span> Whom they come to know and respect as a neighbor in Bath. Mrs. Croft's practical kindness contrasts with the Elliots' cold formality.</li>
-                        <li><span class="relationship-name">Sir Walter Elliot:</span> Their landlord, whose pretensions they find amusing. The Admiral's unfazed response to Sir Walter's snobbery is quietly devastating.</li>
-                        <li><span class="relationship-name">The Naval Community:</span> They move comfortably among the Harvilles, Benwicks, and other naval families, part of a meritocratic world the Elliots cannot understand.</li>
+                        <li><span class="relationship-name"><a href="captain-wentworth.html">Captain Wentworth</a>:</span> Mrs. Croft's brother, whose romantic situation she watches with sisterly concern. She facilitates his eventual reunion with Anne.</li>
+                        <li><span class="relationship-name"><a href="anne-elliot.html">Anne Elliot</a>:</span> Whom they come to know and respect as a neighbor in Bath. Mrs. Croft's practical kindness contrasts with the Elliots' cold formality.</li>
+                        <li><span class="relationship-name"><a href="sir-walter-elliot.html">Sir Walter Elliot</a>:</span> Their landlord, whose pretensions they find amusing. The Admiral's unfazed response to Sir Walter's snobbery is quietly devastating.</li>
+                        <li><span class="relationship-name">The Naval Community:</span> They move comfortably among the <a href="captain-harville.html">Harvilles</a>, <a href="captain-benwick.html">Benwicks</a>, and other naval families, part of a meritocratic world the Elliots cannot understand.</li>
                     </ul>
                 </div>
             </div>
@@ -187,6 +195,36 @@
                     <p>Their occupation of Kellynch Hall carries symbolic weight. The naval officers who saved England from Napoleon now inhabit the ancestral home of a baronet who has contributed nothing but debts. The transfer of property mirrors a transfer of moral authority—from an exhausted aristocracy to a vital meritocracy that has earned its place through service.</p>
 
                     <p>Finally, the Crofts show that happiness in marriage requires neither great fortune nor elevated rank. Their contentment comes from companionship, shared purpose, and mutual regard. In a novel that scrutinizes the sources of lasting happiness, they provide one of its clearest answers.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h2 class="section-title">Related Characters</h2>
+                <div class="content-block">
+                    <div class="related-grid">
+                        <div class="related-group">
+                            <h4>Family</h4>
+                            <ul>
+                                <li><a href="captain-wentworth.html">Captain Wentworth</a> <span class="novel-tag">brother</span></li>
+                            </ul>
+                        </div>
+                        <div class="related-group">
+                            <h4>Naval Circle</h4>
+                            <ul>
+                                <li><a href="captain-harville.html">Captain Harville</a> <span class="novel-tag">fellow officers</span></li>
+                                <li><a href="captain-benwick.html">Captain Benwick</a> <span class="novel-tag">fellow officers</span></li>
+                            </ul>
+                        </div>
+                        <div class="related-group">
+                            <h4>Connections</h4>
+                            <ul>
+                                <li><a href="anne-elliot.html">Anne Elliot</a> <span class="novel-tag">friend</span></li>
+                                <li><a href="sir-walter-elliot.html">Sir Walter Elliot</a> <span class="novel-tag">landlord</span></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -49,6 +49,14 @@
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; margin-top: 2rem; border-top: 1px solid rgba(156, 175, 136, 0.3); }
         .character-nav a { color: var(--deep-teal); text-decoration: none; padding: 0.5rem 1rem; border-radius: 8px; background: var(--cream); }
         .character-nav a:hover { background: var(--light-sage); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .quick-facts { grid-template-columns: 1fr 1fr; } }
@@ -162,11 +170,11 @@
                 <h2 class="section-title">Key Relationships</h2>
                 <div class="content-block">
                     <ul class="relationships-list">
-                        <li><span class="relationship-name">Isabella Thorpe:</span> His sister, with whom he shares mercenary values and manipulative tendencies. They operate as a team, pursuing the Morland siblings for their supposed wealth.</li>
-                        <li><span class="relationship-name">James Morland:</span> His Oxford friend, whom he cultivates primarily to gain access to Catherine. Their friendship serves Thorpe's schemes rather than genuine affection.</li>
-                        <li><span class="relationship-name">Catherine Morland:</span> His object of pursuit, whom he believes to be a wealthy heiress. His persistent, unwanted attentions constitute a form of harassment.</li>
-                        <li><span class="relationship-name">General Tilney:</span> The recipient of his lies about Catherine's fortune. Their brief acquaintance has outsized consequences for the plot.</li>
-                        <li><span class="relationship-name">Henry Tilney:</span> A rival for Catherine's attention. Thorpe's boorishness contrasts sharply with Henry's wit and genuine kindness.</li>
+                        <li><span class="relationship-name"><a href="isabella-thorpe.html">Isabella Thorpe</a>:</span> His sister, with whom he shares mercenary values and manipulative tendencies. They operate as a team, pursuing the Morland siblings for their supposed wealth.</li>
+                        <li><span class="relationship-name"><a href="james-morland.html">James Morland</a>:</span> His Oxford friend, whom he cultivates primarily to gain access to Catherine. Their friendship serves Thorpe's schemes rather than genuine affection.</li>
+                        <li><span class="relationship-name"><a href="catherine-morland.html">Catherine Morland</a>:</span> His object of pursuit, whom he believes to be a wealthy heiress. His persistent, unwanted attentions constitute a form of harassment.</li>
+                        <li><span class="relationship-name"><a href="general-tilney.html">General Tilney</a>:</span> The recipient of his lies about Catherine's fortune. Their brief acquaintance has outsized consequences for the plot.</li>
+                        <li><span class="relationship-name"><a href="henry-tilney.html">Henry Tilney</a>:</span> A rival for Catherine's attention. Thorpe's boorishness contrasts sharply with Henry's wit and genuine kindness.</li>
                     </ul>
                 </div>
             </div>
@@ -181,6 +189,33 @@
                     <p>As a contrast to Henry Tilney, Thorpe illuminates what makes Henry admirable. Where Thorpe talks constantly about himself, Henry shows genuine interest in others. Where Thorpe lies reflexively, Henry speaks with playful but fundamental honesty. Where Thorpe dismisses novels as trash, Henry defends them with wit and intelligence. The comparison shows Catherine's good judgment in preferring Henry, despite her youth and inexperience.</p>
 
                     <p>Thorpe also represents the real dangers facing young women in Austen's world—not Gothic villains but ordinary opportunists willing to deceive and manipulate for financial gain. His aggressive pursuit of Catherine, his lies about her engagements, and his interference in her relationships constitute genuine threats to her happiness and reputation. The everyday villain, Austen suggests, may be more dangerous than the Gothic variety.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h2 class="section-title">Related Characters</h2>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Thorpe Siblings</h4>
+                        <ul>
+                            <li><a href="isabella-thorpe.html">Isabella Thorpe</a> - His scheming sister</li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Annoying Suitors</h4>
+                        <ul>
+                            <li><a href="../pride-and-prejudice/mr-collins.html">Mr. Collins</a> <span class="novel-tag">Pride and Prejudice</span></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>His Victims</h4>
+                        <ul>
+                            <li><a href="catherine-morland.html">Catherine Morland</a> - His unwanted target</li>
+                            <li><a href="james-morland.html">James Morland</a> - His exploited friend</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
