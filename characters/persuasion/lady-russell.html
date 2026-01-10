@@ -155,6 +155,14 @@
             align-items: center;
         }
         .character-nav a:hover { transform: translateY(-2px); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer {
             background: var(--deep-teal);
             color: white;
@@ -285,16 +293,16 @@
                 <h3 class="section-title">Key Relationships</h3>
                 <ul class="relationships-list">
                     <li>
-                        <strong>Anne Elliot:</strong> Her goddaughter and the child of her dearest friend. Lady Russell's love for Anne is real, but her advice has been harmful. She must eventually accept Anne's marriage to the man she once rejected.
+                        <strong><a href="anne-elliot.html">Anne Elliot</a>:</strong> Her goddaughter and the child of her dearest friend. Lady Russell's love for Anne is real, but her advice has been harmful. She must eventually accept Anne's marriage to the man she once rejected.
                     </li>
                     <li>
-                        <strong>Captain Wentworth:</strong> The man she persuaded Anne to refuse. Lady Russell never liked him—his confidence seemed like arrogance, his prospects like recklessness. She must learn to see him differently.
+                        <strong><a href="captain-wentworth.html">Captain Wentworth</a>:</strong> The man she persuaded Anne to refuse. Lady Russell never liked him—his confidence seemed like arrogance, his prospects like recklessness. She must learn to see him differently.
                     </li>
                     <li>
-                        <strong>Sir Walter Elliot:</strong> Her neighbor and Anne's father. Lady Russell manages Sir Walter's affairs with patient practicality, seeing clearly his faults while maintaining necessary relations.
+                        <strong><a href="sir-walter-elliot.html">Sir Walter Elliot</a>:</strong> Her neighbor and Anne's father. Lady Russell manages Sir Walter's affairs with patient practicality, seeing clearly his faults while maintaining necessary relations.
                     </li>
                     <li>
-                        <strong>William Elliot:</strong> Anne's cousin, whom Lady Russell initially approves. Her enthusiasm for William Elliot—based on his manners and rank—shows her susceptibility to surface charm.
+                        <strong><a href="william-elliot.html">William Elliot</a>:</strong> Anne's cousin, whom Lady Russell initially approves. Her enthusiasm for William Elliot—based on his manners and rank—shows her susceptibility to surface charm.
                     </li>
                     <li>
                         <strong>Lady Elliot (deceased):</strong> Her dearest friend and Anne's mother. Lady Russell's devotion to Anne stems from her love for Lady Elliot, whose sensible qualities Anne inherited.
@@ -310,6 +318,35 @@
                 <p>This acceptance is not easy. Lady Russell had believed herself wise, believed her advice sound. To admit error is to admit that her cherished values—prudence, rank, security—led her astray. She must recognize that Anne's constancy, which looked like mere stubbornness, was in fact superior judgment.</p>
                 <p>The novel grants Lady Russell this grace: she loves Anne enough to be happy in Anne's happiness, even when that happiness proves her wrong. She will learn to respect Wentworth because Anne loves him, even if she never quite understands what Anne sees in him. Her prejudices remain, but her love is stronger.</p>
                 <p>Lady Russell thus embodies Austen's nuanced view of human limitation. Good people can give bad advice. Love can mislead as easily as indifference. The proper response to error is not self-flagellation but acceptance—recognizing one's mistakes while continuing to love and be loved despite them.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Elliot Family</h4>
+                        <ul>
+                            <li><a href="anne-elliot.html">Anne Elliot</a> <span class="novel-tag">goddaughter</span></li>
+                            <li><a href="sir-walter-elliot.html">Sir Walter Elliot</a> <span class="novel-tag">neighbor</span></li>
+                            <li><a href="elizabeth-elliot.html">Elizabeth Elliot</a> <span class="novel-tag">Anne's sister</span></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Influences</h4>
+                        <ul>
+                            <li><a href="captain-wentworth.html">Captain Wentworth</a> <span class="novel-tag">opposed</span></li>
+                            <li><a href="william-elliot.html">William Elliot</a> <span class="novel-tag">approved</span></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Similar Advisors</h4>
+                        <ul>
+                            <li><a href="../pride-and-prejudice/charlotte-lucas.html">Charlotte Lucas</a> <span class="novel-tag">Pride and Prejudice</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

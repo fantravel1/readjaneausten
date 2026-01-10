@@ -155,6 +155,14 @@
             align-items: center;
         }
         .character-nav a:hover { transform: translateY(-2px); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer {
             background: var(--deep-teal);
             color: white;
@@ -286,16 +294,16 @@
                 <h3 class="section-title">Key Relationships</h3>
                 <ul class="relationships-list">
                     <li>
-                        <strong>Catherine Morland:</strong> His future wife. Henry's affection for Catherine develops from her open admiration into genuine love. He educates her gently and values her good heart above sophistication.
+                        <strong><a href="catherine-morland.html">Catherine Morland</a>:</strong> His future wife. Henry's affection for Catherine develops from her open admiration into genuine love. He educates her gently and values her good heart above sophistication.
                     </li>
                     <li>
-                        <strong>Eleanor Tilney:</strong> His beloved sister, with whom he shares wit and affection. Their easy camaraderie shows Henry at his most natural, and Eleanor's friendship with Catherine pleases him.
+                        <strong><a href="eleanor-tilney.html">Eleanor Tilney</a>:</strong> His beloved sister, with whom he shares wit and affection. Their easy camaraderie shows Henry at his most natural, and Eleanor's friendship with Catherine pleases him.
                     </li>
                     <li>
-                        <strong>General Tilney:</strong> His tyrannical father, whose mercenary values Henry does not share. Henry's willingness to defy General Tilney for Catherine shows the steel beneath his playful exterior.
+                        <strong><a href="general-tilney.html">General Tilney</a>:</strong> His tyrannical father, whose mercenary values Henry does not share. Henry's willingness to defy General Tilney for Catherine shows the steel beneath his playful exterior.
                     </li>
                     <li>
-                        <strong>Frederick Tilney:</strong> His older brother, whose pursuit of Isabella Thorpe Henry observes without intervening. Frederick's behavior troubles Henry without surprising him.
+                        <strong><a href="captain-tilney.html">Captain Tilney</a>:</strong> His older brother, whose pursuit of Isabella Thorpe Henry observes without intervening. Frederick's behavior troubles Henry without surprising him.
                     </li>
                 </ul>
             </div>
@@ -308,6 +316,29 @@
                 <p>His voice carries much of the novel's literary criticism. When he discusses novels, describes landscapes, or exposes Gothic conventions, Austen speaks through him. His famous lecture on the picturesque—pointing out to Catherine what she should admire in a view—parodies literary conventions while educating readers along with the heroine.</p>
                 <p>Some critics find Henry too perfect, too much a mouthpiece for authorial views. Others see him as Austen's ideal companion: someone who shares her wit, her love of reading, her ability to laugh at the world without becoming cynical. His marriage to Catherine suggests that education and affection, properly combined, create the happiest partnerships.</p>
                 <p>Henry Tilney remains Austen's most purely delightful hero—the one we might most enjoy having dinner with, the one whose conversation would never flag. If Darcy commands and Knightley instructs, Henry amuses. In a world full of General Tilneys and John Thorpes, his good-humored wisdom is its own form of heroism.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Tilney Family</h4>
+                        <ul>
+                            <li><a href="catherine-morland.html">Catherine Morland</a> - His beloved future wife</li>
+                            <li><a href="eleanor-tilney.html">Eleanor Tilney</a> - His cherished sister</li>
+                            <li><a href="general-tilney.html">General Tilney</a> - His tyrannical father</li>
+                            <li><a href="captain-tilney.html">Captain Tilney</a> - His careless older brother</li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Witty Heroes</h4>
+                        <ul>
+                            <li><a href="../pride-and-prejudice/fitzwilliam-darcy.html">Fitzwilliam Darcy</a> <span class="novel-tag">Pride and Prejudice</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

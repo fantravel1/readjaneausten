@@ -155,6 +155,14 @@
             align-items: center;
         }
         .character-nav a:hover { transform: translateY(-2px); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer {
             background: var(--deep-teal);
             color: white;
@@ -285,19 +293,19 @@
                 <h3 class="section-title">Key Relationships</h3>
                 <ul class="relationships-list">
                     <li>
-                        <strong>Anne Elliot:</strong> His neglected middle daughter, whose worth he cannot perceive. Anne's lack of beauty and low spirits make her invisible to a father who values only appearances.
+                        <strong><a href="anne-elliot.html">Anne Elliot</a>:</strong> His neglected middle daughter, whose worth he cannot perceive. Anne's lack of beauty and low spirits make her invisible to a father who values only appearances.
                     </li>
                     <li>
-                        <strong>Elizabeth Elliot:</strong> His favorite daughter, who shares his vanity and flatters his consequence. Their relationship is mutually shallow but mutually satisfying.
+                        <strong><a href="elizabeth-elliot.html">Elizabeth Elliot</a>:</strong> His favorite daughter, who shares his vanity and flatters his consequence. Their relationship is mutually shallow but mutually satisfying.
                     </li>
                     <li>
-                        <strong>William Elliot:</strong> His heir, whose renewed attentions gratify his vanity. Sir Walter is easily deceived by William Elliot's smooth flattery.
+                        <strong><a href="william-elliot.html">William Elliot</a>:</strong> His heir, whose renewed attentions gratify his vanity. Sir Walter is easily deceived by William Elliot's smooth flattery.
                     </li>
                     <li>
                         <strong>Mrs. Clay:</strong> Elizabeth's companion, whose designs on Sir Walter everyone sees but himself. His susceptibility to flattery makes him easy prey.
                     </li>
                     <li>
-                        <strong>Admiral Croft:</strong> His tenant at Kellynch Hall, whom Sir Walter despises for his weathered complexion and lack of rank, yet must tolerate for financial reasons.
+                        <strong><a href="the-crofts.html">Admiral Croft</a>:</strong> His tenant at Kellynch Hall, whom Sir Walter despises for his weathered complexion and lack of rank, yet must tolerate for financial reasons.
                     </li>
                 </ul>
             </div>
@@ -310,6 +318,36 @@
                 <p>Yet beneath the comedy lies serious critique. Sir Walter represents the worst of the aristocratic class: its empty pride, its contempt for merit, its worship of birth over worth. In a novel that celebrates the self-made naval officers, Sir Walter embodies everything the navy's meritocracy opposes.</p>
                 <p>His treatment of Anne particularly indicts his values. Here is a daughter of genuine intelligence and feeling, and her father cannot see her at all. His blindness to Anne's worth measures the extent of his moral bankruptcy. He is not cruel so much as simply empty—there is nothing inside him but vanity.</p>
                 <p>Sir Walter remains unchanged at the novel's end. He does not learn, does not grow, does not even recognize that anything has happened. Anne's happiness with Wentworth means nothing to him except that her husband is now wealthy enough to be acknowledged. His shallowness is impervious to experience, immune to wisdom. He will die as he lived: reading his own name in the Baronetage.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Elliot Family</h4>
+                        <ul>
+                            <li><a href="anne-elliot.html">Anne Elliot</a> <span class="novel-tag">middle daughter</span></li>
+                            <li><a href="elizabeth-elliot.html">Elizabeth Elliot</a> <span class="novel-tag">eldest daughter</span></li>
+                            <li><a href="mary-musgrove.html">Mary Musgrove</a> <span class="novel-tag">youngest daughter</span></li>
+                            <li><a href="william-elliot.html">William Elliot</a> <span class="novel-tag">heir</span></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Advisors & Tenants</h4>
+                        <ul>
+                            <li><a href="lady-russell.html">Lady Russell</a> <span class="novel-tag">neighbor</span></li>
+                            <li><a href="the-crofts.html">The Crofts</a> <span class="novel-tag">tenants</span></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Similar Fathers</h4>
+                        <ul>
+                            <li><a href="../pride-and-prejudice/mr-bennet.html">Mr. Bennet</a> <span class="novel-tag">Pride and Prejudice</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

@@ -155,6 +155,14 @@
             align-items: center;
         }
         .character-nav a:hover { transform: translateY(-2px); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer {
             background: var(--deep-teal);
             color: white;
@@ -286,19 +294,19 @@
                 <h3 class="section-title">Key Relationships</h3>
                 <ul class="relationships-list">
                     <li>
-                        <strong>Fanny Price:</strong> The woman he truly loves but cannot win. Fanny sees through his charm to his essential instability. Her refusal is vindicated by his final betrayal.
+                        <strong><a href="fanny-price.html">Fanny Price</a>:</strong> The woman he truly loves but cannot win. Fanny sees through his charm to his essential instability. Her refusal is vindicated by his final betrayal.
                     </li>
                     <li>
-                        <strong>Maria Bertram/Rushworth:</strong> His casual flirtation becomes criminal affair. Henry's willingness to pursue a married woman reveals his fundamental selfishness.
+                        <strong><a href="maria-bertram.html">Maria Bertram</a>/<a href="mr-rushworth.html">Rushworth</a>:</strong> His casual flirtation becomes criminal affair. Henry's willingness to pursue a married woman reveals his fundamental selfishness.
                     </li>
                     <li>
-                        <strong>Julia Bertram:</strong> The sister he abandoned when Maria proved more responsive. Julia's resentment contributes to the family's eventual collapse.
+                        <strong><a href="julia-bertram.html">Julia Bertram</a>:</strong> The sister he abandoned when Maria proved more responsive. Julia's resentment contributes to the family's eventual collapse.
                     </li>
                     <li>
-                        <strong>Mary Crawford:</strong> His sister and confidante. Mary enables Henry's behavior while understanding its dangers. They share the same moral education and its limitations.
+                        <strong><a href="mary-crawford.html">Mary Crawford</a>:</strong> His sister and confidante. Mary enables Henry's behavior while understanding its dangers. They share the same moral education and its limitations.
                     </li>
                     <li>
-                        <strong>Edmund Bertram:</strong> The man whose opinion of him matters through Fanny. Henry's reading of Shakespeare impresses Edmund, but Edmund ultimately sees his true character.
+                        <strong><a href="edmund-bertram.html">Edmund Bertram</a>:</strong> The man whose opinion of him matters through Fanny. Henry's reading of Shakespeare impresses Edmund, but Edmund ultimately sees his true character.
                     </li>
                 </ul>
             </div>
@@ -311,6 +319,35 @@
                 <p>Yet Austen ultimately says no. The narrator's suggestion that constancy might eventually have won Fanny comes with a crucial qualifier: "within a reasonable period." Henry cannot wait; he cannot sustain. When Fanny is not present to inspire him, he reverts to his true nature.</p>
                 <p>This verdict may seem harsh, but Austen insists on it. Character, she suggests, is not easily changed. The habits of a lifetime—Henry's need for conquest, his inability to find satisfaction in what he has—prove stronger than genuine feeling. Love without constancy is insufficient.</p>
                 <p>Henry Crawford thus serves as a warning against the seductions of charm. Everything about him appeals—his wit, his energy, his apparent devotion. But beneath the performance lies emptiness, and those who trust him pay the price.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>The Crawfords</h4>
+                        <ul>
+                            <li><a href="mary-crawford.html">Mary Crawford</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Romantic Interests</h4>
+                        <ul>
+                            <li><a href="fanny-price.html">Fanny Price</a></li>
+                            <li><a href="maria-bertram.html">Maria Bertram</a></li>
+                            <li><a href="julia-bertram.html">Julia Bertram</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Charming Rakes</h4>
+                        <ul>
+                            <li><a href="../pride-and-prejudice/george-wickham.html">George Wickham</a> <span class="novel-tag">Pride and Prejudice</span></li>
+                            <li><a href="../sense-and-sensibility/john-willoughby.html">John Willoughby</a> <span class="novel-tag">Sense and Sensibility</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

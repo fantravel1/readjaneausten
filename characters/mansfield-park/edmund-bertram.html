@@ -155,6 +155,14 @@
             align-items: center;
         }
         .character-nav a:hover { transform: translateY(-2px); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer {
             background: var(--deep-teal);
             color: white;
@@ -286,19 +294,19 @@
                 <h3 class="section-title">Key Relationships</h3>
                 <ul class="relationships-list">
                     <li>
-                        <strong>Fanny Price:</strong> His cousin and eventual wife. Edmund's kindness creates their bond, but he long remains blind to her romantic feelings. Only after losing Mary does he recognize that Fanny was always his true match.
+                        <strong><a href="fanny-price.html">Fanny Price</a>:</strong> His cousin and eventual wife. Edmund's kindness creates their bond, but he long remains blind to her romantic feelings. Only after losing <a href="mary-crawford.html">Mary</a> does he recognize that Fanny was always his true match.
                     </li>
                     <li>
-                        <strong>Mary Crawford:</strong> The woman who tests his principles. Edmund's infatuation with Mary shows both his susceptibility to charm and his capacity for self-deception. Her final revelation frees him from his blindness.
+                        <strong><a href="mary-crawford.html">Mary Crawford</a>:</strong> The woman who tests his principles. Edmund's infatuation with Mary shows both his susceptibility to charm and his capacity for self-deception. Her final revelation frees him from his blindness.
                     </li>
                     <li>
-                        <strong>Sir Thomas Bertram:</strong> His father, whose authority Edmund respects but whose parenting failures he comes to understand. Edmund inherits his father's moral seriousness without his coldness.
+                        <strong><a href="sir-thomas-bertram.html">Sir Thomas Bertram</a>:</strong> His father, whose authority Edmund respects but whose parenting failures he comes to understand. Edmund inherits his father's moral seriousness without his coldness.
                     </li>
                     <li>
-                        <strong>Tom Bertram:</strong> His older brother, whose extravagance reduces Edmund's future income. Unlike Tom, Edmund takes responsibility seriously and cannot understand his brother's careless ways.
+                        <strong><a href="tom-bertram.html">Tom Bertram</a>:</strong> His older brother, whose extravagance reduces Edmund's future income. Unlike Tom, Edmund takes responsibility seriously and cannot understand his brother's careless ways.
                     </li>
                     <li>
-                        <strong>Mrs. Norris:</strong> His aunt, whose treatment of Fanny he fails to check adequately. Edmund's blindness extends to not fully recognizing how Mrs. Norris persecutes his future wife.
+                        <strong><a href="mrs-norris.html">Mrs. Norris</a>:</strong> His aunt, whose treatment of <a href="fanny-price.html">Fanny</a> he fails to check adequately. Edmund's blindness extends to not fully recognizing how Mrs. Norris persecutes his future wife.
                     </li>
                 </ul>
             </div>
@@ -310,6 +318,38 @@
                 <p>Edmund Bertram is often considered Austen's least romantic hero. He lacks Darcy's commanding presence, Knightley's authority, and even Edward Ferrars' tortured devotion. Yet he may be Austen's most realistic portrayal of a good man's limitations.</p>
                 <p>His gradual recognition of Fanny's worth—"loving, guiding, protecting her, as he had been doing ever since her being ten years old"—suggests that the best relationships sometimes grow from friendship rather than passion. Their marriage represents not a dramatic transformation but a natural fulfillment.</p>
                 <p>Edmund's most significant quality may be his capacity for being influenced for good. Mary Crawford might have corrupted him; Fanny Price refines him. His story suggests that choosing the right partner is as much about moral compatibility as romantic attraction.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Bertram Family</h4>
+                        <ul>
+                            <li><a href="sir-thomas-bertram.html">Sir Thomas Bertram</a></li>
+                            <li><a href="lady-bertram.html">Lady Bertram</a></li>
+                            <li><a href="tom-bertram.html">Tom Bertram</a></li>
+                            <li><a href="maria-bertram.html">Maria Bertram</a></li>
+                            <li><a href="julia-bertram.html">Julia Bertram</a></li>
+                            <li><a href="fanny-price.html">Fanny Price</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>The Crawfords</h4>
+                        <ul>
+                            <li><a href="henry-crawford.html">Henry Crawford</a></li>
+                            <li><a href="mary-crawford.html">Mary Crawford</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Similar Heroes</h4>
+                        <ul>
+                            <li><a href="../sense-and-sensibility/edward-ferrars.html">Edward Ferrars</a> <span class="novel-tag">Sense and Sensibility</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

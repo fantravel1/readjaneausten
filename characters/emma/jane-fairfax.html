@@ -28,6 +28,14 @@
         .section p { margin-bottom: 1.2rem; font-size: 1.05rem; line-height: 1.8; }
         .character-nav { display: flex; justify-content: space-between; padding: 2rem 0; gap: 1rem; flex-wrap: wrap; }
         .character-nav a { background: white; padding: 1rem 1.5rem; border-radius: 10px; text-decoration: none; color: var(--deep-teal); box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
     </style>
@@ -60,6 +68,28 @@
                 <p>Jane's situation is far more difficult than it appears. Secretly engaged to a man she cannot acknowledge, she must watch him flirt with another woman while maintaining her composure. The strain nearly breaks her.</p>
                 <p>Her plan to become a governess—which she compares to the slave trade—represents genuine desperation. Without Frank, she faces a life of dependent drudgery. The engagement is risky but offers her only escape from a dismal future.</p>
                 <p>When the engagement is revealed, Jane emerges as a figure of sympathy rather than coldness. Her reserve was self-protection; her accomplishments, hard-won preparation for independence. She deserves better than Frank Churchill, though the novel grants her happiness with him.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 style="font-size: 1.8rem; color: var(--burgundy); text-align: center; margin-bottom: 1rem;">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Highbury Society</h4>
+                        <ul>
+                            <li><a href="frank-churchill.html">Frank Churchill</a></li>
+                            <li><a href="miss-bates.html">Miss Bates</a></li>
+                            <li><a href="emma-woodhouse.html">Emma Woodhouse</a></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Reserved Heroines</h4>
+                        <ul>
+                            <li><a href="../mansfield-park/fanny-price.html">Fanny Price</a> <span class="novel-tag">Mansfield Park</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

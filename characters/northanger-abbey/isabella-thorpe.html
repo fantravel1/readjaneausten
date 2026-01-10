@@ -155,6 +155,14 @@
             align-items: center;
         }
         .character-nav a:hover { transform: translateY(-2px); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer {
             background: var(--deep-teal);
             color: white;
@@ -286,16 +294,16 @@
                 <h3 class="section-title">Key Relationships</h3>
                 <ul class="relationships-list">
                     <li>
-                        <strong>Catherine Morland:</strong> Her credulous victim. Isabella's friendship with Catherine is entirely mercenary—a means to James. Yet Catherine's eventual disillusionment represents genuine growth.
+                        <strong><a href="catherine-morland.html">Catherine Morland</a>:</strong> Her credulous victim. Isabella's friendship with Catherine is entirely mercenary—a means to James. Yet Catherine's eventual disillusionment represents genuine growth.
                     </li>
                     <li>
-                        <strong>James Morland:</strong> Her discarded fiancé. Isabella accepts James believing him wealthy, cools when learning he is not, and abandons him for Captain Tilney without remorse.
+                        <strong><a href="james-morland.html">James Morland</a>:</strong> Her discarded fiancé. Isabella accepts James believing him wealthy, cools when learning he is not, and abandons him for Captain Tilney without remorse.
                     </li>
                     <li>
-                        <strong>Captain Tilney:</strong> Her failed conquest. Isabella's flirtation with Frederick Tilney destroys her engagement to James but yields nothing—he never intended to marry her.
+                        <strong><a href="captain-tilney.html">Captain Tilney</a>:</strong> Her failed conquest. Isabella's flirtation with Frederick Tilney destroys her engagement to James but yields nothing—he never intended to marry her.
                     </li>
                     <li>
-                        <strong>John Thorpe:</strong> Her boorish brother, whose lies about Catherine's wealth initially draw Isabella to the friendship. The Thorpes share mercenary values.
+                        <strong><a href="john-thorpe.html">John Thorpe</a>:</strong> Her boorish brother, whose lies about Catherine's wealth initially draw Isabella to the friendship. The Thorpes share mercenary values.
                     </li>
                 </ul>
             </div>
@@ -308,6 +316,35 @@
                 <p>Her constant protestations of disinterest reveal interest: "I assure you I have not the smallest opinion of men in general" means she thinks of little else. Her declarations of indifference to money come while calculating every man's fortune. She says the opposite of what she means so consistently that reading her becomes easy.</p>
                 <p>This linguistic falseness educates readers in Austen's own values. Where Isabella's language is excessive and performed, genuine characters speak with restraint. Eleanor Tilney's quiet friendship contrasts with Isabella's effusions; Henry's wit reveals rather than conceals.</p>
                 <p>Isabella Thorpe thus serves a crucial function in Northanger Abbey: she teaches both Catherine and readers how to distinguish truth from performance, genuine feeling from its counterfeit. Her exposure is the novel's moral education, preparing Catherine for the subtler deceptions she will encounter.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Thorpe Siblings</h4>
+                        <ul>
+                            <li><a href="john-thorpe.html">John Thorpe</a> - Her equally mercenary brother</li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Scheming Women</h4>
+                        <ul>
+                            <li><a href="../sense-and-sensibility/lucy-steele.html">Lucy Steele</a> <span class="novel-tag">Sense and Sensibility</span></li>
+                            <li><a href="../mansfield-park/mary-crawford.html">Mary Crawford</a> <span class="novel-tag">Mansfield Park</span></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Victims of Her Schemes</h4>
+                        <ul>
+                            <li><a href="catherine-morland.html">Catherine Morland</a> - Her false friend</li>
+                            <li><a href="james-morland.html">James Morland</a> - Her jilted fiance</li>
+                            <li><a href="captain-tilney.html">Captain Tilney</a> - Her failed conquest</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

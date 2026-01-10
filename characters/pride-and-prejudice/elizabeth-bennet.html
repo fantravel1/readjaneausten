@@ -173,6 +173,14 @@
             align-items: center;
         }
         .character-nav a:hover { transform: translateY(-2px); }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer {
             background: var(--deep-teal);
             color: white;
@@ -304,19 +312,19 @@
                 <h3 class="section-title">Key Relationships</h3>
                 <ul class="relationships-list">
                     <li>
-                        <strong>Mr. Darcy:</strong> Their relationship evolves from mutual antagonism to deep love. Elizabeth challenges Darcy to confront his pride, while he teaches her about her own prejudices. Their intellectual equality and moral growth make them Austen's most celebrated couple.
+                        <strong><a href="fitzwilliam-darcy.html">Mr. Darcy</a>:</strong> Their relationship evolves from mutual antagonism to deep love. Elizabeth challenges Darcy to confront his pride, while he teaches her about her own prejudices. Their intellectual equality and moral growth make them Austen's most celebrated couple.
                     </li>
                     <li>
-                        <strong>Jane Bennet:</strong> Elizabeth's closest confidante and the sister she most resembles in character. Elizabeth's protectiveness of Jane drives much of her initial dislike of Darcy and Bingley's sisters.
+                        <strong><a href="jane-bennet.html">Jane Bennet</a>:</strong> Elizabeth's closest confidante and the sister she most resembles in character. Elizabeth's protectiveness of Jane drives much of her initial dislike of Darcy and Bingley's sisters.
                     </li>
                     <li>
-                        <strong>Mr. Bennet:</strong> Elizabeth is her father's favorite, sharing his wit and love of the ridiculous. However, she grows to see his detachment and failure to properly guide the family as harmful.
+                        <strong><a href="mr-bennet.html">Mr. Bennet</a>:</strong> Elizabeth is her father's favorite, sharing his wit and love of the ridiculous. However, she grows to see his detachment and failure to properly guide the family as harmful.
                     </li>
                     <li>
-                        <strong>Charlotte Lucas:</strong> Elizabeth's pragmatic friend whose marriage to Mr. Collins challenges Elizabeth's romantic ideals about marriage and highlights the limited choices available to women.
+                        <strong><a href="charlotte-lucas.html">Charlotte Lucas</a>:</strong> Elizabeth's pragmatic friend whose marriage to <a href="mr-collins.html">Mr. Collins</a> challenges Elizabeth's romantic ideals about marriage and highlights the limited choices available to women.
                     </li>
                     <li>
-                        <strong>Mr. Wickham:</strong> His charm initially deceives Elizabeth, and her trust in him exemplifies her susceptibility to first impressions. His true nature reveals her capacity for misjudgment.
+                        <strong><a href="george-wickham.html">Mr. Wickham</a>:</strong> His charm initially deceives Elizabeth, and her trust in him exemplifies her susceptibility to first impressions. His true nature reveals her capacity for misjudgment.
                     </li>
                 </ul>
             </div>
@@ -328,6 +336,43 @@
                 <p>Elizabeth Bennet remains literature's most beloved heroine because she feels startlingly modern despite her Regency setting. Her refusal to settle, her intellectual confidence, her wit, and her capacity for growth resonate with readers across generations and cultures.</p>
                 <p>Austen herself called Elizabeth "as delightful a creature as ever appeared in print." Unlike the passive heroines common in novels of the period, Elizabeth is active, opinionated, and willing to challenge authority. She speaks her mind to everyone from Lady Catherine to Darcy himself.</p>
                 <p>Most importantly, Elizabeth is flawed in realistic, relatable ways. Her pride in her own judgment and her prejudice against Darcy are mistakes any reader might make. Her journey toward self-knowledge offers hope that we too can recognize our biases and become better people.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>The Bennet Family</h4>
+                        <ul>
+                            <li><a href="jane-bennet.html">Jane Bennet</a> — Eldest sister</li>
+                            <li><a href="mary-bennet.html">Mary Bennet</a> — Middle sister</li>
+                            <li><a href="kitty-bennet.html">Kitty Bennet</a> — Fourth sister</li>
+                            <li><a href="lydia-bennet.html">Lydia Bennet</a> — Youngest sister</li>
+                            <li><a href="mr-bennet.html">Mr. Bennet</a> — Father</li>
+                            <li><a href="mrs-bennet.html">Mrs. Bennet</a> — Mother</li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Love Interests & Rivals</h4>
+                        <ul>
+                            <li><a href="fitzwilliam-darcy.html">Mr. Darcy</a> — Hero</li>
+                            <li><a href="george-wickham.html">George Wickham</a> — False suitor</li>
+                            <li><a href="colonel-fitzwilliam.html">Colonel Fitzwilliam</a> — Darcy's cousin</li>
+                            <li><a href="caroline-bingley.html">Caroline Bingley</a> — Rival</li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Similar Heroines Across Austen</h4>
+                        <ul>
+                            <li><a href="../emma/emma-woodhouse.html">Emma Woodhouse</a> <span class="novel-tag">Emma</span></li>
+                            <li><a href="../persuasion/anne-elliot.html">Anne Elliot</a> <span class="novel-tag">Persuasion</span></li>
+                            <li><a href="../northanger-abbey/catherine-morland.html">Catherine Morland</a> <span class="novel-tag">Northanger Abbey</span></li>
+                            <li><a href="../sense-and-sensibility/elinor-dashwood.html">Elinor Dashwood</a> <span class="novel-tag">Sense & Sensibility</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

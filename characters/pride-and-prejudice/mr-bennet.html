@@ -42,6 +42,14 @@
         .quote-block cite { display: block; margin-top: 1rem; color: var(--text-light); font-size: 0.9rem; }
         .character-nav { display: flex; justify-content: space-between; gap: 1rem; padding: 2rem 0; flex-wrap: wrap; }
         .character-nav a { background: white; padding: 1rem 1.5rem; border-radius: 10px; text-decoration: none; color: var(--deep-teal); box-shadow: 0 3px 10px rgba(0,0,0,0.1); min-height: 48px; display: inline-flex; align-items: center; }
+        .related-characters { padding: 3rem 0; background: var(--light-sage); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
+        .related-group h4 { color: var(--deep-teal); font-size: 1rem; margin-bottom: 0.75rem; }
+        .related-group ul { list-style: none; }
+        .related-group li { margin-bottom: 0.5rem; }
+        .related-group a { color: var(--text-dark); text-decoration: none; padding: 0.4rem 0; display: inline-block; border-bottom: 1px solid transparent; transition: border-color 0.3s ease; }
+        .related-group a:hover { border-bottom-color: var(--deep-teal); }
+        .related-group .novel-tag { font-size: 0.75rem; color: var(--text-light); font-style: italic; }
         footer { background: var(--deep-teal); color: white; text-align: center; padding: 2rem 0; }
         footer a { color: rgba(255,255,255,0.8); text-decoration: none; }
         @media (max-width: 768px) { h1 { font-size: 2.2rem; } .profile-header { flex-direction: column; } }
@@ -104,7 +112,7 @@
         <section class="section">
             <div class="container">
                 <h3 class="section-title">A Father's Failure</h3>
-                <p>Mr. Bennet's failure as a father is most evident in his treatment of his younger daughters. While he lavishes affection and respect on Elizabeth, he openly despises Kitty and Lydia, calling them "two of the silliest girls in the country." This contempt does nothing to improve them and much to damage them.</p>
+                <p>Mr. Bennet's failure as a father is most evident in his treatment of his younger daughters. While he lavishes affection and respect on <a href="elizabeth-bennet.html">Elizabeth</a>, he openly despises <a href="kitty-bennet.html">Kitty</a> and <a href="lydia-bennet.html">Lydia</a>, calling them "two of the silliest girls in the country." This contempt does nothing to improve them and much to damage them.</p>
                 <p>When Elizabeth warns him not to let Lydia go to Brighton with the militia, he dismisses her concerns. His reasoning reveals his fundamental irresponsibility: he simply does not want the inconvenience of a disappointed Lydia at home. The near-ruin that follows is a direct result of this negligence.</p>
                 <p>After Lydia's elopement, Mr. Bennet briefly shows genuine emotion and self-awareness. "Who should suffer but myself?" he asks Elizabeth. "It has been my own doing, and I ought to feel it." Yet this moment of insight does not lead to lasting change—by the novel's end, he has largely returned to his usual detachment.</p>
             </div>
@@ -116,6 +124,30 @@
                 <p>Elizabeth is clearly Mr. Bennet's favorite child, and their relationship is marked by mutual affection and intellectual companionship. He delights in her wit and values her judgment above that of any other family member. When she accepts Darcy, it is her father's blessing that means most to her.</p>
                 <p>Yet even this relationship has shadows. Elizabeth benefits from her father's partiality at her sisters' expense, and she has absorbed some of his tendency toward ironic detachment. Part of her growth involves recognizing the limitations of mere cleverness without moral engagement.</p>
                 <p>Mr. Bennet's response to Elizabeth's engagement to Darcy reveals his genuine love for her. His concern is not about rank or money but about her happiness: "I know your disposition, Lizzy. I know that you could be neither happy nor respectable unless you truly esteemed your husband." His blessing, when satisfied that she loves Darcy, is wholehearted.</p>
+            </div>
+        </section>
+
+        <section class="related-characters">
+            <div class="container">
+                <h3 class="section-title">Related Characters</h3>
+                <div class="related-grid">
+                    <div class="related-group">
+                        <h4>Family & Connections</h4>
+                        <ul>
+                            <li><a href="elizabeth-bennet.html">Elizabeth Bennet</a> <span class="novel-tag">Favorite daughter</span></li>
+                            <li><a href="mrs-bennet.html">Mrs. Bennet</a> <span class="novel-tag">His wife</span></li>
+                            <li><a href="jane-bennet.html">Jane Bennet</a> <span class="novel-tag">Eldest daughter</span></li>
+                            <li><a href="lydia-bennet.html">Lydia Bennet</a> <span class="novel-tag">Youngest daughter</span></li>
+                            <li><a href="mr-collins.html">Mr. Collins</a> <span class="novel-tag">Heir to Longbourn</span></li>
+                        </ul>
+                    </div>
+                    <div class="related-group">
+                        <h4>Similar Detached Fathers</h4>
+                        <ul>
+                            <li><a href="../emma/mr-woodhouse.html">Mr. Woodhouse</a> <span class="novel-tag">Emma</span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
