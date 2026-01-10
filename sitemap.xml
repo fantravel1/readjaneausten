@@ -456,6 +456,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/northanger-abbey/john-thorpe.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Persuasion Characters -->
   <url>
@@ -490,6 +496,24 @@
   </url>
   <url>
     <loc>https://readjaneausten.com/characters/persuasion/sir-walter-elliot.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/persuasion/elizabeth-elliot.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/persuasion/mary-musgrove.html</loc>
+    <lastmod>2026-01-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/persuasion/captain-benwick.html</loc>
     <lastmod>2026-01-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
