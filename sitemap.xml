@@ -292,6 +292,30 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/pride-and-prejudice/mary-bennet.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/pride-and-prejudice/kitty-bennet.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/pride-and-prejudice/georgiana-darcy.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/pride-and-prejudice/colonel-fitzwilliam.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Sense and Sensibility Characters -->
   <url>
@@ -356,6 +380,24 @@
   </url>
   <url>
     <loc>https://readjaneausten.com/characters/sense-and-sensibility/fanny-dashwood.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/sense-and-sensibility/mrs-ferrars.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/sense-and-sensibility/robert-ferrars.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/sense-and-sensibility/margaret-dashwood.html</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -428,6 +470,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/emma/robert-martin.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Mansfield Park Characters -->
   <url>
@@ -496,6 +544,18 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/mansfield-park/mr-rushworth.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/mansfield-park/mr-yates.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 
   <!-- Northanger Abbey Characters -->
   <url>
@@ -548,6 +608,12 @@
   </url>
   <url>
     <loc>https://readjaneausten.com/characters/northanger-abbey/mrs-allen.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/northanger-abbey/captain-tilney.html</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -616,6 +682,30 @@
   </url>
   <url>
     <loc>https://readjaneausten.com/characters/persuasion/the-crofts.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/persuasion/henrietta-musgrove.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/persuasion/charles-musgrove.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/persuasion/captain-harville.html</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://readjaneausten.com/characters/persuasion/mrs-smith.html</loc>
     <lastmod>2026-01-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
